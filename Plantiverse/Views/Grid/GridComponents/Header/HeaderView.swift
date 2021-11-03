@@ -16,8 +16,9 @@ struct HeaderView: View {
                        minHeight: 44,
                        maxHeight: .infinity)
                 .accessibilitySortPriority(0)
-            Text("My Plants by Room")
+            Text("My Plantiverse")
                 .font(.title)
+                .fixedSize(horizontal: true, vertical: false)
                 .accessibilitySortPriority(2)
             AddButton()
                 .frame(minWidth: 44,

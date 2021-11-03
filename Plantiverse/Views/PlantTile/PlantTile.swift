@@ -18,6 +18,7 @@ struct PlantTile: View {
                 plant.task.map({ task in
                     TaskView(plantTask: task)
                 })
+
                     .padding()
             }
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
@@ -25,11 +26,9 @@ struct PlantTile: View {
             if plant.needsHealthUpdate {
                 NotificationView(plant: plant)
                     .offset(x: 60, y: -80)
-                    //.accessibilitySortPriority(0)
             }
         }
         .accessibilityElement(children: .combine)
-        .accessibilitySortPriority(1)
     }
 }
 

@@ -16,6 +16,7 @@ struct NotificationView: View {
             showingAlert = true
         }) {
             Image(systemName: "exclamationmark")
+                .accessibilityLabel(Text("Update plant health"))
                 .foregroundColor(Color.black)
                 .padding()
         }
@@ -39,8 +40,6 @@ struct NotificationView: View {
                     Text("Please select \(plant.name) plant's current health")
                 }
         .background(Circle().fill(Color.green).opacity(0.70))
-        .accessibilityLabel(Text("Update plant health"))
-        .accessibilityElement(children: .contain)
         .accessibilityElement(children: .combine)
     }
 }
