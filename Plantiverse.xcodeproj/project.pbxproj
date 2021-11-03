@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F374EA002732D922002EB20E /* PlantiverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E9FF2732D922002EB20E /* PlantiverseApp.swift */; };
+		F374EA042732D923002EB20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F374EA032732D923002EB20E /* Assets.xcassets */; };
+		F374EA072732D923002EB20E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F374EA062732D923002EB20E /* Preview Assets.xcassets */; };
+		F374EA112732D924002EB20E /* PlantiverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA102732D924002EB20E /* PlantiverseTests.swift */; };
+		F374EA1B2732D924002EB20E /* PlantiverseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA1A2732D924002EB20E /* PlantiverseUITests.swift */; };
+		F374EA1D2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA1C2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift */; };
+		F374EA2A2732D94F002EB20E /* RoomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA292732D94F002EB20E /* RoomSection.swift */; };
+		F374EA2C2732D955002EB20E /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA2B2732D955002EB20E /* TaskView.swift */; };
+		F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA2D2732D95C002EB20E /* PlantInfoView.swift */; };
+		F374EA302732D961002EB20E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA2F2732D961002EB20E /* HeaderView.swift */; };
+		F374EA322732D970002EB20E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA312732D970002EB20E /* NotificationView.swift */; };
+		F374EA342732D979002EB20E /* PlantTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA332732D979002EB20E /* PlantTile.swift */; };
+		F374EA362732D980002EB20E /* PlantsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA352732D980002EB20E /* PlantsGrid.swift */; };
+		F374EA3A2732DA72002EB20E /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA392732DA72002EB20E /* PlantModel.swift */; };
+		F374EA3C2732DA77002EB20E /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA3B2732DA77002EB20E /* Room.swift */; };
+		F374EA3E2732DA7C002EB20E /* PlantFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA3D2732DA7C002EB20E /* PlantFactory.swift */; };
+		F374EA402732DA80002EB20E /* RoomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA3F2732DA80002EB20E /* RoomFactory.swift */; };
+		F374EA422732DAA4002EB20E /* PlantTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA412732DAA4002EB20E /* PlantTask.swift */; };
+		F374EA442732DAB2002EB20E /* PlantTaskFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA432732DAB2002EB20E /* PlantTaskFactory.swift */; };
+		F374EA462732DAE9002EB20E /* PlantCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA452732DAE9002EB20E /* PlantCategory.swift */; };
+		F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA472732DBC8002EB20E /* MainGridView.swift */; };
+		F374EA4E2732DE37002EB20E /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4D2732DE37002EB20E /* ButtonsView.swift */; };
+		F374EA502732DE57002EB20E /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4F2732DE57002EB20E /* EditButton.swift */; };
+		F374EA522732DE60002EB20E /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA512732DE60002EB20E /* AddButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F374EA0D2732D924002EB20E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F374E9F42732D922002EB20E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F374E9FB2732D922002EB20E;
+			remoteInfo = Plantiverse;
+		};
+		F374EA172732D924002EB20E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F374E9F42732D922002EB20E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F374E9FB2732D922002EB20E;
+			remoteInfo = Plantiverse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F374E9FC2732D922002EB20E /* Plantiverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plantiverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F374E9FF2732D922002EB20E /* PlantiverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantiverseApp.swift; sourceTree = "<group>"; };
+		F374EA032732D923002EB20E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F374EA062732D923002EB20E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F374EA0C2732D924002EB20E /* PlantiverseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantiverseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F374EA102732D924002EB20E /* PlantiverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantiverseTests.swift; sourceTree = "<group>"; };
+		F374EA162732D924002EB20E /* PlantiverseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlantiverseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F374EA1A2732D924002EB20E /* PlantiverseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantiverseUITests.swift; sourceTree = "<group>"; };
+		F374EA1C2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantiverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F374EA292732D94F002EB20E /* RoomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSection.swift; sourceTree = "<group>"; };
+		F374EA2B2732D955002EB20E /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		F374EA2D2732D95C002EB20E /* PlantInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoView.swift; sourceTree = "<group>"; };
+		F374EA2F2732D961002EB20E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F374EA312732D970002EB20E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F374EA332732D979002EB20E /* PlantTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTile.swift; sourceTree = "<group>"; };
+		F374EA352732D980002EB20E /* PlantsGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsGrid.swift; sourceTree = "<group>"; };
+		F374EA392732DA72002EB20E /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		F374EA3B2732DA77002EB20E /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		F374EA3D2732DA7C002EB20E /* PlantFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantFactory.swift; sourceTree = "<group>"; };
+		F374EA3F2732DA80002EB20E /* RoomFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomFactory.swift; sourceTree = "<group>"; };
+		F374EA412732DAA4002EB20E /* PlantTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTask.swift; sourceTree = "<group>"; };
+		F374EA432732DAB2002EB20E /* PlantTaskFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTaskFactory.swift; sourceTree = "<group>"; };
+		F374EA452732DAE9002EB20E /* PlantCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategory.swift; sourceTree = "<group>"; };
+		F374EA472732DBC8002EB20E /* MainGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridView.swift; sourceTree = "<group>"; };
+		F374EA4D2732DE37002EB20E /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		F374EA4F2732DE57002EB20E /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		F374EA512732DE60002EB20E /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F374E9F92732D922002EB20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F374EA092732D924002EB20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F374EA132732D924002EB20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F374E9F32732D922002EB20E = {
+			isa = PBXGroup;
+			children = (
+				F374E9FE2732D922002EB20E /* Plantiverse */,
+				F374EA0F2732D924002EB20E /* PlantiverseTests */,
+				F374EA192732D924002EB20E /* PlantiverseUITests */,
+				F374E9FD2732D922002EB20E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F374E9FD2732D922002EB20E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F374E9FC2732D922002EB20E /* Plantiverse.app */,
+				F374EA0C2732D924002EB20E /* PlantiverseTests.xctest */,
+				F374EA162732D924002EB20E /* PlantiverseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F374E9FE2732D922002EB20E /* Plantiverse */ = {
+			isa = PBXGroup;
+			children = (
+				F374E9FF2732D922002EB20E /* PlantiverseApp.swift */,
+				F374EA472732DBC8002EB20E /* MainGridView.swift */,
+				F374EA372732D9A0002EB20E /* Views */,
+				F374EA382732D9A9002EB20E /* Data */,
+				F374EA032732D923002EB20E /* Assets.xcassets */,
+				F374EA052732D923002EB20E /* Preview Content */,
+			);
+			path = Plantiverse;
+			sourceTree = "<group>";
+		};
+		F374EA052732D923002EB20E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA062732D923002EB20E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F374EA0F2732D924002EB20E /* PlantiverseTests */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA102732D924002EB20E /* PlantiverseTests.swift */,
+			);
+			path = PlantiverseTests;
+			sourceTree = "<group>";
+		};
+		F374EA192732D924002EB20E /* PlantiverseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA1A2732D924002EB20E /* PlantiverseUITests.swift */,
+				F374EA1C2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift */,
+			);
+			path = PlantiverseUITests;
+			sourceTree = "<group>";
+		};
+		F374EA372732D9A0002EB20E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA4C2732DD24002EB20E /* PlantTile */,
+				F374EA4B2732DD18002EB20E /* Grid */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F374EA382732D9A9002EB20E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA392732DA72002EB20E /* PlantModel.swift */,
+				F374EA3B2732DA77002EB20E /* Room.swift */,
+				F374EA3D2732DA7C002EB20E /* PlantFactory.swift */,
+				F374EA412732DAA4002EB20E /* PlantTask.swift */,
+				F374EA452732DAE9002EB20E /* PlantCategory.swift */,
+				F374EA432732DAB2002EB20E /* PlantTaskFactory.swift */,
+				F374EA3F2732DA80002EB20E /* RoomFactory.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F374EA492732DCDB002EB20E /* PlantTileComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA2D2732D95C002EB20E /* PlantInfoView.swift */,
+				F374EA2B2732D955002EB20E /* TaskView.swift */,
+				F374EA312732D970002EB20E /* NotificationView.swift */,
+			);
+			path = PlantTileComponents;
+			sourceTree = "<group>";
+		};
+		F374EA4A2732DCF7002EB20E /* GridComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA532732DE82002EB20E /* Header */,
+			);
+			path = GridComponents;
+			sourceTree = "<group>";
+		};
+		F374EA4B2732DD18002EB20E /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA292732D94F002EB20E /* RoomSection.swift */,
+				F374EA352732D980002EB20E /* PlantsGrid.swift */,
+				F374EA4A2732DCF7002EB20E /* GridComponents */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		F374EA4C2732DD24002EB20E /* PlantTile */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA332732D979002EB20E /* PlantTile.swift */,
+				F374EA492732DCDB002EB20E /* PlantTileComponents */,
+			);
+			path = PlantTile;
+			sourceTree = "<group>";
+		};
+		F374EA532732DE82002EB20E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA2F2732D961002EB20E /* HeaderView.swift */,
+				F374EA542732DE8F002EB20E /* HeaderComponents */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F374EA542732DE8F002EB20E /* HeaderComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F374EA4D2732DE37002EB20E /* ButtonsView.swift */,
+				F374EA4F2732DE57002EB20E /* EditButton.swift */,
+				F374EA512732DE60002EB20E /* AddButton.swift */,
+			);
+			path = HeaderComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F374E9FB2732D922002EB20E /* Plantiverse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F374EA202732D924002EB20E /* Build configuration list for PBXNativeTarget "Plantiverse" */;
+			buildPhases = (
+				F374E9F82732D922002EB20E /* Sources */,
+				F374E9F92732D922002EB20E /* Frameworks */,
+				F374E9FA2732D922002EB20E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plantiverse;
+			productName = Plantiverse;
+			productReference = F374E9FC2732D922002EB20E /* Plantiverse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F374EA0B2732D924002EB20E /* PlantiverseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F374EA232732D924002EB20E /* Build configuration list for PBXNativeTarget "PlantiverseTests" */;
+			buildPhases = (
+				F374EA082732D924002EB20E /* Sources */,
+				F374EA092732D924002EB20E /* Frameworks */,
+				F374EA0A2732D924002EB20E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F374EA0E2732D924002EB20E /* PBXTargetDependency */,
+			);
+			name = PlantiverseTests;
+			productName = PlantiverseTests;
+			productReference = F374EA0C2732D924002EB20E /* PlantiverseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F374EA152732D924002EB20E /* PlantiverseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F374EA262732D924002EB20E /* Build configuration list for PBXNativeTarget "PlantiverseUITests" */;
+			buildPhases = (
+				F374EA122732D924002EB20E /* Sources */,
+				F374EA132732D924002EB20E /* Frameworks */,
+				F374EA142732D924002EB20E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F374EA182732D924002EB20E /* PBXTargetDependency */,
+			);
+			name = PlantiverseUITests;
+			productName = PlantiverseUITests;
+			productReference = F374EA162732D924002EB20E /* PlantiverseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F374E9F42732D922002EB20E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F374E9FB2732D922002EB20E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					F374EA0B2732D924002EB20E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F374E9FB2732D922002EB20E;
+					};
+					F374EA152732D924002EB20E = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = F374E9FB2732D922002EB20E;
+					};
+				};
+			};
+			buildConfigurationList = F374E9F72732D922002EB20E /* Build configuration list for PBXProject "Plantiverse" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F374E9F32732D922002EB20E;
+			productRefGroup = F374E9FD2732D922002EB20E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F374E9FB2732D922002EB20E /* Plantiverse */,
+				F374EA0B2732D924002EB20E /* PlantiverseTests */,
+				F374EA152732D924002EB20E /* PlantiverseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F374E9FA2732D922002EB20E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F374EA072732D923002EB20E /* Preview Assets.xcassets in Resources */,
+				F374EA042732D923002EB20E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F374EA0A2732D924002EB20E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F374EA142732D924002EB20E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F374E9F82732D922002EB20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F374EA302732D961002EB20E /* HeaderView.swift in Sources */,
+				F374EA502732DE57002EB20E /* EditButton.swift in Sources */,
+				F374EA322732D970002EB20E /* NotificationView.swift in Sources */,
+				F374EA3C2732DA77002EB20E /* Room.swift in Sources */,
+				F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */,
+				F374EA002732D922002EB20E /* PlantiverseApp.swift in Sources */,
+				F374EA2A2732D94F002EB20E /* RoomSection.swift in Sources */,
+				F374EA402732DA80002EB20E /* RoomFactory.swift in Sources */,
+				F374EA3A2732DA72002EB20E /* PlantModel.swift in Sources */,
+				F374EA2C2732D955002EB20E /* TaskView.swift in Sources */,
+				F374EA4E2732DE37002EB20E /* ButtonsView.swift in Sources */,
+				F374EA3E2732DA7C002EB20E /* PlantFactory.swift in Sources */,
+				F374EA342732D979002EB20E /* PlantTile.swift in Sources */,
+				F374EA362732D980002EB20E /* PlantsGrid.swift in Sources */,
+				F374EA442732DAB2002EB20E /* PlantTaskFactory.swift in Sources */,
+				F374EA462732DAE9002EB20E /* PlantCategory.swift in Sources */,
+				F374EA422732DAA4002EB20E /* PlantTask.swift in Sources */,
+				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,
+				F374EA522732DE60002EB20E /* AddButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F374EA082732D924002EB20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F374EA112732D924002EB20E /* PlantiverseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F374EA122732D924002EB20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F374EA1D2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift in Sources */,
+				F374EA1B2732D924002EB20E /* PlantiverseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F374EA0E2732D924002EB20E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F374E9FB2732D922002EB20E /* Plantiverse */;
+			targetProxy = F374EA0D2732D924002EB20E /* PBXContainerItemProxy */;
+		};
+		F374EA182732D924002EB20E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F374E9FB2732D922002EB20E /* Plantiverse */;
+			targetProxy = F374EA172732D924002EB20E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F374EA1E2732D924002EB20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F374EA1F2732D924002EB20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F374EA212732D924002EB20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Plantiverse/Preview Content\"";
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dequeSystems.Plantiverse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F374EA222732D924002EB20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Plantiverse/Preview Content\"";
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dequeSystems.Plantiverse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F374EA242732D924002EB20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dequeSystems.PlantiverseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plantiverse.app/Plantiverse";
+			};
+			name = Debug;
+		};
+		F374EA252732D924002EB20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dequeSystems.PlantiverseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plantiverse.app/Plantiverse";
+			};
+			name = Release;
+		};
+		F374EA272732D924002EB20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dequeSystems.PlantiverseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Plantiverse;
+			};
+			name = Debug;
+		};
+		F374EA282732D924002EB20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ZZQGXN669;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dequeSystems.PlantiverseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Plantiverse;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F374E9F72732D922002EB20E /* Build configuration list for PBXProject "Plantiverse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F374EA1E2732D924002EB20E /* Debug */,
+				F374EA1F2732D924002EB20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F374EA202732D924002EB20E /* Build configuration list for PBXNativeTarget "Plantiverse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F374EA212732D924002EB20E /* Debug */,
+				F374EA222732D924002EB20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F374EA232732D924002EB20E /* Build configuration list for PBXNativeTarget "PlantiverseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F374EA242732D924002EB20E /* Debug */,
+				F374EA252732D924002EB20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F374EA262732D924002EB20E /* Build configuration list for PBXNativeTarget "PlantiverseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F374EA272732D924002EB20E /* Debug */,
+				F374EA282732D924002EB20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F374E9F42732D922002EB20E /* Project object */;
+}
