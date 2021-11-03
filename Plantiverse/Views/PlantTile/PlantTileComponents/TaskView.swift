@@ -19,13 +19,7 @@ struct TaskView: View {
                 .font(.footnote)
         }.accessibilityHidden(true)
         .accessibilityElement(children: .combine)
-        .accessibilityCustomContent(.task, plantTask.name.rawValue, importance: .high)
-    }
-}
-
-extension AccessibilityCustomContentKey {
-    static var task: AccessibilityCustomContentKey {
-        AccessibilityCustomContentKey("Task")
+        .accessibilityCustomContent("Task", plantTask.name.rawValue, importance: .high)
     }
 }
 

@@ -15,4 +15,8 @@ struct PlantModel: Identifiable {
     var task: PlantTask?
     var category: PlantCategory
     var id = UUID()
+
+    var hasTask: Bool {
+        return task != nil 
+    }
 }

@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct PlantTask {
+struct PlantTask: Identifiable {
     var name: TaskName
     var imageName: String
+    var id = UUID()
 }
 
 enum TaskName: String {

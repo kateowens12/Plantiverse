@@ -24,12 +24,21 @@ struct PlantsGrid: View {
             ForEach(plants.indices, id: \.self) { i in
                 PlantTile(plant: room.plants[i])
                     .accessibilityRotorEntry(id: room.plants[i].id, in: plantNamespace)
+
             }
         }
-                  .accessibilityRotor("Plants that need Health Update") {
+                  .accessibilityRotor("Plants with Health Update") {
                       ForEach(plants, id: \.id) { plant in
                           if plant.needsHealthUpdate {
                               AccessibilityRotorEntry("Update plant health", id: plant.id, in: plantNamespace)
+                          }
+                      }
+                  }
+
+                  .accessibilityRotor("Plants with a Task") {
+                      ForEach(plants, id: \.id) { plant in
+                          if plant.hasTask {
+                              AccessibilityRotorEntry("task", id: plant.id, in: plantNamespace)
                           }
                       }
                   }
