@@ -39,6 +39,8 @@
 		F3A41EC3275961B700D5A0B7 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC2275961B700D5A0B7 /* StatusView.swift */; };
 		F3A41EC52759648900D5A0B7 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC42759648900D5A0B7 /* CategoryView.swift */; };
 		F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC62759698000D5A0B7 /* ImagePicker.swift */; };
+		F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */; };
+		F3A41F1127626AF500D5A0B7 /* PlantBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		F3A41EC2275961B700D5A0B7 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		F3A41EC42759648900D5A0B7 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F3A41EC62759698000D5A0B7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsInfoView.swift; sourceTree = "<group>"; };
+		F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBasicInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,9 +189,11 @@
 		F374EA372732D9A0002EB20E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */,
+				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
+				F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */,
 				F374EA4C2732DD24002EB20E /* PlantTile */,
 				F374EA4B2732DD18002EB20E /* GridView */,
-				F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */,
 				F3A41EC62759698000D5A0B7 /* ImagePicker.swift */,
 			);
 			path = Views;
@@ -400,6 +406,7 @@
 				F374EA502732DE57002EB20E /* EditButton.swift in Sources */,
 				F3205E3B2739B30F00895065 /* MessageContentView.swift in Sources */,
 				F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */,
+				F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */,
 				F374EA322732D970002EB20E /* NotificationView.swift in Sources */,
 				F374EA3C2732DA77002EB20E /* Room.swift in Sources */,
 				F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */,
@@ -422,6 +429,7 @@
 				F374EA422732DAA4002EB20E /* PlantTask.swift in Sources */,
 				F3205E3727399D9700895065 /* Tet.swift in Sources */,
 				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,
+				F3A41F1127626AF500D5A0B7 /* PlantBasicInfoView.swift in Sources */,
 				F374EA522732DE60002EB20E /* AddButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
