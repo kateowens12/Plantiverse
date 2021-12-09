@@ -22,5 +22,15 @@ struct PlantModel: Identifiable {
     var hasTask: Bool {
         return task != nil
     }
+
+    var allTasks: [PlantTask]? {
+        guard let theTask = task else { return nil }
+        var all = [PlantTask]()
+        all.append(theTask)
+        // do we have a task?
+        // unwrap it and add to array
+
+        return all
+    }
 }
 

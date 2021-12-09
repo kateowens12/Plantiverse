@@ -41,6 +41,9 @@
 		F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC62759698000D5A0B7 /* ImagePicker.swift */; };
 		F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */; };
 		F3A41F1127626AF500D5A0B7 /* PlantBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */; };
+		F3A41F13276277BE00D5A0B7 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F12276277BD00D5A0B7 /* TaskList.swift */; };
+		F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */; };
+		F3A41F1727627F3A00D5A0B7 /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 		F3A41EC62759698000D5A0B7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsInfoView.swift; sourceTree = "<group>"; };
 		F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBasicInfoView.swift; sourceTree = "<group>"; };
+		F3A41F12276277BD00D5A0B7 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
+		F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		F374E9F32732D922002EB20E = {
 			isa = PBXGroup;
 			children = (
+				F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */,
 				F3205E3A2739B30F00895065 /* MessageContentView.swift */,
 				F3205E3827399F4000895065 /* MessageView2.swift */,
 				F3205E3627399D9700895065 /* Tet.swift */,
@@ -192,6 +199,7 @@
 				F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */,
 				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
 				F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */,
+				F3A41F12276277BD00D5A0B7 /* TaskList.swift */,
 				F374EA4C2732DD24002EB20E /* PlantTile */,
 				F374EA4B2732DD18002EB20E /* GridView */,
 				F3A41EC62759698000D5A0B7 /* ImagePicker.swift */,
@@ -210,6 +218,7 @@
 				F374EA452732DAE9002EB20E /* PlantCategory.swift */,
 				F374EA432732DAB2002EB20E /* PlantTaskFactory.swift */,
 				F374EA3F2732DA80002EB20E /* RoomFactory.swift */,
+				F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -403,11 +412,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F374EA302732D961002EB20E /* HeaderView.swift in Sources */,
+				F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */,
 				F374EA502732DE57002EB20E /* EditButton.swift in Sources */,
 				F3205E3B2739B30F00895065 /* MessageContentView.swift in Sources */,
 				F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */,
 				F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */,
 				F374EA322732D970002EB20E /* NotificationView.swift in Sources */,
+				F3A41F13276277BE00D5A0B7 /* TaskList.swift in Sources */,
 				F374EA3C2732DA77002EB20E /* Room.swift in Sources */,
 				F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */,
 				F374EA002732D922002EB20E /* PlantiverseApp.swift in Sources */,
@@ -426,6 +437,7 @@
 				F374EA442732DAB2002EB20E /* PlantTaskFactory.swift in Sources */,
 				F3A41EBF275917E200D5A0B7 /* Status.swift in Sources */,
 				F374EA462732DAE9002EB20E /* PlantCategory.swift in Sources */,
+				F3A41F1727627F3A00D5A0B7 /* PlantViewModel.swift in Sources */,
 				F374EA422732DAA4002EB20E /* PlantTask.swift in Sources */,
 				F3205E3727399D9700895065 /* Tet.swift in Sources */,
 				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,
