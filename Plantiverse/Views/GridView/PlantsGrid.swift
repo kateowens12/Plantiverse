@@ -24,7 +24,6 @@ struct PlantsGrid: View {
             ForEach(plants.indices, id: \.self) { i in
                 PlantTile(plant: room.plants[i])
                     .accessibilityRotorEntry(id: room.plants[i].id, in: plantNamespace)
-
             }
         }
                   .accessibilityRotor("Plants with Health Update") {
