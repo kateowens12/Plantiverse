@@ -18,14 +18,14 @@ struct PlantTile: View {
                 plant.task.map({ task in
                     TaskView(plantTask: task)
                 })
-                    .padding()
+                .padding()
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
 
             if plant.needsHealthUpdate {
                 NotificationView(plant: plant)
-                    .offset(x: 60, y: -80)
+                    .offset(x: 90, y: -90)
             }
         }
         .accessibilityElement(children: .combine)

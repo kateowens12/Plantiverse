@@ -40,6 +40,7 @@ struct NotificationView: View {
                     Text("Please select \(plant.name) plant's current health")
                 }
         .background(Circle().fill(Color.green).opacity(0.70))
+        .frame(width: 90, height:90, alignment: .center)
         .accessibilityElement(children: .combine)
     }
 }

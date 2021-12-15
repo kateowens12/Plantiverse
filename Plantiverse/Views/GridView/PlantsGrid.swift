@@ -25,7 +25,7 @@ struct PlantsGrid: View {
                 NavigationLink(destination: PlantDetailView(plant: room.plants[i])) {
                 PlantTile(plant: room.plants[i])
                     .accessibilityRotorEntry(id: room.plants[i].id, in: plantNamespace)
-                }
+                }.buttonStyle(PlainButtonStyle())
             }
         }
                   .accessibilityRotor("Plants with Health Update") {

@@ -23,6 +23,7 @@ struct PlantDetailView: View {
                 }
             }
             .accessibilityElement(children: .contain)
+            .navigationTitle(Text(plant.name))
         }
     }
 }
