@@ -134,7 +134,6 @@
 		F374E9F32732D922002EB20E = {
 			isa = PBXGroup;
 			children = (
-				F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */,
 				F3205E3A2739B30F00895065 /* MessageContentView.swift */,
 				F3205E3827399F4000895065 /* MessageView2.swift */,
 				F3205E3627399D9700895065 /* Tet.swift */,
@@ -199,6 +198,7 @@
 				F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */,
 				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
 				F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */,
+				F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */,
 				F3A41F12276277BD00D5A0B7 /* TaskList.swift */,
 				F374EA4C2732DD24002EB20E /* PlantTile */,
 				F374EA4B2732DD18002EB20E /* GridView */,

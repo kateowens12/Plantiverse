@@ -11,6 +11,7 @@ struct PlantDetailsInfoView: View {
     var plant: PlantModel
 
     var body: some View {
+
         HStack {
             CategoryView(category: plant.category)
             plant.status.map { status in
@@ -23,6 +24,7 @@ struct PlantDetailsInfoView: View {
         }
         .accessibilityElement(children: .contain)
         .padding()
+        Spacer()
     }
 }
 

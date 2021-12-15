@@ -19,7 +19,12 @@ struct PlantDetailView: View {
                 PlantDetailsInfoView(plant: plant)
                 Divider()
                 Spacer()
+                plant.allTasks.map { tasks in
+                    TaskList(tasks: tasks)
+                }
+                Spacer()
             }
+            .accessibilityElement(children: .contain)
         }
     }
 }

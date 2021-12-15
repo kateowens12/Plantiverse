@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct TaskList: View {
-    var plant: PlantModel
+    var tasks: [PlantTask]
 
     var body: some View {
-        // list of all tasks
+        List(tasks) { task in
+            TaskRow(task: task)
+        }
     }
 }
 
 struct TaskList_Previews: PreviewProvider {
     static var previews: some View {
-        TaskList(plant: PlantFactory().pothos)
+        TaskList(tasks: [PlantTaskFactory().clean, PlantTaskFactory().water])
     }
 }

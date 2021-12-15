@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct TaskRow: View {
-    var plant: PlantModel
+    var task: PlantTask
 
     var body: some View {
         HStack {
             // task image
-            
+            Image(task.imageName)
+                .padding()
+            Text(task.name.rawValue)
             // task name
         }
     }
@@ -21,6 +23,6 @@ struct TaskRow: View {
 
 struct TaskRow_Previews: PreviewProvider {
     static var previews: some View {
-        TaskRow(plant: PlantFactory().pothos)
+        TaskRow(task: PlantTaskFactory().clean)
     }
 }
