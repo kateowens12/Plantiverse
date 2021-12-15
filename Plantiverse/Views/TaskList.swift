@@ -11,8 +11,13 @@ struct TaskList: View {
     var tasks: [PlantTask]
 
     var body: some View {
-        List(tasks) { task in
-            TaskRow(task: task)
+        Form {
+            Section(header: Text("Tasks To Do")) {
+                    List(tasks) { task in
+                        TaskRow(task: task)
+                    }
+            }
+            .background(.clear)
         }
     }
 }

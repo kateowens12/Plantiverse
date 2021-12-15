@@ -12,12 +12,12 @@ struct TaskRow: View {
 
     var body: some View {
         HStack {
-            // task image
             Image(task.imageName)
                 .padding()
             Text(task.name.rawValue)
-            // task name
+                .padding()
         }
+        .accessibilityElement(children: .combine)
     }
 }
 

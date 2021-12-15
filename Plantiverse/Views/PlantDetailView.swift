@@ -14,15 +14,13 @@ struct PlantDetailView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                PlantBasicInfoView(plant: plant)
-                Divider()
+                PlantBasicInfoView(plant: plant, width: geometry.size.width, height: geometry.size.height)
                 PlantDetailsInfoView(plant: plant)
-                Divider()
+                    .padding()
                 Spacer()
                 plant.allTasks.map { tasks in
                     TaskList(tasks: tasks)
                 }
-                Spacer()
             }
             .accessibilityElement(children: .contain)
         }

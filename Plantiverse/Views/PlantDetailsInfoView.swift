@@ -11,25 +11,28 @@ struct PlantDetailsInfoView: View {
     var plant: PlantModel
 
     var body: some View {
-
-        HStack {
-            CategoryView(category: plant.category)
-            plant.status.map { status in
-                StatusView(status: status)
+        VStack {
+            Divider()
+            HStack {
+                CategoryView(category: plant.category)
+                    .padding()
+                plant.status.map { status in
+                    StatusView(status: status)
+                }
+                .padding()
+                plant.task.map { task in
+                    TaskView(plantTask: task)
+                }
+                .padding()
             }
-            .padding()
-            plant.task.map { task in
-                TaskView(plantTask: task)
-            }
+            Divider()
+            .accessibilityElement(children: .contain)
         }
-        .accessibilityElement(children: .contain)
-        .padding()
-        Spacer()
     }
 }
 
 struct PlantDetailsInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantDetailsInfoView(plant: PlantFactory().pothos)
+        PlantDetailsInfoView(plant: PlantFactory().aloeVera)
     }
 }
