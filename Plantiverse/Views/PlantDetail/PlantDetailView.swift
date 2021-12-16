@@ -10,11 +10,15 @@ import SwiftUI
 struct PlantDetailView: View {
     var plant: PlantModel
     @State private var showingImagePicker = false
-
+    @State private var image = UIImage()
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 PlantBasicInfoView(plant: plant, width: geometry.size.width, height: geometry.size.height)
+                Button(action: { self.showingImagePicker = true }) {
+                              Text("ADD PHOTO")
+                          }
                 PlantDetailsInfoView(plant: plant)
                     .padding()
                 Spacer()
@@ -22,8 +26,11 @@ struct PlantDetailView: View {
                     TaskList(tasks: tasks)
                 }
             }
-            .accessibilityElement(children: .contain)
             .navigationTitle(Text(plant.name))
+            .accessibilityElement(children: .contain)
+            .sheet(isPresented: $showingImagePicker) {
+                ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+            }
         }
     }
 }

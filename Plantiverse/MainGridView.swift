@@ -18,7 +18,6 @@ struct MainGridView: View {
     let rooms = RoomFactory().getAllRooms()
     let suggestions: [String] = [
         // each of the plant names with no repeating names
-
     ]
 
     var body: some View {

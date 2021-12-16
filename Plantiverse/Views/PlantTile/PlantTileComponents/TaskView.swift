@@ -16,6 +16,8 @@ struct TaskView: View {
                 .fixedSize()
                 .accessibilityHidden(true)
             Text(plantTask.name.rawValue)
+               // .font(.caption)
+            // should i use caption or footnote font? which is appropriate here for a11y?
                 .font(.footnote)
         }.accessibilityHidden(true)
         .accessibilityElement(children: .combine)

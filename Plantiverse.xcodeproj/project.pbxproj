@@ -34,7 +34,7 @@
 		F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA472732DBC8002EB20E /* MainGridView.swift */; };
 		F374EA4E2732DE37002EB20E /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4D2732DE37002EB20E /* ButtonsView.swift */; };
 		F374EA502732DE57002EB20E /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4F2732DE57002EB20E /* EditButton.swift */; };
-		F374EA522732DE60002EB20E /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA512732DE60002EB20E /* AddButton.swift */; };
+		F374EA522732DE60002EB20E /* CircularSystemImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA512732DE60002EB20E /* CircularSystemImageButton.swift */; };
 		F3A41EBF275917E200D5A0B7 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EBE275917E200D5A0B7 /* Status.swift */; };
 		F3A41EC12759221900D5A0B7 /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */; };
 		F3A41EC3275961B700D5A0B7 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC2275961B700D5A0B7 /* StatusView.swift */; };
@@ -95,7 +95,7 @@
 		F374EA472732DBC8002EB20E /* MainGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridView.swift; sourceTree = "<group>"; };
 		F374EA4D2732DE37002EB20E /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		F374EA4F2732DE57002EB20E /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
-		F374EA512732DE60002EB20E /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		F374EA512732DE60002EB20E /* CircularSystemImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSystemImageButton.swift; sourceTree = "<group>"; };
 		F3A41EBE275917E200D5A0B7 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
 		F3A41EC2275961B700D5A0B7 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
@@ -295,7 +295,7 @@
 			children = (
 				F374EA4D2732DE37002EB20E /* ButtonsView.swift */,
 				F374EA4F2732DE57002EB20E /* EditButton.swift */,
-				F374EA512732DE60002EB20E /* AddButton.swift */,
+				F374EA512732DE60002EB20E /* CircularSystemImageButton.swift */,
 			);
 			path = HeaderComponents;
 			sourceTree = "<group>";
@@ -462,7 +462,7 @@
 				F3205E3727399D9700895065 /* Tet.swift in Sources */,
 				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,
 				F3A41F1127626AF500D5A0B7 /* PlantBasicInfoView.swift in Sources */,
-				F374EA522732DE60002EB20E /* AddButton.swift in Sources */,
+				F374EA522732DE60002EB20E /* CircularSystemImageButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

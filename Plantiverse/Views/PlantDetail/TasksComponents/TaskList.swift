@@ -17,7 +17,6 @@ struct TaskList: View {
                         TaskRow(task: task)
                     }
             }
-            .background(.clear)
         }
     }
 }

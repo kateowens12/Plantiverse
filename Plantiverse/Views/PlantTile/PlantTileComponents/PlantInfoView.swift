@@ -17,7 +17,10 @@ struct PlantInfoView: View {
                 .accessibility(label: Text(plant.category.rawValue))
                 .accessibilityHidden(true)
             Text(plant.name)
+                .font(.body)
+                .multilineTextAlignment(.center)
                 .padding()
+                .fixedSize(horizontal: false, vertical: true)
                 .accessibility(sortPriority: 2)
         }
         .accessibilityElement(children: .combine)

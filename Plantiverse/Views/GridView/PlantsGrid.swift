@@ -11,8 +11,10 @@ struct PlantsGrid: View {
     @Namespace var plantNamespace
     var room: Room
     var columns: [GridItem] = [
-        GridItem(.flexible(minimum: 50.0, maximum: .infinity)),
-        GridItem(.flexible(minimum: 50.0, maximum: .infinity))
+       // GridItem(.adaptive(minimum: 100, maximum: 180)),
+       // GridItem(.flexible(minimum: 100, maximum: 180))
+        GridItem(.flexible()),
+        GridItem(.flexible())
     ]
 
     var body: some View {
