@@ -17,8 +17,12 @@ struct PlantDetailView: View {
             VStack {
                 PlantBasicInfoView(plant: plant, width: geometry.size.width, height: geometry.size.height)
                 Button(action: { self.showingImagePicker = true }) {
-                              Text("ADD PHOTO")
+                              Image(systemName: "photo")
                           }
+                .foregroundColor(Color.black)
+                    .padding()
+                    .background(Circle().fill(Color.gray).opacity(0.60))
+                        .accessibility(label: Text("Add a new plant"))
                 PlantDetailsInfoView(plant: plant)
                     .padding()
                 Spacer()
