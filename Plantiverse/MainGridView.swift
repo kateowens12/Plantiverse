@@ -16,7 +16,10 @@ struct MainGridView: View {
 
     @State private var query: String = ""
     let rooms = RoomFactory().getAllRooms()
-    let suggestions: [String] = ["pothos", "snake plant"]
+    let suggestions: [String] = [
+        // each of the plant names with no repeating names
+
+    ]
 
     var body: some View {
         NavigationView {

@@ -10,6 +10,7 @@
 		F3205E3727399D9700895065 /* Tet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3205E3627399D9700895065 /* Tet.swift */; };
 		F3205E3927399F4000895065 /* MessageView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3205E3827399F4000895065 /* MessageView2.swift */; };
 		F3205E3B2739B30F00895065 /* MessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3205E3A2739B30F00895065 /* MessageContentView.swift */; };
+		F363EE56276B94F700570A0F /* AllTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363EE55276B94F700570A0F /* AllTasksView.swift */; };
 		F374EA002732D922002EB20E /* PlantiverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E9FF2732D922002EB20E /* PlantiverseApp.swift */; };
 		F374EA042732D923002EB20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F374EA032732D923002EB20E /* Assets.xcassets */; };
 		F374EA072732D923002EB20E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F374EA062732D923002EB20E /* Preview Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		F3205E3627399D9700895065 /* Tet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tet.swift; sourceTree = "<group>"; };
 		F3205E3827399F4000895065 /* MessageView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView2.swift; sourceTree = "<group>"; };
 		F3205E3A2739B30F00895065 /* MessageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageContentView.swift; sourceTree = "<group>"; };
+		F363EE55276B94F700570A0F /* AllTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksView.swift; sourceTree = "<group>"; };
 		F374E9FC2732D922002EB20E /* Plantiverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plantiverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F374E9FF2732D922002EB20E /* PlantiverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantiverseApp.swift; sourceTree = "<group>"; };
 		F374EA032732D923002EB20E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,6 +133,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F363EE57276B97A100570A0F /* TasksComponents */ = {
+			isa = PBXGroup;
+			children = (
+				F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */,
+				F3A41F12276277BD00D5A0B7 /* TaskList.swift */,
+			);
+			path = TasksComponents;
+			sourceTree = "<group>";
+		};
+		F363EE58276B97B500570A0F /* PlantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F3A41EC62759698000D5A0B7 /* ImagePicker.swift */,
+				F363EE57276B97A100570A0F /* TasksComponents */,
+				F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */,
+				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
+				F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */,
+			);
+			path = PlantDetail;
+			sourceTree = "<group>";
+		};
 		F374E9F32732D922002EB20E = {
 			isa = PBXGroup;
 			children = (
@@ -195,14 +218,9 @@
 		F374EA372732D9A0002EB20E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */,
-				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
-				F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */,
-				F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */,
-				F3A41F12276277BD00D5A0B7 /* TaskList.swift */,
+				F363EE58276B97B500570A0F /* PlantDetail */,
 				F374EA4C2732DD24002EB20E /* PlantTile */,
 				F374EA4B2732DD18002EB20E /* GridView */,
-				F3A41EC62759698000D5A0B7 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +249,7 @@
 				F3A41EC2275961B700D5A0B7 /* StatusView.swift */,
 				F3A41EC42759648900D5A0B7 /* CategoryView.swift */,
 				F374EA312732D970002EB20E /* NotificationView.swift */,
+				F363EE55276B94F700570A0F /* AllTasksView.swift */,
 			);
 			path = PlantTileComponents;
 			sourceTree = "<group>";
@@ -438,6 +457,7 @@
 				F3A41EBF275917E200D5A0B7 /* Status.swift in Sources */,
 				F374EA462732DAE9002EB20E /* PlantCategory.swift in Sources */,
 				F3A41F1727627F3A00D5A0B7 /* PlantViewModel.swift in Sources */,
+				F363EE56276B94F700570A0F /* AllTasksView.swift in Sources */,
 				F374EA422732DAA4002EB20E /* PlantTask.swift in Sources */,
 				F3205E3727399D9700895065 /* Tet.swift in Sources */,
 				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,

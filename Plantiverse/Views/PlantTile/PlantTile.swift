@@ -15,6 +15,7 @@ struct PlantTile: View {
             VStack(alignment: .center) {
                 PlantInfoView(plant: plant)
                     .padding()
+
                 plant.task.map({ task in
                     TaskView(plantTask: task)
                 })
