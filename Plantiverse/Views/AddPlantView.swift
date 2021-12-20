@@ -14,7 +14,6 @@ struct AddPlantView: View {
     @State private var isShowing: Bool = false
     
     var body: some View {
-        // TODO add edit button to top right corner
         Form {
             Section(header: Text("Plant Info")) {
                 VStack {
@@ -39,12 +38,6 @@ struct AddPlantView: View {
                     Divider()
                     // slider or stepper for pot size
                 }
-                
-//                Button {
-//                    isShowing.toggle()
-//                } label: {
-//                    Text("Done")
-//                }
             }
         }
     }
