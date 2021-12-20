@@ -14,6 +14,7 @@ struct AddPlantView: View {
     @State private var isShowing: Bool = false
     
     var body: some View {
+        // TODO add edit button to top right corner
         Form {
             Section(header: Text("Plant Info")) {
                 VStack {
@@ -26,6 +27,7 @@ struct AddPlantView: View {
                         Text("Succulents").tag(PlantCategory.Succulents)
                         Text("Not Specified").tag(PlantCategory.NA)
                     }
+                    Divider()
                     Picker("Plant Health", selection: $selectedHealth) {
                         Text("Excellent").tag(PlantHealth.Excellent)
                         Text("Good").tag(PlantHealth.Good)
@@ -34,6 +36,7 @@ struct AddPlantView: View {
                         Text("Unspecified").tag(PlantHealth.NA)
                         Text("Needs Update").tag(PlantHealth.NeedsUpdate)
                     }
+                    Divider()
                     // slider or stepper for pot size
                 }
                 

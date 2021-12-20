@@ -11,8 +11,7 @@ struct PlantsGrid: View {
     @Namespace var plantNamespace
     var room: Room
     var columns: [GridItem] = [
-       // GridItem(.adaptive(minimum: 100, maximum: 180)),
-       // GridItem(.flexible(minimum: 100, maximum: 180))
+      // TODO figure out how to make these resize with expanded type, but all be the same size
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
