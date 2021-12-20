@@ -25,7 +25,6 @@ struct AddButton: View {
         } content: {
             AddPlantView()
         }
-
     }
 }
 

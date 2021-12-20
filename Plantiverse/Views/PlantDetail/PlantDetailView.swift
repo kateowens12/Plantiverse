@@ -16,9 +16,11 @@ struct PlantDetailView: View {
         GeometryReader { geometry in
             VStack {
                 PlantBasicInfoView(plant: plant, width: geometry.size.width, height: geometry.size.height)
-                Button(action: { self.showingImagePicker = true }) {
-                              Image(systemName: "photo")
-                          }
+                Button(action: {
+                    self.showingImagePicker = true
+                }) {
+                     Image(systemName: "photo")
+                    }
                 .foregroundColor(Color.black)
                     .padding()
                     .background(Circle().fill(Color.gray).opacity(0.60))
@@ -32,9 +34,14 @@ struct PlantDetailView: View {
             }
             .navigationTitle(Text(plant.name))
             .accessibilityElement(children: .contain)
+           
             .sheet(isPresented: $showingImagePicker) {
+               // plant.image = Image(uiImage: $image.wrappedValue)
+                // set plant's image to selected image
+            } content: {
                 ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
             }
+
         }
     }
 }
