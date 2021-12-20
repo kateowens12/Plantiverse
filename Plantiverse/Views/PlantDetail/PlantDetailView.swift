@@ -10,7 +10,7 @@ import SwiftUI
 struct PlantDetailView: View {
     var plant: PlantModel
     @State private var showingImagePicker = false
-    @State private var image = UIImage()
+    @State private var image: Image? = nil
     
     var body: some View {
         GeometryReader { geometry in
@@ -39,9 +39,8 @@ struct PlantDetailView: View {
                // plant.image = Image(uiImage: $image.wrappedValue)
                 // set plant's image to selected image
             } content: {
-                ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+                ImagePicker(image: self.$image)
             }
-
         }
     }
 }
