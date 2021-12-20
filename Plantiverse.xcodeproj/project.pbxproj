@@ -45,6 +45,9 @@
 		F3A41F13276277BE00D5A0B7 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F12276277BD00D5A0B7 /* TaskList.swift */; };
 		F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */; };
 		F3A41F1727627F3A00D5A0B7 /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */; };
+		F3EEDD882770FE2C00B71968 /* AddPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EEDD872770FE2C00B71968 /* AddPlantView.swift */; };
+		F3EEDD8A2770FE3300B71968 /* EditPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EEDD892770FE3300B71968 /* EditPlantView.swift */; };
+		F3EEDD8C2771024E00B71968 /* PlantHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EEDD8B2771024E00B71968 /* PlantHealth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,9 @@
 		F3A41F12276277BD00D5A0B7 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
+		F3EEDD872770FE2C00B71968 /* AddPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlantView.swift; sourceTree = "<group>"; };
+		F3EEDD892770FE3300B71968 /* EditPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlantView.swift; sourceTree = "<group>"; };
+		F3EEDD8B2771024E00B71968 /* PlantHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,8 @@
 				F363EE58276B97B500570A0F /* PlantDetail */,
 				F374EA4C2732DD24002EB20E /* PlantTile */,
 				F374EA4B2732DD18002EB20E /* GridView */,
+				F3EEDD872770FE2C00B71968 /* AddPlantView.swift */,
+				F3EEDD892770FE3300B71968 /* EditPlantView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +242,7 @@
 				F374EA3D2732DA7C002EB20E /* PlantFactory.swift */,
 				F374EA412732DAA4002EB20E /* PlantTask.swift */,
 				F374EA452732DAE9002EB20E /* PlantCategory.swift */,
+				F3EEDD8B2771024E00B71968 /* PlantHealth.swift */,
 				F374EA432732DAB2002EB20E /* PlantTaskFactory.swift */,
 				F374EA3F2732DA80002EB20E /* RoomFactory.swift */,
 				F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */,
@@ -431,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F374EA302732D961002EB20E /* HeaderView.swift in Sources */,
+				F3EEDD8C2771024E00B71968 /* PlantHealth.swift in Sources */,
 				F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */,
 				F374EA502732DE57002EB20E /* EditButton.swift in Sources */,
 				F3205E3B2739B30F00895065 /* MessageContentView.swift in Sources */,
@@ -442,6 +452,7 @@
 				F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */,
 				F374EA002732D922002EB20E /* PlantiverseApp.swift in Sources */,
 				F374EA2A2732D94F002EB20E /* RoomSection.swift in Sources */,
+				F3EEDD882770FE2C00B71968 /* AddPlantView.swift in Sources */,
 				F374EA402732DA80002EB20E /* RoomFactory.swift in Sources */,
 				F3205E3927399F4000895065 /* MessageView2.swift in Sources */,
 				F374EA3A2732DA72002EB20E /* PlantModel.swift in Sources */,
@@ -462,6 +473,7 @@
 				F3205E3727399D9700895065 /* Tet.swift in Sources */,
 				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,
 				F3A41F1127626AF500D5A0B7 /* PlantBasicInfoView.swift in Sources */,
+				F3EEDD8A2770FE3300B71968 /* EditPlantView.swift in Sources */,
 				F374EA522732DE60002EB20E /* AddButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
