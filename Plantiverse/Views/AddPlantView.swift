@@ -27,7 +27,6 @@ struct AddPlantView: View {
                         Text("Not Specified").tag(PlantCategory.NA)
                     }
                     Picker("Plant Health", selection: $selectedHealth) {
-                        // TODO: add icon next to text
                         Text("Excellent").tag(PlantHealth.Excellent)
                         Text("Good").tag(PlantHealth.Good)
                         Text("Meh").tag(PlantHealth.Meh)
@@ -38,11 +37,11 @@ struct AddPlantView: View {
                     // slider or stepper for pot size
                 }
                 
-                Button {
-                    isShowing.toggle()
-                } label: {
-                    Text("Done")
-                }
+//                Button {
+//                    isShowing.toggle()
+//                } label: {
+//                    Text("Done")
+//                }
             }
         }
     }

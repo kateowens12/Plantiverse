@@ -14,7 +14,8 @@ struct PlantTask: Identifiable {
 }
 
 enum TaskName: String {
-    case Water = "water in 2 days"
-    case Clean = "clean tomorrow"
-    case Repot = "repot today"
+    case Water = "water"
+    case Clean = "clean"
+    case Repot = "repot"
+    case Fertilize = "fertilize"
 }
