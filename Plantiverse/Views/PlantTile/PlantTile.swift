@@ -23,11 +23,7 @@ struct PlantTile: View {
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
-
-            if plant.needsHealthUpdate {
-                NotificationView(plant: plant)
-                    .offset(x: 90, y: -90)
-            }
+            .overlay(plant.needsHealthUpdate ? NotificationView(plant: plant) : nil)
         }
         .accessibilityElement(children: .combine)
     }
@@ -35,6 +31,6 @@ struct PlantTile: View {
 
 struct PlantTileView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantTile(plant: PlantFactory().philodendron)
+        PlantTile(plant: PlantFactory().mint)
     }
 }

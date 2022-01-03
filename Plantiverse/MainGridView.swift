@@ -8,17 +8,7 @@
 import SwiftUI
 
 struct MainGridView: View {
-    @Environment(\.isSearching)
-    private var isSearching: Bool
-
-    @Environment(\.dismissSearch)
-    private var dismissSearch
-
-    @State private var query: String = ""
     let rooms = RoomFactory().getAllRooms()
-    let suggestions: [String] = [
-        // each of the plant names with no repeating names
-    ]
 
     var body: some View {
         NavigationView {
@@ -33,18 +23,6 @@ struct MainGridView: View {
             }
             .navigationTitle("Plantiverse")
         }
-        .searchable(text: $query,
-                    placement: .navigationBarDrawer(displayMode: .always),
-                    prompt: "Search Plants") {
-            ForEach(suggestions, id: \.self) { suggestion in
-                Text(suggestion)
-                    .searchCompletion(suggestion)
-            }
-        }
-        .onChange(of: query) { newQuery in
-
-        }
-
     }
 }
 

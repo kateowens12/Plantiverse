@@ -37,6 +37,7 @@ struct AddPlantView: View {
                     }
                     Divider()
                     // slider or stepper for pot size
+                    // CustomAdjustableView()
                 }
             }
         }

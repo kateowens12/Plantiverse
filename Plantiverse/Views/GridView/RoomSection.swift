@@ -14,6 +14,7 @@ struct RoomSection: View {
         Section(header: Text(room.name.rawValue).font(.title2))
         {
             PlantsGrid(room: room)
+                .padding(4.0)
         }
     }
 }

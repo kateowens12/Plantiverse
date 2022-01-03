@@ -20,7 +20,7 @@ struct PlantsGrid: View {
         let plants = room.plants
         LazyVGrid(columns: columns,
                   alignment: .center,
-                  spacing: 12,
+                  spacing: 10,
                   pinnedViews: .sectionHeaders) {
             ForEach(plants.indices, id: \.self) { i in
                 NavigationLink(destination: PlantDetailView(plant: room.plants[i])) {
