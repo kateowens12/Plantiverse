@@ -20,11 +20,12 @@ struct PlantsGrid: View {
         let plants = room.plants
         LazyVGrid(columns: columns,
                   alignment: .center,
-                  spacing: 10,
+                  spacing: 8,
                   pinnedViews: .sectionHeaders) {
             ForEach(plants.indices, id: \.self) { i in
                 NavigationLink(destination: PlantDetailView(plant: room.plants[i])) {
-                PlantTile(plant: room.plants[i])
+                    PlantTile(plant: room.plants[i])
+                        .padding(.trailing, 4)
                     .accessibilityRotorEntry(id: room.plants[i].id, in: plantNamespace)
                 }.buttonStyle(PlainButtonStyle())
             }

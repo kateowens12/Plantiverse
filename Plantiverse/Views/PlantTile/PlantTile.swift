@@ -14,17 +14,15 @@ struct PlantTile: View {
         ZStack {
             VStack(alignment: .center) {
                 PlantInfoView(plant: plant)
-                    .padding()
 
                 plant.task.map({ task in
                     TaskView(plantTask: task)
                 })
-                .padding()
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
             .overlay(plant.needsHealthUpdate ? NotificationView(plant: plant) : nil)
-        }
+        }//.fixedSize(horizontal: false, vertical: false)
         .accessibilityElement(children: .combine)
     }
 }

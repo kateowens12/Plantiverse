@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainGridView: View {
+    
     let rooms = RoomFactory().getAllRooms()
 
     var body: some View {
@@ -16,10 +17,16 @@ struct MainGridView: View {
                 VStack {
                     HeaderView()
                     Divider()
+                    Spacer()
                     ForEach(rooms.indices, id: \.self) { index in
+                        Spacer()
+                        Spacer()
                         RoomSection(room: rooms[index])
+                        Spacer()
                     }
+                
                 }.padding()
+                Spacer()
             }
             .navigationTitle("Plantiverse")
         }
