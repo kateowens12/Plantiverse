@@ -9,35 +9,22 @@ import SwiftUI
 
 struct AddPlantView: View {
     @State private var text: String = ""
-    @State private var selectedCategory: PlantCategory = .NA
-    @State private var selectedHealth: PlantHealth = .NA
     @State private var isShowing: Bool = false
     
     var body: some View {
         Form {
-            Section(header: Text("Plant Info")) {
+            Section(header: Text("Basic Info")) {
                 VStack {
                     TextField("Plant Name", text: $text, prompt: Text("Enter plant name"))
-                    Divider()
-                    Picker("Plant Category", selection: $selectedCategory) {
-                        // TODO: add icon next to text
-                        Text("Houseplant").tag(PlantCategory.Houseplants)
-                        Text("Herb").tag(PlantCategory.Herbs)
-                        Text("Succulents").tag(PlantCategory.Succulents)
-                        Text("Not Specified").tag(PlantCategory.NA)
+                Divider()
+                PlantHealthPicker()
                     }
+                }
+            Section(header: Text("Detailed Info")) {
+                VStack {
+                    PotSizeStepper()
                     Divider()
-                    Picker("Plant Health", selection: $selectedHealth) {
-                        Text("Excellent").tag(PlantHealth.Excellent)
-                        Text("Good").tag(PlantHealth.Good)
-                        Text("Meh").tag(PlantHealth.Meh)
-                        Text("Bad").tag(PlantHealth.Bad)
-                        Text("Unspecified").tag(PlantHealth.NA)
-                        Text("Needs Update").tag(PlantHealth.NeedsUpdate)
-                    }
-                    Divider()
-                    // slider or stepper for pot size
-                    // CustomAdjustableView()
+                    PlantCategoryPicker()
                 }
             }
         }

@@ -42,7 +42,6 @@ class RoomFactory {
         rooms.append(diningRoom)
         rooms.append(bedroom)
         rooms.append(bathroom)
-
         return rooms
     }
 }
