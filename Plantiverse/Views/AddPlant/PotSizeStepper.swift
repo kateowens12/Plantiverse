@@ -17,7 +17,7 @@ struct PotSizeStepper: View {
                 .font(.body)
                 .padding()
             Spacer()
-            VStack {
+            VStack(alignment: .leading) {
                 Text("\($potSize.wrappedValue) inch")
                     .font(.body)
                     .padding(.bottom, 4)
@@ -27,16 +27,15 @@ struct PotSizeStepper: View {
                 }
             }
             Spacer()
+        }//.accessibilityElement(children: .combine)
+//// why am i forgetting all teh stepper things ahhh
+        /// add stepper a11y representation here once brain is less meh
+            .accessibilityRepresentation {
+                Stepper(value: $potSize, in: 0...1000) {
+                    Text("Pot size")
+                }.accessibilityValue(Text("\(potSize) inch"))
+            }
         }
-//        .accessibilityRepresentation {
-//            Stepper("Pot Size") {
-//                $potSize.wrappedValue += 1
-//            } onDecrement: {
-//                $potSize.wrappedValue -= 1
-//            }
-//
-//        }
-    }
 }
 
 struct PotSizeStepper_Previews: PreviewProvider {

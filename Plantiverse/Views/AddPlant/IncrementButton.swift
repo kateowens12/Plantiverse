@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct IncrementButton: View {
-    @State var potSize: Int = 0
+    @State var value: Int = 0
 
     var body: some View {
         Button {
-            $potSize.wrappedValue += 1
+            value += 1
         } label: {
             Image(systemName: "plus.circle.fill")
-        }.accessibilityLabel("Increment")
+                .accessibilityLabel("Increment")
+        }
     }
 }
 
