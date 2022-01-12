@@ -13,7 +13,7 @@ struct PotSizeStepper: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Spacer()
+                //Spacer()
                 Text("Pot Size")
                     .font(.body)
                     .padding()
@@ -29,6 +29,7 @@ struct PotSizeStepper: View {
                 }
                 Spacer()
             }
+            Spacer()
         }//.accessibilityElement(children: .combine)
         //// why am i forgetting all teh stepper things ahhh
                 /// add stepper a11y representation here once brain is less meh
