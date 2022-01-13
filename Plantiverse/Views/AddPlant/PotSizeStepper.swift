@@ -11,34 +11,51 @@ struct PotSizeStepper: View {
     @State var potSize: Int = 0
     
     var body: some View {
-        VStack(alignment: .leading) {
             HStack {
-                //Spacer()
-                Text("Pot Size")
-                    .font(.body)
-                    .padding()
-                Spacer()
-                VStack {
-                    Text("\($potSize.wrappedValue) inch")
+                HStack(spacing: 12) {
+                    Text("Pot Size")
                         .font(.body)
-                        .padding(.bottom, 4)
-                    HStack(alignment: .center) {
-                        IncrementButton()
-                        DecrementButton()
+                        .foregroundColor(.black)
+                        
+                        Text("\($potSize.wrappedValue) inch")
+                            .font(.body)
+                            .foregroundColor(potSize > 0 ? .black : .gray)
+                }
+              
+                    HStack {
+                        Spacer()
+                        CustomCountButton(action: decrement, type: .decrement)
+                            .padding(.leading, 12)
+                        CustomCountButton(action: increment, type: .increment)
+                            .padding(.trailing, 12)
+
                     }
-                }
-                Spacer()
+                    //.accessibilityElement(children: .contain)
+                
+                .accessibilityElement(children: .contain)
             }
-            Spacer()
-        }//.accessibilityElement(children: .combine)
-        //// why am i forgetting all teh stepper things ahhh
-                /// add stepper a11y representation here once brain is less meh
-                    .accessibilityRepresentation {
-                        Stepper(value: $potSize, in: 0...1000) {
-                            Text("Pot size")
-                        }.accessibilityValue(Text("\(potSize) inch"))
-                }
+            // am i going overboard with these a11y element behavior view modifiers? 
+            .accessibilityElement(children: .contain)
+        .accessibilityElement(children: .combine)
+        
+        .accessibilityRepresentation {
+            Stepper {
+                Text("Pot Size: \(potSize) inch")
+            } onIncrement: {
+                increment()
+            } onDecrement: {
+                decrement()
+            }
         }
+    }
+    
+    func increment() {
+        $potSize.wrappedValue += 1
+    }
+    
+    func decrement() {
+        $potSize.wrappedValue -= 1
+    }
 }
 
 struct PotSizeStepper_Previews: PreviewProvider {

@@ -13,7 +13,7 @@ class PlantTaskFactory {
     }
 
     var water: PlantTask {
-        return PlantTask(name: .Water, imageName: "drop.fill")
+        return PlantTask(name: .Water, imageName: "cloud.rain.fill")
     }
 
     var clean: PlantTask {

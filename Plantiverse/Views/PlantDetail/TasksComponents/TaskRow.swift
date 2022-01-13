@@ -12,8 +12,8 @@ struct TaskRow: View {
 
     var body: some View {
         HStack {
-            Image(task.imageName)
-                .padding()
+            Image(systemName: task.imageName)
+                .imageScale(.medium)
             Text(task.name.rawValue)
                 .padding()
         }

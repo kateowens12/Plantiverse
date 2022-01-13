@@ -21,7 +21,7 @@ struct PlantBasicInfoView: View {
                     .frame(width: width * 0.90, height: height * 0.30, alignment: .center)
             }
             Text(plant.name)
-                .font(.title)
+                .font(.largeTitle)
                 .fontWeight(.bold)
         }
     }

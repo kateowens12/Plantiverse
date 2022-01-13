@@ -8,25 +8,18 @@
 import SwiftUI
 
 struct AddPlantView: View {
-    @State private var text: String = ""
-    @State private var isShowing: Bool = false
+    @State private var plantName: String = ""
     
     var body: some View {
-        Form {
-            Section(header: Text("Basic Info")) {
-                VStack {
-                    TextField("Plant Name", text: $text, prompt: Text("Enter plant name"))
-                Divider()
-                PlantHealthPicker()
+        NavigationView {
+                Form {
+                    Section(header: Text("Basic Info")) {
+                        TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
+                        PlantHealthPicker()
+                        PlantCategoryPicker()
+                        RepottedToggle()
                     }
                 }
-            Section(header: Text("Detailed Info")) {
-                VStack {
-                    PotSizeStepper()
-                    Divider()
-                    PlantCategoryPicker()
-                }
-            }
         }
     }
 }

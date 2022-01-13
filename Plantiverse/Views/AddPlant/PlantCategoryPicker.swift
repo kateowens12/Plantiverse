@@ -11,11 +11,9 @@ struct PlantCategoryPicker: View {
 
     var body: some View {
         Picker("Plant Category", selection: $selectedCategory) {
-            // TODO: add icon next to text
-            Text("Houseplant").tag(PlantCategory.Houseplants)
-            Text("Herb").tag(PlantCategory.Herbs)
-            Text("Succulents").tag(PlantCategory.Succulents)
-            Text("Not Specified").tag(PlantCategory.NA)
+            ForEach(PlantCategory.allCases) { category in
+                PlantCategoryRow(category: category).tag(category)
+            }
         }
     }
 }
@@ -25,3 +23,5 @@ struct PlantCategoryPicker_Previews: PreviewProvider {
         PlantCategoryPicker()
     }
 }
+
+

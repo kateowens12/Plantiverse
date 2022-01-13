@@ -11,11 +11,13 @@ struct TaskList: View {
     var tasks: [PlantTask]
 
     var body: some View {
-        Form {
-            Section(header: Text("Tasks To Do")) {
-                    List(tasks) { task in
-                        TaskRow(task: task)
-                    }
+        VStack(alignment: .leading) {
+            Text("Tasks To Complete".capitalized)
+                .font(.callout)
+                .foregroundColor(.gray)
+            ForEach(tasks) { plantTask in
+                TaskRow(task: plantTask)
+                Divider()
             }
         }
     }

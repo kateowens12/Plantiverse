@@ -13,7 +13,7 @@ struct TaskView: View {
     var body: some View {
         HStack {
             Image(systemName: plantTask.imageName)
-                .fixedSize()
+                .imageScale(.medium)
                 .accessibilityHidden(true)
             Text(plantTask.name.rawValue)
                // .font(.caption)

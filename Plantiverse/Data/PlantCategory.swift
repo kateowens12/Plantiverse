@@ -29,9 +29,8 @@ enum PlantCategory: String, CaseIterable, Identifiable {
         case .Succulents:
             name = "sun.max.fill"
         case .NA:
-            name = "question.mark"
+            name = ""
         }
-
         return name
     }
 }
