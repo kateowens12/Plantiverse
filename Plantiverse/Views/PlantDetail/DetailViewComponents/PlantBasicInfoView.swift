@@ -20,9 +20,6 @@ struct PlantBasicInfoView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: width * 0.90, height: height * 0.30, alignment: .center)
             }
-            Text(plant.name)
-                .font(.largeTitle)
-                .fontWeight(.bold)
         }
     }
 }
