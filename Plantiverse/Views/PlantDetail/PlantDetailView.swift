@@ -28,10 +28,13 @@ struct PlantDetailView: View {
                     .accessibility(label: Text("Add a new image"))
                     .padding(.bottom)
                     
+                    Spacer()
+                    
                     PlantDetailsInfoView(plant: plant)
                         .padding()
                     
                     Spacer()
+                    
                     plant.allTasks.map { tasks in
                         TaskList(tasks: tasks)
                             .padding()
