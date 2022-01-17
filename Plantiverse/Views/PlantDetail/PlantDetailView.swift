@@ -21,28 +21,26 @@ struct PlantDetailView: View {
                         self.showingImagePicker = true
                     }) {
                         Image(systemName: "photo")
+                            .foregroundColor(Color.black)
+                            .padding()
+                            .background(Circle().fill(Color.gray).opacity(0.60))
                     }
-                    .foregroundColor(Color.black)
-                    .padding()
-                    .background(Circle().fill(Color.gray).opacity(0.60))
                     .accessibility(label: Text("Add a new image"))
-                    .padding()
+                    .padding(.bottom)
+                    
                     PlantDetailsInfoView(plant: plant)
-                   //     .padding()
-                    //Spacer()
+                        .padding()
+                    
+                    Spacer()
                     plant.allTasks.map { tasks in
                         TaskList(tasks: tasks)
-                            .padding(.leading, 10)
+                            .padding()
                     }
-                  //  Spacer()
                 }
                 .navigationTitle(Text(plant.name))
                 .accessibilityElement(children: .contain)
-                
                 .sheet(isPresented: $showingImagePicker) {
-                    // plant.image = Image(uiImage: $image.wrappedValue)
                     // set plant's image to selected image
-                    
                 } content: {
                     ImagePicker(image: self.$image)
                 }

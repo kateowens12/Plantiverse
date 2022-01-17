@@ -12,14 +12,20 @@ struct TaskList: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Tasks To Complete".capitalized)
-                .font(.callout)
-                .foregroundColor(.gray)
+            Spacer()
+            Text("Tasks To Complete")
+                .font(.title2)
+                .foregroundColor(.black)
+                .padding()
             ForEach(tasks) { plantTask in
                 TaskRow(task: plantTask)
+                    .font(.body)
+                    .padding(.bottom)
+                    .padding(.leading)
+                    .padding(.trailing)
                 Divider()
             }
-        }
+        }.overlay(RoundedRectangle(cornerRadius: 20).background(.gray).opacity(0.10)).edgesIgnoringSafeArea(.bottom)
     }
 }
 

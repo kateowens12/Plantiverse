@@ -15,7 +15,7 @@ struct TaskRow: View {
             Image(systemName: task.imageName)
                 .imageScale(.medium)
             Text(task.name.rawValue)
-                .padding()
+                Spacer()
         }
         .accessibilityElement(children: .combine)
     }

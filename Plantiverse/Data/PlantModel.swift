@@ -19,6 +19,7 @@ struct PlantModel: Identifiable {
     var image: Image?
     var distanceFromWindow: Int?
     var potSize: Int?
+    var hasBeenRepotted: Bool = false
     
     var hasTask: Bool {
         return task != nil
