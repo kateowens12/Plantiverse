@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct AddButton: View {
-    @State private var isAddViewShowing: Bool = false
+    @State var isAddViewShowing: Bool = false
     
     var body: some View {
         Button(action: {
-            isAddViewShowing.toggle()
+            $isAddViewShowing.wrappedValue.toggle()
         }) {
             Image(systemName: "plus")
                 .foregroundColor(Color.black)
@@ -21,15 +21,14 @@ struct AddButton: View {
         .background(Circle().fill(Color.gray).opacity(0.60))
         .accessibility(label: Text("Add a new plant"))
         .sheet(isPresented: $isAddViewShowing) {
-            isAddViewShowing.toggle()
-        } content: {
-            AddPlantView()
+            AddPlantView(isAddViewShowing: self.$isAddViewShowing)
         }
     }
 }
 
-struct AddButton_Previews: PreviewProvider {
-    static var previews: some View {
-        AddButton()
-    }
-}
+//struct AddButton_Previews: PreviewProvider {
+//    @Binding 
+//    static var previews: some View {
+//        AddButton(isAddViewShowing: $showing)
+//    }
+//}

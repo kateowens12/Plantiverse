@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct SaveButton: View {
+    @State private var isAddViewShowing: Bool = true
+    var action: () -> Void
+    
     var body: some View {
         Button {
-            print("tapped")
+            action()
         } label: {
             Text("Save")
                 .fontWeight(.bold)
                 .foregroundColor(.black)
         }
         .padding()
-        .overlay(RoundedRectangle(cornerRadius: 15).foregroundColor(.blue).opacity(0.50))
+        .overlay(RoundedRectangle(cornerRadius: 15).foregroundColor(.blue).opacity(0.40))
         .frame(minWidth: 44.0, minHeight: 44.0)
     }
 }
 
-struct SaveButton_Previews: PreviewProvider {
-    static var previews: some View {
-        SaveButton()
-    }
-}
+//struct SaveButton_Previews: PreviewProvider {
+//    @State var isShowing = false
+//
+//    static var previews: some View {
+//        SaveButton(isPresented: $isShowing)
+//    }
+//}

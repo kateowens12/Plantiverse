@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddPlantView: View {
     @State private var plantName: String = ""
+    @Binding var isAddViewShowing: Bool
     
     var body: some View {
         NavigationView {
@@ -27,16 +28,22 @@ struct AddPlantView: View {
                     .onDisappear {
                         UITableView.appearance().backgroundColor = .systemGroupedBackground
                     }
-                SaveButton()
+                SaveButton {
+                    isAddViewShowing = false
+                }
             }
         }
+
     }
 }
 
-struct AddPlantView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddPlantView()
-    }
-}
+//struct AddPlantView_Previews: PreviewProvider {
+//    @State var showing = false
+//    @Binding var isPresented: Binding<Bool> = projectedValue(projectedValue: $showing.wrappedValue)
+//
+//    static var previews: some View {
+//        AddPlantView(isPresented: $isPresented)
+//    }
+//}
 
 
