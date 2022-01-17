@@ -11,11 +11,19 @@ struct CategoryView: View {
     var category: PlantCategory
 
     var body: some View {
-        Text(category.rawValue)
-            .font(.footnote)
-            .padding()
-            .background(.green.opacity(0.90))
-            .clipShape(Capsule())
+        HStack {
+            Image(systemName: category.getImageName(for: category))
+                .imageScale(.small)
+                .padding(.leading)
+            Text(category.rawValue)
+                        .font(.footnote)
+                        .padding(.top)
+                        .padding(.trailing)
+                        .padding(.bottom)
+        }
+        .background(.green.opacity(0.90))
+        .clipShape(Capsule())
+        .fixedSize(horizontal: true, vertical: false)
     }
 }
 

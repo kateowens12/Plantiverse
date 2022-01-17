@@ -46,7 +46,7 @@
 		F3A41EC52759648900D5A0B7 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC42759648900D5A0B7 /* CategoryView.swift */; };
 		F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC62759698000D5A0B7 /* ImagePicker.swift */; };
 		F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */; };
-		F3A41F1127626AF500D5A0B7 /* PlantBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */; };
+		F3A41F1127626AF500D5A0B7 /* PlantImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1027626AF500D5A0B7 /* PlantImageView.swift */; };
 		F3A41F13276277BE00D5A0B7 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F12276277BD00D5A0B7 /* TaskList.swift */; };
 		F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */; };
 		F3A41F1727627F3A00D5A0B7 /* PlantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */; };
@@ -114,7 +114,7 @@
 		F3A41EC42759648900D5A0B7 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F3A41EC62759698000D5A0B7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsInfoView.swift; sourceTree = "<group>"; };
-		F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantBasicInfoView.swift; sourceTree = "<group>"; };
+		F3A41F1027626AF500D5A0B7 /* PlantImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantImageView.swift; sourceTree = "<group>"; };
 		F3A41F12276277BD00D5A0B7 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		F3A41F1427627B1D00D5A0B7 /* TaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRow.swift; sourceTree = "<group>"; };
 		F3A41F1627627F3A00D5A0B7 /* PlantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantViewModel.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		F315F5E62783679200ACA539 /* DetailViewComponents */ = {
 			isa = PBXGroup;
 			children = (
-				F3A41F1027626AF500D5A0B7 /* PlantBasicInfoView.swift */,
+				F3A41F1027626AF500D5A0B7 /* PlantImageView.swift */,
 				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
 				F3A41EC62759698000D5A0B7 /* ImagePicker.swift */,
 			);
@@ -505,7 +505,7 @@
 				F363EE56276B94F700570A0F /* AllTasksView.swift in Sources */,
 				F374EA422732DAA4002EB20E /* PlantTask.swift in Sources */,
 				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,
-				F3A41F1127626AF500D5A0B7 /* PlantBasicInfoView.swift in Sources */,
+				F3A41F1127626AF500D5A0B7 /* PlantImageView.swift in Sources */,
 				F374EA522732DE60002EB20E /* AddButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

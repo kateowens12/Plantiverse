@@ -16,8 +16,10 @@ struct PlantModel: Identifiable {
     var category: PlantCategory
     var id = UUID()
     var status: Status?
-    var image: Image? = Image("pothos")
-
+    var image: Image?
+    var distanceFromWindow: Int?
+    var potSize: Int?
+    
     var hasTask: Bool {
         return task != nil
     }

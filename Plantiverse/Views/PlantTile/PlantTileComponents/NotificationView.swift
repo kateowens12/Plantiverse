@@ -22,7 +22,7 @@ struct NotificationView: View {
                     $0[.bottom]
                 }
                 .alignmentGuide(.trailing) {
-                    $0[.trailing] - $0.width * 0.20
+                    $0[.trailing] - $0.width * 0.10
                 }
         }
         .onTapGesture {

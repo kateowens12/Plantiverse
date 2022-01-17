@@ -17,16 +17,12 @@ struct MainGridView: View {
                 VStack {
                     HeaderView()
                     Divider()
-                    Spacer()
                     ForEach(rooms.indices, id: \.self) { index in
-                        Spacer()
-                        Spacer()
                         RoomSection(room: rooms[index])
-                        Spacer()
                     }
                 
-                }.padding()
-                Spacer()
+                }
+                .padding()
             }
             .navigationTitle("Plantiverse")
         }

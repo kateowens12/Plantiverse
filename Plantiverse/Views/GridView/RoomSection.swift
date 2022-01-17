@@ -11,12 +11,9 @@ struct RoomSection: View {
     var room: Room
     
     var body: some View {
-        Spacer()
         Section(header: Text(room.name.rawValue).font(.title2))
         {
-            Spacer()
             PlantsGrid(room: room)
-                .padding()
         }
     }
 }

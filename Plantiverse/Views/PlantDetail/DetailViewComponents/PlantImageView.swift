@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlantBasicInfoView: View {
+struct PlantImageView: View {
     var plant: PlantModel
     var width: CGFloat
     var height: CGFloat
@@ -19,6 +19,10 @@ struct PlantBasicInfoView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: width * 0.90, height: height * 0.30, alignment: .center)
+                    .background(Color.clear)
+                    .clipShape(Circle())
+                    .shadow(radius: 10)
+                    .overlay(Circle().stroke(Color.cyan, lineWidth: 4.0))
             }
         }
     }
@@ -26,6 +30,6 @@ struct PlantBasicInfoView: View {
 
 struct PlantBasicInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantBasicInfoView(plant: PlantFactory().pothos, width: 40, height: 80)
+        PlantImageView(plant: PlantFactory().pothos, width: 40, height: 80)
     }
 }

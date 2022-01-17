@@ -16,7 +16,7 @@ struct PlantDetailView: View {
         GeometryReader { geometry in
             ScrollView {
                 VStack {
-                    PlantBasicInfoView(plant: plant, width: geometry.size.width, height: geometry.size.height)
+                    PlantImageView(plant: plant, width: geometry.size.width, height: geometry.size.height)
                     Button(action: {
                         self.showingImagePicker = true
                     }) {
@@ -25,14 +25,16 @@ struct PlantDetailView: View {
                     .foregroundColor(Color.black)
                     .padding()
                     .background(Circle().fill(Color.gray).opacity(0.60))
-                    .accessibility(label: Text("Add a new plant"))
+                    .accessibility(label: Text("Add a new image"))
+                    .padding()
                     PlantDetailsInfoView(plant: plant)
-                        .padding()
-                    Spacer()
+                   //     .padding()
+                    //Spacer()
                     plant.allTasks.map { tasks in
                         TaskList(tasks: tasks)
                             .padding(.leading, 10)
                     }
+                  //  Spacer()
                 }
                 .navigationTitle(Text(plant.name))
                 .accessibilityElement(children: .contain)

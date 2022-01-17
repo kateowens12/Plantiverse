@@ -13,18 +13,21 @@ struct TaskView: View {
     var body: some View {
         HStack {
             Image(systemName: plantTask.imageName)
-                .imageScale(.medium)
+                .imageScale(.small)
+                .padding(.leading)
                 .accessibilityHidden(true)
             Text(plantTask.name.rawValue)
-               // .font(.caption)
-            // should i use caption or footnote font? which is appropriate here for a11y?
                 .font(.footnote)
-        }.accessibilityHidden(true)
-        .accessibilityElement(children: .combine)
-        .accessibilityCustomContent("Task", plantTask.name.rawValue, importance: .high)
-        .padding()
+                .padding(.top)
+                .padding(.trailing)
+                .padding(.bottom)
+        }
         .background(.gray.opacity(0.75))
         .clipShape(Capsule())
+        .accessibilityHidden(true)
+        .accessibilityElement(children: .combine)
+        .accessibilityCustomContent("Task", plantTask.name.rawValue, importance: .high)
+        .fixedSize(horizontal: true, vertical: false)
     }
 }
 
