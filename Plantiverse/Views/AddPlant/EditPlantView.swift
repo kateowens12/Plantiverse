@@ -14,25 +14,21 @@ struct EditPlantView: View {
 
     var body: some View {
         NavigationView {
-            VStack(spacing: 16) {
+            VStack {
                 Text(plant.name)
                     .font(.title)
-               // Spacer()
-                // distance from window slider
-                TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
-                    .padding()
-                PotSizeStepper()
-                    .padding()
-                Divider()
-                    .padding()
-                PlantHealthPicker()
-                    .padding()
-                Divider()
-                PlantCategoryPicker()
-                    .padding()
-                
-                RepottedToggle()
-                    .padding()
+                VStack(alignment: .center, spacing: 12) {
+                    // distance from window slider
+                    TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
+                    PotSizeStepper()
+                    PlantHealthPicker()
+                    PlantCategoryPicker()
+                    RepottedToggle()
+                }
+               // .padding()
+              //  .overlay(RoundedRectangle(cornerRadius: 20).background(.gray).opacity(0.10))
+             //   .edgesIgnoringSafeArea(.bottom)
+                .padding()
                 Spacer()
                 SaveButton {
                     isEditing = false
@@ -41,9 +37,3 @@ struct EditPlantView: View {
         }
     }
 }
-
-//struct EditPlantView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EditPlantView(plant: PlantFactory().pothos, isEditing: <#Binding<Bool>#>)
-//    }
-//}
