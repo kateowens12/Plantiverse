@@ -24,7 +24,7 @@
 		F374EA1D2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA1C2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift */; };
 		F374EA2A2732D94F002EB20E /* RoomSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA292732D94F002EB20E /* RoomSection.swift */; };
 		F374EA2C2732D955002EB20E /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA2B2732D955002EB20E /* TaskView.swift */; };
-		F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA2D2732D95C002EB20E /* PlantInfoView.swift */; };
+		F374EA2E2732D95C002EB20E /* TileInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA2D2732D95C002EB20E /* TileInfoView.swift */; };
 		F374EA302732D961002EB20E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA2F2732D961002EB20E /* HeaderView.swift */; };
 		F374EA322732D970002EB20E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA312732D970002EB20E /* NotificationView.swift */; };
 		F374EA342732D979002EB20E /* PlantTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA332732D979002EB20E /* PlantTile.swift */; };
@@ -92,7 +92,7 @@
 		F374EA1C2732D924002EB20E /* PlantiverseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantiverseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F374EA292732D94F002EB20E /* RoomSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSection.swift; sourceTree = "<group>"; };
 		F374EA2B2732D955002EB20E /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		F374EA2D2732D95C002EB20E /* PlantInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantInfoView.swift; sourceTree = "<group>"; };
+		F374EA2D2732D95C002EB20E /* TileInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileInfoView.swift; sourceTree = "<group>"; };
 		F374EA2F2732D961002EB20E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		F374EA312732D970002EB20E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		F374EA332732D979002EB20E /* PlantTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTile.swift; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 		F374EA492732DCDB002EB20E /* PlantTileComponents */ = {
 			isa = PBXGroup;
 			children = (
-				F374EA2D2732D95C002EB20E /* PlantInfoView.swift */,
+				F374EA2D2732D95C002EB20E /* TileInfoView.swift */,
 				F374EA2B2732D955002EB20E /* TaskView.swift */,
 				F3A41EC2275961B700D5A0B7 /* StatusView.swift */,
 				F3A41EC42759648900D5A0B7 /* CategoryView.swift */,
@@ -504,7 +504,7 @@
 				F319A58A278F5AAA00DD4B19 /* PotSizeStepper.swift in Sources */,
 				F363EE56276B94F700570A0F /* AllTasksView.swift in Sources */,
 				F374EA422732DAA4002EB20E /* PlantTask.swift in Sources */,
-				F374EA2E2732D95C002EB20E /* PlantInfoView.swift in Sources */,
+				F374EA2E2732D95C002EB20E /* TileInfoView.swift in Sources */,
 				F3A41F1127626AF500D5A0B7 /* PlantImageView.swift in Sources */,
 				F374EA522732DE60002EB20E /* AddButton.swift in Sources */,
 			);

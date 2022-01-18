@@ -25,7 +25,9 @@ struct TaskList: View {
                     .padding(.trailing)
                 Divider()
             }
-        }.overlay(RoundedRectangle(cornerRadius: 20).background(.gray).opacity(0.10)).edgesIgnoringSafeArea(.bottom)
+        }
+        .overlay(RoundedRectangle(cornerRadius: 20).background(.gray).opacity(0.10))
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

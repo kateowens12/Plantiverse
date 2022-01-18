@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlantInfoView: View {
+struct TileInfoView: View {
     var plant: PlantModel
 
     var body: some View {
@@ -24,12 +24,12 @@ struct PlantInfoView: View {
                 .accessibility(sortPriority: 2)
         }
         .accessibilityElement(children: .combine)
-        .accessibilityCustomContent("Plant Category", plant.category.rawValue)
+      //  .accessibilityCustomContent("Plant Category", plant.category.rawValue)
     }
 }
 
 struct PlantInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantInfoView(plant: PlantFactory().mint)
+        TileInfoView(plant: PlantFactory().mint)
     }
 }

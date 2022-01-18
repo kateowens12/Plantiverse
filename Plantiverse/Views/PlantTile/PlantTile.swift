@@ -13,7 +13,7 @@ struct PlantTile: View {
     var body: some View {
         ZStack {
             VStack(alignment: .center) {
-                PlantInfoView(plant: plant)
+                TileInfoView(plant: plant)
 
                 plant.task.map({ task in
                     TaskView(plantTask: task)
@@ -22,7 +22,8 @@ struct PlantTile: View {
             .padding()
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
             .overlay(plant.needsHealthUpdate ? NotificationView(plant: plant) : nil)
-        }//.fixedSize(horizontal: false, vertical: false)
+        }
+        .accessibilityElement(children: .contain)
         .accessibilityElement(children: .combine)
     }
 }

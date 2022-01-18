@@ -11,7 +11,6 @@ struct PlantsGrid: View {
     @Namespace var plantNamespace
     var room: Room
     var columns: [GridItem] = [
-      // TODO figure out how to make these resize with expanded type, but all be the same size
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
@@ -20,7 +19,7 @@ struct PlantsGrid: View {
         let plants = room.plants
         LazyVGrid(columns: columns,
                   alignment: .center,
-                  spacing: 12,
+                  spacing: 16,
                   pinnedViews: .sectionHeaders) {
             ForEach(plants.indices, id: \.self) { i in
                 NavigationLink(destination: PlantDetailView(plant: room.plants[i])) {
