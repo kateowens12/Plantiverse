@@ -11,7 +11,8 @@ struct PlantDetailView: View {
     var plant: PlantModel
     @State private var showingImagePicker = false
     @State private var image: Image? = nil
-    
+    @State var isEditing: Bool = false
+
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
@@ -46,6 +47,19 @@ struct PlantDetailView: View {
                     // set plant's image to selected image
                 } content: {
                     ImagePicker(image: self.$image)
+                }
+            }.toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isEditing = true
+                    } label: {
+                        Image(systemName: "gearshape.fill")
+                        .accessibilityLabel("Edit Plant")
+                    }.sheet(isPresented: $isEditing) {
+                            print("")
+                        } content: {
+                            EditPlantView(plant: plant, isEditing: $isEditing)
+                        }
                 }
             }
         }

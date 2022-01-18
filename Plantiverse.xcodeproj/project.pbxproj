@@ -15,6 +15,7 @@
 		F319A5982790C9E200DD4B19 /* RepottedToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A5972790C9E200DD4B19 /* RepottedToggle.swift */; };
 		F319A59A2790D54A00DD4B19 /* AddImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A5992790D54A00DD4B19 /* AddImageButton.swift */; };
 		F319A59C2795C89C00DD4B19 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A59B2795C89C00DD4B19 /* SaveButton.swift */; };
+		F319A5A227972F5800DD4B19 /* EditPlantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A5A127972F5800DD4B19 /* EditPlantView.swift */; };
 		F363EE56276B94F700570A0F /* AllTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F363EE55276B94F700570A0F /* AllTasksView.swift */; };
 		F374EA002732D922002EB20E /* PlantiverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374E9FF2732D922002EB20E /* PlantiverseApp.swift */; };
 		F374EA042732D923002EB20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F374EA032732D923002EB20E /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		F319A5972790C9E200DD4B19 /* RepottedToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepottedToggle.swift; sourceTree = "<group>"; };
 		F319A5992790D54A00DD4B19 /* AddImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageButton.swift; sourceTree = "<group>"; };
 		F319A59B2795C89C00DD4B19 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		F319A5A127972F5800DD4B19 /* EditPlantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlantView.swift; sourceTree = "<group>"; };
 		F363EE55276B94F700570A0F /* AllTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTasksView.swift; sourceTree = "<group>"; };
 		F374E9FC2732D922002EB20E /* Plantiverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plantiverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F374E9FF2732D922002EB20E /* PlantiverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantiverseApp.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F3EEDD872770FE2C00B71968 /* AddPlantView.swift */,
+				F319A5A127972F5800DD4B19 /* EditPlantView.swift */,
 				F319A59B2795C89C00DD4B19 /* SaveButton.swift */,
 				F319A58D278F709300DD4B19 /* PlantCategoryPicker.swift */,
 				F319A5952790C8D200DD4B19 /* PlantCategoryRow.swift */,
@@ -472,6 +475,7 @@
 				F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */,
 				F374EA502732DE57002EB20E /* EditButton.swift in Sources */,
 				F319A594279094DC00DD4B19 /* CustomCountButton.swift in Sources */,
+				F319A5A227972F5800DD4B19 /* EditPlantView.swift in Sources */,
 				F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */,
 				F319A5982790C9E200DD4B19 /* RepottedToggle.swift in Sources */,
 				F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */,
