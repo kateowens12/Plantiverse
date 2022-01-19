@@ -11,43 +11,36 @@ struct PotSizeStepper: View {
     @State var potSize: Int = 0
     
     var body: some View {
-            HStack {
-                HStack(spacing: 12) {
-                    Text("Pot Size")
-                        .font(.body)
-                        .foregroundColor(.black)
-                        
-                        Text("\($potSize.wrappedValue) inch")
-                            .font(.body)
-                            .foregroundColor(potSize > 0 ? .black : .gray)
-                }
-              
-                    HStack {
-                        Spacer()
-                        CustomCountButton(action: decrement, type: .decrement)
-                            .padding(.leading, 12)
-                        CustomCountButton(action: increment, type: .increment)
-                            .padding(.trailing, 12)
-
-                    }
-                    //.accessibilityElement(children: .contain)
-                
-                .accessibilityElement(children: .contain)
-            }
-            // am i going overboard with these a11y element behavior view modifiers? 
-        .accessibilityElement(children: .contain)
-        .accessibilityElement(children: .combine)
-        
-        .accessibilityRepresentation {
-            Stepper {
-                Text("Pot Size: \(potSize) inch")
-            } onIncrement: {
-                increment()
-            } onDecrement: {
-                decrement()
-            }
+        HStack {
+            Text("Pot Size")
+                .font(.body)
+                .foregroundColor(.black)
+                .padding(.horizontal)
+            Text("\($potSize.wrappedValue) inch")
+                .font(.body)
+                .foregroundColor(potSize > 0 ? .black : .gray)
+Spacer()
+            CustomCountButton(action: decrement, type: .decrement)
+                .disabled(potSize <= 0)
+            
+            CustomCountButton(action: increment, type: .increment)
+                .disabled(24 <= potSize)
+        }  .accessibilityRepresentation {
+            Stepper("Pot Size", value: $potSize,
+                    in: 0...24,
+                    step: 1)
         }
-    }
+          //  HStack {
+            //    HStack(spacing: 12) {
+                    
+                
+//                    Text("\($potSize.wrappedValue) inch")
+//                        .font(.body)
+//                        .foregroundColor(potSize > 0 ? .black : .gray)
+         //       }
+
+            }
+ 
     
     func increment() {
         $potSize.wrappedValue += 1

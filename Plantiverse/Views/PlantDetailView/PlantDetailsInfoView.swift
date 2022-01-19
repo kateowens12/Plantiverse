@@ -32,7 +32,7 @@ struct PlantDetailsInfoView: View {
         .padding(.leading)
         .accessibilityElement(children: .contain)
         .padding()
-        .overlay(RoundedRectangle(cornerRadius: 20).background(.gray).opacity(0.10)).edgesIgnoringSafeArea(.bottom)
+        .overlay(RoundedRectangle(cornerRadius: 20).background(.gray).opacity(0.10))
     }
 }
 

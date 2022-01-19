@@ -175,7 +175,6 @@
 		F315F5E62783679200ACA539 /* DetailViewComponents */ = {
 			isa = PBXGroup;
 			children = (
-				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
 				F3614C34279897DB006FFE72 /* RepottedToggleRow.swift */,
 				F3614C322798973B006FFE72 /* WindowDistanceRow.swift */,
 				F3614C3027989707006FFE72 /* PotSizeRow.swift */,
@@ -205,8 +204,9 @@
 		F363EE58276B97B500570A0F /* PlantDetailView */ = {
 			isa = PBXGroup;
 			children = (
-				F3A8489E2798B6ED003FC1A8 /* PlantImage */,
 				F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */,
+				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
+				F3A8489E2798B6ED003FC1A8 /* PlantImage */,
 				F315F5E62783679200ACA539 /* DetailViewComponents */,
 				F363EE57276B97A100570A0F /* TasksComponents */,
 			);
