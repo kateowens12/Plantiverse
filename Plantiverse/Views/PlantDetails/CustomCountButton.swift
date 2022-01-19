@@ -21,8 +21,9 @@ struct CustomCountButton: View {
                 .padding()
                 .contentShape(Rectangle())
                 .opacity(0.5)
-        }.accessibilityLabel(Text(type.a11yLabel))
-            .buttonStyle(PlainButtonStyle())
+                .accessibilityLabel(Text(type.a11yLabel))
+        }
+        .buttonStyle(.plain)
     }
 }
 

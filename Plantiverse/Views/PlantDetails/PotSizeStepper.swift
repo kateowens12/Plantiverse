@@ -20,26 +20,22 @@ struct PotSizeStepper: View {
                 .font(.body)
                 .foregroundColor(potSize > 0 ? .black : .gray)
 Spacer()
-            CustomCountButton(action: decrement, type: .decrement)
-                .disabled(potSize <= 0)
+            HStack {
+                CustomCountButton(action: decrement, type: .decrement)
+                                .disabled(potSize == 0)
+                CustomCountButton(action: increment, type: .increment)
+                                .disabled(24 <= potSize)
+            }
+            .background(.thinMaterial, in: Capsule())
+                        .contentShape(Capsule())
             
-            CustomCountButton(action: increment, type: .increment)
-                .disabled(24 <= potSize)
-        }  .accessibilityRepresentation {
+        }
+            .accessibilityRepresentation {
             Stepper("Pot Size", value: $potSize,
                     in: 0...24,
                     step: 1)
         }
-          //  HStack {
-            //    HStack(spacing: 12) {
-                    
-                
-//                    Text("\($potSize.wrappedValue) inch")
-//                        .font(.body)
-//                        .foregroundColor(potSize > 0 ? .black : .gray)
-         //       }
-
-            }
+    }
  
     
     func increment() {

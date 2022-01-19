@@ -30,10 +30,6 @@ struct PlantModel: Identifiable {
         guard let theTask = task else { return nil }
         var all = [PlantTask]()
         all.append(theTask)
-        // do we have a task?
-        // unwrap it and add to array
-
         return all
     }
 }
-
