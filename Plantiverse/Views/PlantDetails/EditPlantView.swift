@@ -17,30 +17,26 @@ struct EditPlantView: View {
                 VStack {
                     Text(plant.name)
                         .font(.title)
-                    VStack(alignment: .center, spacing: 12) {
-                        // distance from window slider
+                    Form {
                         TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
-                            .padding()
-                        Divider()
                         PotSizeStepper()
-                        Divider()
                         PlantHealthPicker()
-                        Divider()
                         PlantCategoryPicker()
-                        Divider()
                         RepottedToggle()
                     }
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.gray).opacity(0.20))
-                    .padding()
-
-// make gray overlay situation where picker still works with it
+                    .onAppear {
+                        UITableView.appearance().backgroundColor = .clear
+                    }
+                    .onDisappear {
+                        UITableView.appearance().backgroundColor = .systemGroupedBackground
+                    }
+                
                     Spacer()
                     SaveButton {
                         isEditing = false
                     }
+                    Spacer()
                 }
-            
         }
     }
 }

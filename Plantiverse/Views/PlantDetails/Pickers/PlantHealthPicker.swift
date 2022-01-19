@@ -12,12 +12,9 @@ struct PlantHealthPicker: View {
 
     var body: some View {
         Picker("Plant Health", selection: $selectedHealth) {
-            Text("Excellent").tag(PlantHealth.Excellent)
-            Text("Good").tag(PlantHealth.Good)
-            Text("Meh").tag(PlantHealth.Meh)
-            Text("Bad").tag(PlantHealth.Bad)
-            Text("Unspecified").tag(PlantHealth.NA)
-            Text("Needs Update").tag(PlantHealth.NeedsUpdate)
+            ForEach(PlantHealth.allCases) { health in
+                Text(health.rawValue).tag(health)
+            }
         }
     }
 }

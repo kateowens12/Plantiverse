@@ -21,15 +21,13 @@ struct PlantDetailsInfoView: View {
                 }
             }
             .padding()
+            
             Divider()
             WindowDistanceRow(distance: plant.distanceFromWindow)
             Divider()
-
             PotSizeRow(potSize: plant.potSize)
             Divider()
-
             RepottedToggleRow(isRepotted: plant.hasBeenRepotted)
-            Divider()
         }
         .padding(.leading)
         .accessibilityElement(children: .contain)
