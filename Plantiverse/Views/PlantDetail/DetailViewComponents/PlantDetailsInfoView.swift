@@ -9,19 +9,6 @@ import SwiftUI
 
 struct PlantDetailsInfoView: View {
     var plant: PlantModel
-    @State var potSize: Int?
-    @State var distance: Int?
-    var noPotSize: Bool {
-        return plant.potSize == 0 || plant.potSize == nil
-    }
-    
-    var inWindow: Bool {
-        return plant.distanceFromWindow == 0
-    }
-    
-    var noDistanceProvided: Bool {
-        return plant.distanceFromWindow == nil
-    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -32,48 +19,17 @@ struct PlantDetailsInfoView: View {
                 plant.status.map { status in
                     StatusView(status: status)
                 }
-            }.padding()
-            Divider()
-            
-            HStack {
-                Text("Distance from Window:")
-                
-                plant.distanceFromWindow.map { distance in
-                    Text("\(distance) feet")
-                }
-                
-                if inWindow {
-                    Text("In Window")
-                }
-                
-                if noDistanceProvided {
-                    Text("Unspecified")
-                }
-                Spacer()
             }
+            .padding()
             Divider()
-            
-            HStack {
-                Text("Pot size:")
-                
-                plant.potSize.map { size in
-                    Text("\(size) inch")
-                }
-                
-                if noPotSize {
-                    Text("Unspecified")
-                }
-                Spacer()
-            }
-            
+            WindowDistanceRow(distance: plant.distanceFromWindow)
             Divider()
-            
-            HStack {
-                Text("Has this plant been repotted?")
-                Text(plant.hasBeenRepotted ? "Yes" : "No")
-                Spacer()
-            }
-            
+
+            PotSizeRow(potSize: plant.potSize)
+            Divider()
+
+            RepottedToggleRow(isRepotted: plant.hasBeenRepotted)
+            Divider()
         }
         .padding(.leading)
         .accessibilityElement(children: .contain)
@@ -87,3 +43,4 @@ struct PlantDetailsInfoView_Previews: PreviewProvider {
         PlantDetailsInfoView(plant: PlantFactory().aloeVera)
     }
 }
+

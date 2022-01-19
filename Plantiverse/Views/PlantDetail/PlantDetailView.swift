@@ -54,6 +54,8 @@ struct PlantDetailView: View {
                         isEditing = true
                     } label: {
                         Image(systemName: "gearshape.fill")
+                            .foregroundColor(.black)
+                            .frame(minWidth: 44.0, minHeight: 44.0)
                         .accessibilityLabel("Edit Plant")
                     }.sheet(isPresented: $isEditing) {
                             print("")

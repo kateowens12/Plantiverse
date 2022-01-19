@@ -19,7 +19,6 @@ struct PlantHealthPicker: View {
             Text("Unspecified").tag(PlantHealth.NA)
             Text("Needs Update").tag(PlantHealth.NeedsUpdate)
         }
-        .padding()
     }
 }
 

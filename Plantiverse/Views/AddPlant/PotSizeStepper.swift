@@ -35,7 +35,7 @@ struct PotSizeStepper: View {
                 .accessibilityElement(children: .contain)
             }
             // am i going overboard with these a11y element behavior view modifiers? 
-            .accessibilityElement(children: .contain)
+        .accessibilityElement(children: .contain)
         .accessibilityElement(children: .combine)
         
         .accessibilityRepresentation {

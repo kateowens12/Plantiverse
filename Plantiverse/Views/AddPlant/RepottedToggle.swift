@@ -17,7 +17,9 @@ struct RepottedToggle: View {
                 Spacer()
                 Image(systemName: $isRepotted.wrappedValue ? "checkmark.circle" : "circle")
                     .imageScale(.large)
-            }.onTapGesture {
+                    .frame(minWidth: 44.0, minHeight: 44.0)
+            }
+            .onTapGesture {
                 $isRepotted.wrappedValue.toggle()
             }
             .accessibilityRepresentation(representation: {
