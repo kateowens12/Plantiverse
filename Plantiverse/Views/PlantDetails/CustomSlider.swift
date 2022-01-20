@@ -48,6 +48,7 @@ struct CustomSlider: View {
                         )
                 }
             }
+            //TODO: find out if a11y representation is added here or on the entire window distance slider view
         }
     }
 }

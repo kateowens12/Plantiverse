@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct StatusView: View {
-    var status: Status
+struct PlantHealthView: View {
+    var status: PlantHealth
 
     var body: some View {
         Text(status.rawValue)
@@ -21,6 +21,6 @@ struct StatusView: View {
 
 struct CapsuleView_Previews: PreviewProvider {
     static var previews: some View {
-        StatusView(status: Status.VeryGood)
+        PlantHealthView(status: PlantHealth.Great)
     }
 }

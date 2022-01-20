@@ -45,9 +45,8 @@
 		F374EA4E2732DE37002EB20E /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4D2732DE37002EB20E /* ButtonsView.swift */; };
 		F374EA502732DE57002EB20E /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4F2732DE57002EB20E /* EditButton.swift */; };
 		F374EA522732DE60002EB20E /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA512732DE60002EB20E /* AddButton.swift */; };
-		F3A41EBF275917E200D5A0B7 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EBE275917E200D5A0B7 /* Status.swift */; };
 		F3A41EC12759221900D5A0B7 /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */; };
-		F3A41EC3275961B700D5A0B7 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC2275961B700D5A0B7 /* StatusView.swift */; };
+		F3A41EC3275961B700D5A0B7 /* PlantHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */; };
 		F3A41EC52759648900D5A0B7 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC42759648900D5A0B7 /* CategoryView.swift */; };
 		F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC62759698000D5A0B7 /* ImagePicker.swift */; };
 		F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */; };
@@ -119,9 +118,8 @@
 		F374EA4D2732DE37002EB20E /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		F374EA4F2732DE57002EB20E /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		F374EA512732DE60002EB20E /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
-		F3A41EBE275917E200D5A0B7 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
-		F3A41EC2275961B700D5A0B7 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealthView.swift; sourceTree = "<group>"; };
 		F3A41EC42759648900D5A0B7 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F3A41EC62759698000D5A0B7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailsInfoView.swift; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 			isa = PBXGroup;
 			children = (
 				F374EA392732DA72002EB20E /* PlantModel.swift */,
-				F3A41EBE275917E200D5A0B7 /* Status.swift */,
 				F374EA3B2732DA77002EB20E /* Room.swift */,
 				F374EA3D2732DA7C002EB20E /* PlantFactory.swift */,
 				F374EA412732DAA4002EB20E /* PlantTask.swift */,
@@ -307,7 +304,7 @@
 			children = (
 				F374EA2D2732D95C002EB20E /* TileInfoView.swift */,
 				F374EA2B2732D955002EB20E /* TaskView.swift */,
-				F3A41EC2275961B700D5A0B7 /* StatusView.swift */,
+				F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */,
 				F3A41EC42759648900D5A0B7 /* CategoryView.swift */,
 				F374EA312732D970002EB20E /* NotificationView.swift */,
 				F363EE55276B94F700570A0F /* AllTasksView.swift */,
@@ -522,7 +519,7 @@
 				F3EEDD882770FE2C00B71968 /* AddPlantView.swift in Sources */,
 				F374EA402732DA80002EB20E /* RoomFactory.swift in Sources */,
 				F374EA3A2732DA72002EB20E /* PlantModel.swift in Sources */,
-				F3A41EC3275961B700D5A0B7 /* StatusView.swift in Sources */,
+				F3A41EC3275961B700D5A0B7 /* PlantHealthView.swift in Sources */,
 				F319A5962790C8D200DD4B19 /* PlantCategoryRow.swift in Sources */,
 				F374EA2C2732D955002EB20E /* TaskView.swift in Sources */,
 				F374EA4E2732DE37002EB20E /* ButtonsView.swift in Sources */,
@@ -535,7 +532,6 @@
 				F3A848A12799BFCF003FC1A8 /* WindowDistanceSliderView.swift in Sources */,
 				F3A41EC52759648900D5A0B7 /* CategoryView.swift in Sources */,
 				F374EA442732DAB2002EB20E /* PlantTaskFactory.swift in Sources */,
-				F3A41EBF275917E200D5A0B7 /* Status.swift in Sources */,
 				F319A58E278F709300DD4B19 /* PlantCategoryPicker.swift in Sources */,
 				F374EA462732DAE9002EB20E /* PlantCategory.swift in Sources */,
 				F3A41F1727627F3A00D5A0B7 /* PlantViewModel.swift in Sources */,

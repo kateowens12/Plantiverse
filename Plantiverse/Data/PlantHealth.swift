@@ -14,10 +14,11 @@ enum PlantHealth: String, CaseIterable, Identifiable {
          return self.rawValue
      }
     
-    case Excellent = "Excellent"
+    case Great = "Great"
     case Good = "Good"
     case Meh = "Meh"
     case Bad = "Bad"
+    // do we really still need the NA one? 
     case NA = "Unspecified"
     case NeedsUpdate = "Needs update"
 }

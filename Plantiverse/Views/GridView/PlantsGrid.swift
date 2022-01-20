@@ -11,7 +11,6 @@ struct PlantsGrid: View {
     @Namespace var plantNamespace
     var room: Room
     var columns: [GridItem] = [
-        GridItem(.flexible()),
         GridItem(.flexible())
     ]
 

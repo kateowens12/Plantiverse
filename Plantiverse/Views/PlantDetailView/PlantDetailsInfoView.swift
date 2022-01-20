@@ -17,7 +17,7 @@ struct PlantDetailsInfoView: View {
             HStack {
                 CategoryView(category: plant.category)
                 plant.status.map { status in
-                    StatusView(status: status)
+                    PlantHealthView(status: status)
                 }
             }
             .padding()

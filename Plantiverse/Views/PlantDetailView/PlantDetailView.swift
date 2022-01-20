@@ -59,7 +59,7 @@ struct PlantDetailView: View {
                             .frame(minWidth: 44.0, minHeight: 44.0)
                         //.accessibilityLabel("Edit Plant")
                     }.sheet(isPresented: $isEditing) {
-                            print("")
+                     //   update plant info
                         } content: {
                             EditPlantView(plant: plant, isEditing: $isEditing, value: $value)
                         }

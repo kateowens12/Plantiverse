@@ -25,8 +25,8 @@ struct NotificationView: View {
                 .alignmentGuide(HorizontalAlignment.trailing) {
                     $0[HorizontalAlignment.trailing] - $0.width * 0.15
                 }
-                .accessibilityLabel("Health update needed")
-                .accessibilityElement(children: .contain)
+              //  .accessibilityLabel("Health update needed")
+               // .accessibilityElement(children: .contain)
         }
        // .accessibilityElement(children: .contain)
         .onTapGesture {

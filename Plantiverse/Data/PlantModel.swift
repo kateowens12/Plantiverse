@@ -15,7 +15,7 @@ struct PlantModel: Identifiable {
     var task: PlantTask?
     var category: PlantCategory
     var id = UUID()
-    var status: Status?
+    var status: PlantHealth?
     var image: Image?
     var distanceFromWindow: Int?
     var potSize: Int?

@@ -14,7 +14,7 @@ class PlantFactory {
                             needsHealthUpdate: false,
                             task: PlantTaskFactory().clean,
                             category: PlantCategory.Houseplants,
-                            status: .Excellent,
+                            status: .NeedsUpdate,
                             image: Image("pothos"),
                             distanceFromWindow: 2,
                             potSize: 6)
@@ -48,7 +48,7 @@ class PlantFactory {
                                needsHealthUpdate: false,
                                task: nil,
                                category: PlantCategory.Succulents,
-                               status: .VeryGood,
+                               status: .Good,
                                image: Image("burroTail"))
 
     var mint = PlantModel(name: "Mint",
@@ -69,7 +69,7 @@ class PlantFactory {
                                       needsHealthUpdate: false,
                                       task: PlantTaskFactory().repot,
                                       category: PlantCategory.Houseplants,
-                                      status: .Excellent,
+                                      status: .Great,
                                       image: Image("monsteraDelicosa"))
 
     var snakePlant = PlantModel(name: "Snake Plant",
@@ -82,7 +82,7 @@ class PlantFactory {
                              needsHealthUpdate: false,
                              task: PlantTaskFactory().water,
                              category: PlantCategory.Herbs,
-                             status: .Ok,
+                             status: .Meh,
                              image: Image("parsley"))
 
     func getAllPlants() -> [PlantModel] {
