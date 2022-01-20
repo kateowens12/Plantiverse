@@ -21,7 +21,6 @@ struct EditPlantView: View {
                 VStack {
                     TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
                     Divider()
-                    
                     PlantHealthPicker()
                     PlantCategoryPicker()
                     RepottedToggle()
@@ -30,14 +29,14 @@ struct EditPlantView: View {
                 }
                 .padding()
                 .background {
-                    Color.gray.opacity(0.50)
+                    Color.gray.opacity(0.40)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .padding()
+                
                 SaveButton {
                     isEditing = false
                 }
-                .padding()
             }
         }
     }

@@ -20,6 +20,10 @@ struct WindowDistanceSliderView: View {
             CustomSlider(value: $value)
             Spacer()
         }
+        .padding(.vertical)
+        .padding(.bottom)
+        .padding(.bottom)
+    Divider()
     }
 }
 

@@ -38,7 +38,8 @@ struct PotSizeStepper: View {
                         in: 0...24,
                         step: 1)
             }
-        }.padding(.vertical)
+        }
+        .padding(.vertical)
     }
  
     
