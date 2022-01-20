@@ -11,32 +11,43 @@ struct EditPlantView: View {
     var plant: PlantModel
     @State private var plantName: String = ""
     @Binding var isEditing: Bool
-
+    @Binding var value: CGFloat
+    
     var body: some View {
         NavigationView {
+            VStack {
+                Text(plant.name)
+                    .font(.title)
                 VStack {
-                    Text(plant.name)
-                        .font(.title)
-                    Form {
-                        TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
-                        PotSizeStepper()
-                        PlantHealthPicker()
-                        PlantCategoryPicker()
-                        RepottedToggle()
-                    }
-                    .onAppear {
-                        UITableView.appearance().backgroundColor = .clear
-                    }
-                    .onDisappear {
-                        UITableView.appearance().backgroundColor = .systemGroupedBackground
-                    }
-                
-                    Spacer()
-                    SaveButton {
-                        isEditing = false
-                    }
-                    Spacer()
+                    TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
+                    Divider()
+                    
+                    PlantHealthPicker()
+                    PlantCategoryPicker()
+                    RepottedToggle()
+                    WindowDistanceSliderView(value: value)
+                    PotSizeStepper()
                 }
+                .padding()
+                .background {
+                    Color.gray.opacity(0.50)
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .padding()
+                SaveButton {
+                    isEditing = false
+                }
+                .padding()
+            }
         }
+    }
+}
+
+struct Previews_EditPlantView_Previews: PreviewProvider {
+    @State private var plantName: String = ""
+    @Binding var isEditing: Bool
+    @Binding var value: CGFloat
+    static var previews: some View {
+        EditPlantView(plant: PlantFactory().pothos, isEditing: .constant(false), value: .constant(0.0))
     }
 }

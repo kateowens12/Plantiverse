@@ -23,9 +23,9 @@ struct TaskView: View {
         }
         .background(.gray.opacity(0.75))
         .clipShape(Capsule())
-        .accessibilityHidden(true)
-        .accessibilityElement(children: .contain)
-        .accessibilityElement(children: .combine)
+   //     .accessibilityHidden(true)
+     //   .accessibilityElement(children: .contain)
+      //  .accessibilityElement(children: .combine)
         .accessibilityCustomContent("Task", plantTask.name.rawValue, importance: .high)
         .fixedSize(horizontal: true, vertical: false)
     }

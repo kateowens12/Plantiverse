@@ -12,7 +12,8 @@ struct PlantDetailView: View {
     @State private var showingImagePicker = false
     @State private var image: Image? = nil
     @State var isEditing: Bool = false
-
+    @State var value: CGFloat = 0
+    
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
@@ -56,11 +57,11 @@ struct PlantDetailView: View {
                         Image(systemName: "gearshape.fill")
                             .foregroundColor(.black)
                             .frame(minWidth: 44.0, minHeight: 44.0)
-                        .accessibilityLabel("Edit Plant")
+                        //.accessibilityLabel("Edit Plant")
                     }.sheet(isPresented: $isEditing) {
                             print("")
                         } content: {
-                            EditPlantView(plant: plant, isEditing: $isEditing)
+                            EditPlantView(plant: plant, isEditing: $isEditing, value: $value)
                         }
                 }
             }

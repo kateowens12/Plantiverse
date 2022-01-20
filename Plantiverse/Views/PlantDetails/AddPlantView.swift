@@ -10,40 +10,42 @@ import SwiftUI
 struct AddPlantView: View {
     @State private var plantName: String = ""
     @Binding var isAddViewShowing: Bool
+    @State var value: CGFloat = 0
     
     var body: some View {
         NavigationView {
-            VStack {
-                Form {
-                    Section(header: Text("Basic Info")) {
+                VStack {
+                    Text("Add Plant")
+                        .font(.title)
+                    VStack {
                         TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
+                        Divider()
                         PlantHealthPicker()
-                        PlantCategoryPicker()
-                        RepottedToggle()
-                        }
-                }.navigationBarTitle("Add Plant", displayMode: .inline)
-                    .onAppear {
-                        UITableView.appearance().backgroundColor = .clear
+                                PlantCategoryPicker()
+                                RepottedToggle()
+                                WindowDistanceSliderView(value: value)
+                                PotSizeStepper()
                     }
-                    .onDisappear {
-                        UITableView.appearance().backgroundColor = .systemGroupedBackground
+                    .padding()
+                    .background {
+                        Color.gray.opacity(0.50)
                     }
-                SaveButton {
-                    isAddViewShowing = false
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .padding()
+                    SaveButton {
+                        isAddViewShowing = false
+                    }
+                    Spacer()
                 }
-            }
+           // Spacer()
         }
-
     }
 }
 
-//struct AddPlantView_Previews: PreviewProvider {
-//    @State var showing = false
-//    @Binding var isPresented: Binding<Bool> = projectedValue(projectedValue: $showing.wrappedValue)
-//
-//    static var previews: some View {
-//        AddPlantView(isPresented: $isPresented)
-//    }
-//}
-
-
+struct AddPlantView_Previews: PreviewProvider {
+    @State var showing = false
+    @Binding var isPresented: Binding<Bool>
+    static var previews: some View {
+        AddPlantView(isAddViewShowing: .constant(false), value: 0.0)
+    }
+}

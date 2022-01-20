@@ -11,11 +11,16 @@ struct PlantHealthPicker: View {
     @State private var selectedHealth: PlantHealth = .NA
 
     var body: some View {
-        Picker("Plant Health", selection: $selectedHealth) {
-            ForEach(PlantHealth.allCases) { health in
-                Text(health.rawValue).tag(health)
+        HStack {
+            Text("Plant Health")
+            Spacer()
+            Picker("Plant Health", selection: $selectedHealth) {
+                ForEach(PlantHealth.allCases) { health in
+                    Text(health.rawValue).tag(health)
+                }
             }
         }
+        Divider()
     }
 }
 

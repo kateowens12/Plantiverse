@@ -8,13 +8,19 @@
 import SwiftUI
 struct PlantCategoryPicker: View {
     @State private var selectedCategory: PlantCategory = .NA
-
+    
     var body: some View {
-        Picker("Plant Category", selection: $selectedCategory) {
-            ForEach(PlantCategory.allCases) { category in
-                PlantCategoryRow(category: category).tag(category)
+        HStack {
+            Text("Plant Category")
+                .font(.body)
+            Spacer()
+            Picker("Plant Category", selection: $selectedCategory) {
+                ForEach(PlantCategory.allCases) { category in
+                    PlantCategoryRow(category: category).tag(category)
+                }
             }
         }
+        Divider()
     }
 }
 

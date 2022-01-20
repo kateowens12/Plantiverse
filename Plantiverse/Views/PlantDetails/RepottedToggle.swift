@@ -28,6 +28,7 @@ struct RepottedToggle: View {
                 }
             })
         }
+        Divider()
     }
 }
 
