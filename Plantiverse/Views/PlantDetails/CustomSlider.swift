@@ -11,7 +11,7 @@ struct CustomSlider: View {
     @State var lastOffset: CGFloat = 0
     @Binding var value: CGFloat
     var range: ClosedRange<CGFloat> = 1...10
-    var leadingOffset: CGFloat = 0
+    var leadingOffset: CGFloat = 2
     var trailingOffset: CGFloat = 12
     var thumbSize: CGSize = CGSize(width: 44, height: 44)
     let trackGradient = LinearGradient(gradient: Gradient(colors: [.orange, .gray]), startPoint: .leading, endPoint: .trailing)
@@ -38,7 +38,7 @@ struct CustomSlider: View {
                         .gesture(
                             DragGesture(minimumDistance: 0)
                                 .onChanged { value in
-                                    if value.location.x >= 0 && value.location.x <= geometry.size.width - self.trailingOffset {
+                                    if value.location.x >= 0 && value.location.x <= geometry.size.width - self.thumbSize.width {
                                         self.lastOffset = value.location.x
                                         let sliderPosition = max(0 + self.leadingOffset, min(self.lastOffset + value.translation.width, geometry.size.width - self.trailingOffset))
                                         let sliderValue = sliderPosition.map(from: self.leadingOffset...(geometry.size.width - self.trailingOffset), to: self.range)
