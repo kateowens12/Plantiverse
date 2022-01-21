@@ -23,10 +23,11 @@ class RoomFactory {
                         id: UUID())
     
     var bedroom = Room(plants: [PlantFactory().brasilPhilodendron,
+                                PlantFactory().philodendron,
                                 PlantFactory().miniMonstera,
                                 PlantFactory().snakePlant,
-                                PlantFactory().pothos,
-                                PlantFactory().philodendron],
+                                PlantFactory().pothos
+                                ],
                        name: .Bedroom,
                        id: UUID())
     

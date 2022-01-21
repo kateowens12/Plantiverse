@@ -20,7 +20,7 @@ struct MainGridView: View {
                     ForEach(rooms.indices, id: \.self) { index in
                         RoomSection(room: rooms[index])
                     }
-                
+                    .padding()
                 }
                 .padding()
             }

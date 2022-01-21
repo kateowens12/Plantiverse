@@ -16,7 +16,7 @@ struct NotificationView: View {
             Color.clear
             Image(systemName: "exclamationmark")
                 .padding()
-                .background(Color.green.opacity(0.60))
+                .background(Color.red.opacity(0.9))
                 .clipShape(Circle())
                 .frame(width: 50, height: 50)
                 .alignmentGuide(VerticalAlignment.top) {

@@ -28,7 +28,7 @@ struct PlantTile: View {
                         
                         CategoryView(category: plant.category)
                     }
-                }
+                }.fixedSize(horizontal: true, vertical: false)
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
@@ -41,6 +41,6 @@ struct PlantTile: View {
 
 struct PlantTileView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantTile(plant: PlantFactory().pothos)
+        PlantTile(plant: PlantFactory().monsteraDelicosa)
     }
 }
