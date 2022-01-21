@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlantTile: View {
-    var plant: PlantModel
+    @EnvironmentObject var plant: PlantModel
 
     var body: some View {
         ZStack {

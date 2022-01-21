@@ -7,7 +7,17 @@
 
 import Foundation
 
-enum PlantCategory: String, CaseIterable, Identifiable {
+class PlantCategory: ObservableObject {
+    @Published var name: CategoryInfo
+    var imageName: String
+  
+    init(name: CategoryInfo, imageName: String) {
+        self.name = name
+        self.imageName = imageName
+    }
+}
+
+enum CategoryInfo: String, CaseIterable, Identifiable {
     
     var id: String {
         return self.rawValue
@@ -18,7 +28,7 @@ enum PlantCategory: String, CaseIterable, Identifiable {
     case Herbs = "herb"
     case NA = "Unspecified"
 
-    func getImageName(for category: PlantCategory) -> String {
+    func getImageName(for category: CategoryInfo) -> String {
         var name: String
 
         switch category {

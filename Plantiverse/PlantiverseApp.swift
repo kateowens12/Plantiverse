@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PlantiverseApp: App {
+    
     var body: some Scene {
         WindowGroup {
             MainGridView()
+              //  .environmentObject(plant)
+
         }
     }
 }

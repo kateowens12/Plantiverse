@@ -9,21 +9,34 @@ import Foundation
 
 import SwiftUI
 
-struct PlantModel: Identifiable {
-    var name: String
-    @State var needsHealthUpdate: Bool
-    var task: PlantTask?
-    var category: PlantCategory
+class PlantModel: ObservableObject, Identifiable {
+    @Published var name: String = ""
+    @Published var needsHealthUpdate: Bool
+    @Published var task: PlantTask?
+    @Published var category: PlantCategory?
     var id = UUID()
-    var status: PlantHealth?
-    var image: Image?
-    var distanceFromWindow: Int?
-    var potSize: Int?
-    var hasBeenRepotted: Bool = false
-    var room: Room?
+    @Published var status: PlantHealth?
+    @Published var image: Image?
+    @Published var distanceFromWindow: Int?
+    @Published var potSize: Int?
+    @Published var hasBeenRepotted: Bool = false
+    @Published var room: Room
     
     var hasTask: Bool {
         return task != nil
+    }
+    
+    init(name: String, needsHealthUpdate: Bool, task: PlantTask?, category: PlantCategory?, status: PlantHealth?, image: Image?, distanceFromWindow: Int?, potSize: Int?, hasBeenRepotted: Bool, room: Room) {
+        self.name = name
+        self.needsHealthUpdate = needsHealthUpdate
+        self.task = task
+        self.category = category
+        self.status = status
+        self.image = image
+        self.distanceFromWindow = distanceFromWindow
+        self.potSize = potSize
+        self.hasBeenRepotted = hasBeenRepotted
+        self.room = room
     }
 
     var allTasks: [PlantTask]? {

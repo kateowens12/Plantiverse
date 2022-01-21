@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlantHealthPicker: View {
-    @State private var selectedHealth: PlantHealth = .NA
+    @Binding var selectedHealth: PlantHealth
 
     var body: some View {
         HStack {
@@ -26,6 +26,6 @@ struct PlantHealthPicker: View {
 
 struct PlantHealthPicker_Previews: PreviewProvider {
     static var previews: some View {
-        PlantHealthPicker()
+        PlantHealthPicker(selectedHealth: .constant(.Good))
     }
 }

@@ -6,11 +6,16 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Room: Identifiable {
-    var plants: [PlantModel]
-    var name: RoomName
+class Room: ObservableObject, Identifiable {
+    @Published var plants: [PlantModel]
+    var name: RoomName = RoomName.NA
     var id = UUID()
+    
+    init(plants: [PlantModel]) {
+        self.plants = plants
+    }
 }
 
 enum RoomName: String {
@@ -21,4 +26,5 @@ enum RoomName: String {
     case DiningRoom = "Dining Room"
     case Outside = "Outdoors"
     case Office = "Office"
+    case NA = "Unspecified"
 }

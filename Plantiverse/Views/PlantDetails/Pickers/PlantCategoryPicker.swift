@@ -7,7 +7,7 @@
 
 import SwiftUI
 struct PlantCategoryPicker: View {
-    @State private var selectedCategory: PlantCategory = .NA
+    @Binding var selectedCategory: PlantCategory
     
     var body: some View {
         HStack {
@@ -26,7 +26,7 @@ struct PlantCategoryPicker: View {
 
 struct PlantCategoryPicker_Previews: PreviewProvider {
     static var previews: some View {
-        PlantCategoryPicker()
+        PlantCategoryPicker(selectedCategory: .constant(.Houseplants))
     }
 }
 

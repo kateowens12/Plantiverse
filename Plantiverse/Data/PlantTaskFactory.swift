@@ -9,14 +9,14 @@ import Foundation
 
 class PlantTaskFactory {
     var repot: PlantTask {
-        return PlantTask(name: .Repot, imageName: "house.fill")
+        return PlantTask(name: TaskName.Repot, imageName: "house.fill")
     }
 
     var water: PlantTask {
-        return PlantTask(name: .Water, imageName: "cloud.rain.fill")
+        return PlantTask(name: TaskName.Water, imageName: "cloud.rain.fill")
     }
 
     var clean: PlantTask {
-        return PlantTask(name: .Clean, imageName: "trash.fill")
+        return PlantTask(name: TaskName.Clean, imageName: "trash.fill")
     }
 }

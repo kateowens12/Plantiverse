@@ -10,11 +10,13 @@ import SwiftUI
 
 class PlantFactory {
 
-    var pothos = PlantModel(name: "Pothos",
+    var pothos = PlantModel(name: "Pothos", needsHealthUpdate: false, task: PlantTaskFactory().clean, category: PlantCategory.Houseplants, status: <#T##PlantHealth?#>, image: <#T##Image?#>, distanceFromWindow: <#T##Int?#>, potSize: <#T##Int?#>, hasBeenRepotted: <#T##Bool#>, room: <#T##Room#>)
+    
+    PlantModel(name: ,
                             needsHealthUpdate: false,
-                            task: PlantTaskFactory().clean,
-                            category: PlantCategory.Houseplants,
-                            status: .NeedsUpdate,
+                            task: ,
+                            category: ,
+                            status: PlantHealth.NeedsUpdate,
                             image: Image("pothos"),
                             distanceFromWindow: 2,
                             potSize: 6)
@@ -29,9 +31,8 @@ class PlantFactory {
 
     var aloeVera = PlantModel(name: "Aloe Vera",
                               needsHealthUpdate: false,
-                              task: nil,
                               category: PlantCategory.Succulents,
-                              status: .Good,
+                              status: PlantHealth.Good,
                               image: Image("aloeVera"),
                               distanceFromWindow: 2,
                               potSize: 6)
@@ -46,9 +47,9 @@ class PlantFactory {
 
     var burroTail = PlantModel(name: "Burro Tail",
                                needsHealthUpdate: false,
-                               task: nil,
+                               task: PlantTask.TaskName.NA,
                                category: PlantCategory.Succulents,
-                               status: .Good,
+                               status: PlantHealth.Good,
                                image: Image("burroTail"))
 
     var mint = PlantModel(name: "Mint",
@@ -69,7 +70,7 @@ class PlantFactory {
                                       needsHealthUpdate: false,
                                       task: PlantTaskFactory().repot,
                                       category: PlantCategory.Houseplants,
-                                      status: .Great,
+                                      status: PlantHealth.Great,
                                       image: Image("monsteraDelicosa"))
 
     var snakePlant = PlantModel(name: "Snake Plant",
@@ -82,7 +83,7 @@ class PlantFactory {
                              needsHealthUpdate: false,
                              task: PlantTaskFactory().water,
                              category: PlantCategory.Herbs,
-                             status: .Meh,
+                             status: PlantHealth.Meh,
                              image: Image("parsley"))
 
     func getAllPlants() -> [PlantModel] {

@@ -11,6 +11,8 @@ struct AddPlantView: View {
     @State private var plantName: String = ""
     @Binding var isAddViewShowing: Bool
     @State var value: CGFloat = 0
+    @State private var selectedHealth: PlantHealth
+    @State private var selectedCategory: PlantCategory
     
     var body: some View {
         NavigationView {
@@ -20,10 +22,10 @@ struct AddPlantView: View {
                     VStack {
                         TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
                         Divider()
-                        PlantHealthPicker()
-                                PlantCategoryPicker()
+                        PlantHealthPicker(selectedHealth: $selectedHealth)
+                                PlantCategoryPicker(selectedCategory: $selectedCategory)
                                 RepottedToggle()
-                                WindowDistanceSliderView(value: value)
+                        WindowDistanceSliderView(value: value)
                                 PotSizeStepper()
                     }
                     .padding()

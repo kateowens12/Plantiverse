@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlantDetailView: View {
-    var plant: PlantModel
+    @ObservedObject var plant: PlantModel
     @State private var showingImagePicker = false
     @State private var image: Image? = nil
     @State var isEditing: Bool = false

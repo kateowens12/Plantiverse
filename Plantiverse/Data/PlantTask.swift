@@ -7,10 +7,15 @@
 
 import Foundation
 
-struct PlantTask: Identifiable {
-    var name: TaskName
-    var imageName: String
+class PlantTask: ObservableObject, Identifiable {
+    @Published var name: TaskName
+    @Published var imageName: String
     var id = UUID()
+    
+    init(name: TaskName, imageName: String) {
+        self.name = name
+        self.imageName = imageName
+    }
 }
 
 enum TaskName: String {
@@ -18,4 +23,5 @@ enum TaskName: String {
     case Clean = "clean"
     case Repot = "repot"
     case Fertilize = "fertilize"
+    case NA = "None"
 }
