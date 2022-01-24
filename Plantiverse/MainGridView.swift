@@ -27,6 +27,7 @@ struct MainGridView: View {
                 .padding()
             }
             .navigationTitle("Plantiverse")
+            .navigationBarTitleDisplayMode(.automatic)
         }
     }
 }
