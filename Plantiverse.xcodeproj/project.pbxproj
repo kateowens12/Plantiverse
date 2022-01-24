@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F3058D2B279F29810089D31B /* PlantTileAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3058D2A279F29810089D31B /* PlantTileAccessoryView.swift */; };
+		F3058D31279F3D310089D31B /* HealthUpdateAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3058D30279F3D310089D31B /* HealthUpdateAlert.swift */; };
 		F319A58A278F5AAA00DD4B19 /* PotSizeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */; };
 		F319A58C278F707800DD4B19 /* PlantHealthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A58B278F707800DD4B19 /* PlantHealthPicker.swift */; };
 		F319A58E278F709300DD4B19 /* PlantCategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A58D278F709300DD4B19 /* PlantCategoryPicker.swift */; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		F3058D2A279F29810089D31B /* PlantTileAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTileAccessoryView.swift; sourceTree = "<group>"; };
+		F3058D30279F3D310089D31B /* HealthUpdateAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUpdateAlert.swift; sourceTree = "<group>"; };
 		F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotSizeStepper.swift; sourceTree = "<group>"; };
 		F319A58B278F707800DD4B19 /* PlantHealthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealthPicker.swift; sourceTree = "<group>"; };
 		F319A58D278F709300DD4B19 /* PlantCategoryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategoryPicker.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */,
 				F3A41EC42759648900D5A0B7 /* CategoryView.swift */,
 				F374EA312732D970002EB20E /* NotificationView.swift */,
+				F3058D30279F3D310089D31B /* HealthUpdateAlert.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				F3A41F0F27626ABD00D5A0B7 /* PlantDetailsInfoView.swift in Sources */,
 				F374EA322732D970002EB20E /* NotificationView.swift in Sources */,
 				F3A41F13276277BE00D5A0B7 /* TaskList.swift in Sources */,
+				F3058D31279F3D310089D31B /* HealthUpdateAlert.swift in Sources */,
 				F374EA3C2732DA77002EB20E /* Room.swift in Sources */,
 				F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */,
 				F3058D2B279F29810089D31B /* PlantTileAccessoryView.swift in Sources */,

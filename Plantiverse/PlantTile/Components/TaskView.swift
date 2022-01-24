@@ -25,10 +25,10 @@ struct TaskView: View {
         .background(.gray.opacity(0.75))
         .clipShape(Capsule())
         .fixedSize(horizontal: true, vertical: false)
-   //     .accessibilityHidden(true)
-     //   .accessibilityElement(children: .contain)
-      //  .accessibilityElement(children: .combine)
-      //  .accessibilityCustomContent("Task", plantTask.name.rawValue, importance: .high)
+        .accessibilityHidden(true)
+        .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .combine)
+        .accessibilityCustomContent("Tasks due", Text("\(plantTask.name.rawValue) due"), importance: .high)
     }
 }
 

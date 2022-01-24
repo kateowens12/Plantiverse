@@ -24,6 +24,9 @@ struct CategoryView: View {
         .background(.green.opacity(0.90))
         .clipShape(Capsule())
         .fixedSize(horizontal: true, vertical: false)
+        .accessibilityHidden(true)
+        .accessibilityElement(children: .contain)
+        .accessibilityCustomContent("Plant Category", category.rawValue, importance: .default)
     }
 }
 

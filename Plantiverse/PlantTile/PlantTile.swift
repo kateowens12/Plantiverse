@@ -14,20 +14,19 @@ struct PlantTile: View {
         ZStack {
             VStack(alignment: .center) {
                 TileInfoView(plant: plant)
-                
                 PlantTileAccessoryView(plant: plant)
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
-            .overlay(plant.needsHealthUpdate ? NotificationView(plant: plant) : nil)
+            .overlay(plant.needsHealthUpdate ? NotificationView(plant: plant) : nil) 
         }
-       // .accessibilityElement(children: .contain)
-       // .accessibilityElement(children: .combine)
+        .accessibilityElement(children: .contain)
+        .accessibilityElement(children: .combine)
     }
 }
 
 struct PlantTileView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantTile(plant: PlantFactory().monsteraDelicosa)
+        PlantTile(plant: PlantFactory().snakePlant)
     }
 }

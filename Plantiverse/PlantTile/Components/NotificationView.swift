@@ -10,7 +10,7 @@ import SwiftUI
 struct NotificationView: View {
     @State private var showingAlert = false
     var plant: PlantModel
-    //TODO: fix a11y so that needs health update is read if present
+    
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Color.clear
@@ -25,32 +25,20 @@ struct NotificationView: View {
                 .alignmentGuide(HorizontalAlignment.trailing) {
                     $0[HorizontalAlignment.trailing] - $0.width * 0.15
                 }
-              //  .accessibilityLabel("Health update needed")
-               // .accessibilityElement(children: .contain)
-        }
-       // .accessibilityElement(children: .contain)
+        }.frame(minHeight: 44.0)
+        .accessibilityLabel("Health update needed")
+        .accessibilityAddTraits(.isButton)
+        .accessibilityHidden(true)
+        .accessibilityElement(children: .contain)
+        .accessibilityCustomContent(Text("Health Update"), Text(plant.needsHealthUpdate ? "Health update needed" : "No health update needed"), importance: .high)
+        
         .onTapGesture {
             showingAlert = true
         }
-        
-        .alert("Update plant's health", isPresented: $showingAlert) {
-            Button("Great") {
-                plant.needsHealthUpdate.toggle()
-            }
-            
-            Button("Good") {
-                plant.needsHealthUpdate.toggle()
-            }
-            
-            Button("Fair") {
-                plant.needsHealthUpdate = !plant.needsHealthUpdate
-            }
-            
-            Button("Yikes!") {
-                plant.needsHealthUpdate.toggle()
-            }
+        .alert("Update plant health", isPresented: $showingAlert) {
+            HealthUpdateAlert(showingAlert: $showingAlert, plant: self.plant)
         } message: {
-            Text("Please select \(plant.name) plant's current health")
+            Text("Please select \(plant.name)'s current health")
         }
     }
 }

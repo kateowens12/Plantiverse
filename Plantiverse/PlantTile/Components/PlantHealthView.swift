@@ -16,10 +16,9 @@ struct PlantHealthView: View {
             .padding()
             .background(.cyan.opacity(0.80))
             .clipShape(Capsule())
-        //     .accessibilityHidden(true)
-           //  .accessibilityElement(children: .contain)
-             .accessibilityElement(children: .combine)
-          //  .accessibilityCustomContent("Plant Health", status.rawValue, importance: .default)
+            .accessibilityHidden(true)
+            .accessibilityElement(children: .contain)
+            .accessibilityCustomContent("Plant Health", status.rawValue, importance: .default)
     }
 }
 

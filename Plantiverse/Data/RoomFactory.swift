@@ -16,12 +16,6 @@ class RoomFactory {
                           name: .LivingRoom,
                           id: UUID())
     
-    var bathroom = Room(plants: [PlantFactory().philodendron,
-                                 PlantFactory().brasilPhilodendron,
-                                 PlantFactory().snakePlant],
-                        name: .Bathroom,
-                        id: UUID())
-    
     var bedroom = Room(plants: [PlantFactory().brasilPhilodendron,
                                 PlantFactory().philodendron,
                                 PlantFactory().miniMonstera,
@@ -42,7 +36,6 @@ class RoomFactory {
         rooms.append(livingRoom)
         rooms.append(diningRoom)
         rooms.append(bedroom)
-        rooms.append(bathroom)
         return rooms
     }
 }

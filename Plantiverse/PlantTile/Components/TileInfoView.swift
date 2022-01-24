@@ -16,9 +16,6 @@ struct TileInfoView: View {
                 .multilineTextAlignment(.center)
                 .padding()
                 .fixedSize(horizontal: true, vertical: false)
-             //   .accessibility(sortPriority: 2)
-      //  .accessibilityElement(children: .combine)
-      //  .accessibilityCustomContent("Plant Category", plant.category.rawValue)
     }
 }
 

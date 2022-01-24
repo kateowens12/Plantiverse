@@ -24,7 +24,10 @@ struct PlantTileAccessoryView: View {
                 
                 CategoryView(category: plant.category)
             }
-        }.fixedSize(horizontal: true, vertical: false)
+        }
+        .fixedSize(horizontal: true, vertical: false)
+        .accessibilityElement(children: .contain)
+        .accessibilityElement(children: .combine)
     }
 }
 

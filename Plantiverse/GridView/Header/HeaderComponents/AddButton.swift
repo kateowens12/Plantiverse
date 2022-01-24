@@ -19,7 +19,7 @@ struct AddButton: View {
                 .padding()
         }
         .background(Circle().fill(Color.gray).opacity(0.60))
-      //  .accessibility(label: Text("Add a new plant"))
+        .accessibility(label: Text("Add a plant"))
         .sheet(isPresented: $isAddViewShowing) {
             AddPlantView(isAddViewShowing: self.$isAddViewShowing)
         }

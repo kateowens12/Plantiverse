@@ -12,12 +12,12 @@ struct FilterButton: View {
         Button(action: {
             print("tapped")
         }, label: {
-            Image(systemName: "line.3.horizontal.decrease.circle")
+            Image(systemName: "line.3.horizontal.decrease")
                 .foregroundColor(Color.black)
                 .padding()
         })
             .background(Circle().fill(Color.gray).opacity(0.60))
-            .accessibility(label: Text("Filter"))
+            .accessibility(label: Text("Filter plants"))
     }
 }
 
