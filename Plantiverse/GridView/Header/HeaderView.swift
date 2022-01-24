@@ -10,7 +10,7 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         HStack {
-            EditButton()
+            FilterButton()
                 .frame(minWidth: 44,
                        maxWidth: .infinity,
                        minHeight: 44,

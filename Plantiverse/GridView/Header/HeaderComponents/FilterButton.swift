@@ -7,22 +7,22 @@
 
 import SwiftUI
 
-struct EditButton: View {
+struct FilterButton: View {
     var body: some View {
         Button(action: {
             print("tapped")
         }, label: {
-            Image(systemName: "slider.vertical.3")
+            Image(systemName: "line.3.horizontal.decrease.circle")
                 .foregroundColor(Color.black)
                 .padding()
-        }).background(Circle().fill(Color.gray).opacity(0.60))
-            .accessibility(label: Text("Edit plants"))
-            .accessibilitySortPriority(1)
+        })
+            .background(Circle().fill(Color.gray).opacity(0.60))
+            .accessibility(label: Text("Filter"))
     }
 }
 
 struct EditButton_Previews: PreviewProvider {
     static var previews: some View {
-        EditButton()
+        FilterButton()
     }
 }

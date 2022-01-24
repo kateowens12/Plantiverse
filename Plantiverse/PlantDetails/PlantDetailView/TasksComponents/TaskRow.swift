@@ -13,11 +13,12 @@ struct TaskRow: View {
     var body: some View {
         HStack {
             Image(systemName: task.imageName)
-                .imageScale(.medium)
+                .imageScale(.small)
             Text(task.name.rawValue)
+                .font(.body)
                 Spacer()
         }
-        .accessibilityElement(children: .combine)
+       // .accessibilityElement(children: .combine)
     }
 }
 

@@ -19,7 +19,7 @@ struct AddImageButton: View {
         .foregroundColor(Color.black)
         .padding()
         .background(Circle().fill(Color.gray).opacity(0.60))
-        .accessibility(label: Text("Add a new plant"))
+        //.accessibility(label: Text("Add a new plant"))
     }
 }
 

@@ -15,20 +15,7 @@ struct PlantTile: View {
             VStack(alignment: .center) {
                 TileInfoView(plant: plant)
                 
-                VStack {
-                    HStack {
-                        plant.task.map({ task in
-                            TaskView(plantTask: task)
-                        })
-                        
-                        plant.status.map { status in
-                            status == .NeedsUpdate ? nil :
-                            PlantHealthView(status: status)
-                        }
-                        
-                        CategoryView(category: plant.category)
-                    }
-                }.fixedSize(horizontal: true, vertical: false)
+                PlantTileAccessoryView(plant: plant)
             }
             .padding()
             .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))

@@ -33,11 +33,11 @@ struct PotSizeStepper: View {
                                 .contentShape(Capsule())
                 }
             }
-                .accessibilityRepresentation {
-                Stepper("Pot Size", value: $potSize,
-                        in: 0...24,
-                        step: 1)
-            }
+//                .accessibilityRepresentation {
+//                Stepper("Pot Size", value: $potSize,
+//                        in: 0...24,
+//                        step: 1)
+//            }
         }
         .padding(.vertical)
     }

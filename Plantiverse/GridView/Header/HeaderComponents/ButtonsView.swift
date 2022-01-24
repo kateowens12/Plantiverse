@@ -10,7 +10,7 @@ import SwiftUI
 struct ButtonsView: View {
     var body: some View {
         HStack {
-            EditButton()
+            FilterButton()
                 .frame(maxWidth: .infinity,
                        maxHeight: .infinity)
                 .offset(x: -50, y: 50)

@@ -13,6 +13,7 @@ struct TaskView: View {
     var body: some View {
         HStack {
             Image(systemName: plantTask.imageName)
+                .accessibilityHidden(true)
                 .imageScale(.small)
                 .padding(.leading)
             Text(plantTask.name.rawValue)
@@ -23,11 +24,11 @@ struct TaskView: View {
         }
         .background(.gray.opacity(0.75))
         .clipShape(Capsule())
+        .fixedSize(horizontal: true, vertical: false)
    //     .accessibilityHidden(true)
      //   .accessibilityElement(children: .contain)
       //  .accessibilityElement(children: .combine)
-        .accessibilityCustomContent("Task", plantTask.name.rawValue, importance: .high)
-        .fixedSize(horizontal: true, vertical: false)
+      //  .accessibilityCustomContent("Task", plantTask.name.rawValue, importance: .high)
     }
 }
 

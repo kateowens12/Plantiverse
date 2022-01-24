@@ -15,7 +15,7 @@ struct AllTasksView: View {
             HStack {
                 ForEach(tasks) { task in
                     TaskView(plantTask: task )
-                    fixedSize(horizontal: false, vertical: true)
+                    fixedSize(horizontal: true, vertical: false)
                         .padding()
                 }
             }

@@ -27,7 +27,7 @@ struct PlantDetailView: View {
                             .padding()
                             .background(Circle().fill(Color.gray).opacity(0.60))
                     }
-                    .accessibility(label: Text("Add a new image"))
+                   // .accessibility(label: Text("Add a new image"))
                     .padding(.bottom)
                     
                     Spacer()

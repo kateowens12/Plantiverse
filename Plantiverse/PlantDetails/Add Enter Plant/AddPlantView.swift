@@ -21,10 +21,10 @@ struct AddPlantView: View {
                         TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
                         Divider()
                         PlantHealthPicker()
-                                PlantCategoryPicker()
-                                RepottedToggle()
-                                WindowDistanceSliderView(value: value)
-                                PotSizeStepper()
+                        PlantCategoryPicker()
+                        RepottedToggle()
+                        WindowDistanceSliderView(value: value)
+                        PotSizeStepper()
                     }
                     .padding()
                     .background {
@@ -37,7 +37,6 @@ struct AddPlantView: View {
                     }
                     Spacer()
                 }
-           // Spacer()
         }
     }
 }

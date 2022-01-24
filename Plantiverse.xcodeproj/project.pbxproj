@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3058D2B279F29810089D31B /* PlantTileAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3058D2A279F29810089D31B /* PlantTileAccessoryView.swift */; };
 		F319A58A278F5AAA00DD4B19 /* PotSizeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */; };
 		F319A58C278F707800DD4B19 /* PlantHealthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A58B278F707800DD4B19 /* PlantHealthPicker.swift */; };
 		F319A58E278F709300DD4B19 /* PlantCategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A58D278F709300DD4B19 /* PlantCategoryPicker.swift */; };
@@ -43,7 +44,7 @@
 		F374EA462732DAE9002EB20E /* PlantCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA452732DAE9002EB20E /* PlantCategory.swift */; };
 		F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA472732DBC8002EB20E /* MainGridView.swift */; };
 		F374EA4E2732DE37002EB20E /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4D2732DE37002EB20E /* ButtonsView.swift */; };
-		F374EA502732DE57002EB20E /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4F2732DE57002EB20E /* EditButton.swift */; };
+		F374EA502732DE57002EB20E /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4F2732DE57002EB20E /* FilterButton.swift */; };
 		F374EA522732DE60002EB20E /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA512732DE60002EB20E /* AddButton.swift */; };
 		F3A41EC12759221900D5A0B7 /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */; };
 		F3A41EC3275961B700D5A0B7 /* PlantHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */; };
@@ -77,6 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3058D2A279F29810089D31B /* PlantTileAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantTileAccessoryView.swift; sourceTree = "<group>"; };
 		F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotSizeStepper.swift; sourceTree = "<group>"; };
 		F319A58B278F707800DD4B19 /* PlantHealthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealthPicker.swift; sourceTree = "<group>"; };
 		F319A58D278F709300DD4B19 /* PlantCategoryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategoryPicker.swift; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 		F374EA452732DAE9002EB20E /* PlantCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategory.swift; sourceTree = "<group>"; };
 		F374EA472732DBC8002EB20E /* MainGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGridView.swift; sourceTree = "<group>"; };
 		F374EA4D2732DE37002EB20E /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
-		F374EA4F2732DE57002EB20E /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
+		F374EA4F2732DE57002EB20E /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		F374EA512732DE60002EB20E /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
 		F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealthView.swift; sourceTree = "<group>"; };
@@ -157,18 +159,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F315F5E52783677800ACA539 /* PlantDetails */ = {
+		F3058D2C279F2A7A0089D31B /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F319A59B2795C89C00DD4B19 /* SaveButton.swift */,
+				F3058D2D279F2A8F0089D31B /* Custom Controls */,
+				F3614C3627989E94006FFE72 /* Pickers */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		F3058D2D279F2A8F0089D31B /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				F319A593279094DC00DD4B19 /* CustomCountButton.swift */,
+				F3614C372798A66B006FFE72 /* CustomSlider.swift */,
+				F3A848A02799BFCF003FC1A8 /* WindowDistanceSliderView.swift */,
+				F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */,
+				F319A5972790C9E200DD4B19 /* RepottedToggle.swift */,
+			);
+			path = "Custom Controls";
+			sourceTree = "<group>";
+		};
+		F3058D2F279F2B010089D31B /* Add Enter Plant */ = {
 			isa = PBXGroup;
 			children = (
 				F3EEDD872770FE2C00B71968 /* AddPlantView.swift */,
 				F319A5A127972F5800DD4B19 /* EditPlantView.swift */,
-				F3614C3627989E94006FFE72 /* Pickers */,
-				F3614C372798A66B006FFE72 /* CustomSlider.swift */,
-				F3A848A02799BFCF003FC1A8 /* WindowDistanceSliderView.swift */,
-				F319A59B2795C89C00DD4B19 /* SaveButton.swift */,
-				F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */,
-				F319A593279094DC00DD4B19 /* CustomCountButton.swift */,
-				F319A5972790C9E200DD4B19 /* RepottedToggle.swift */,
+				F3058D2C279F2A7A0089D31B /* Controls */,
+			);
+			path = "Add Enter Plant";
+			sourceTree = "<group>";
+		};
+		F315F5E52783677800ACA539 /* PlantDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F363EE55276B94F700570A0F /* AllTasksView.swift */,
+				F3058D2F279F2B010089D31B /* Add Enter Plant */,
+				F363EE58276B97B500570A0F /* PlantDetailView */,
 			);
 			path = PlantDetails;
 			sourceTree = "<group>";
@@ -239,7 +267,9 @@
 			children = (
 				F374E9FF2732D922002EB20E /* PlantiverseApp.swift */,
 				F374EA472732DBC8002EB20E /* MainGridView.swift */,
-				F374EA372732D9A0002EB20E /* Views */,
+				F374EA4B2732DD18002EB20E /* GridView */,
+				F374EA4C2732DD24002EB20E /* PlantTile */,
+				F315F5E52783677800ACA539 /* PlantDetails */,
 				F374EA382732D9A9002EB20E /* Data */,
 				F374EA032732D923002EB20E /* Assets.xcassets */,
 				F374EA052732D923002EB20E /* Preview Content */,
@@ -272,17 +302,6 @@
 			path = PlantiverseUITests;
 			sourceTree = "<group>";
 		};
-		F374EA372732D9A0002EB20E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F315F5E52783677800ACA539 /* PlantDetails */,
-				F363EE58276B97B500570A0F /* PlantDetailView */,
-				F374EA4C2732DD24002EB20E /* PlantTile */,
-				F374EA4B2732DD18002EB20E /* GridView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		F374EA382732D9A9002EB20E /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +318,7 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		F374EA492732DCDB002EB20E /* PlantTileComponents */ = {
+		F374EA492732DCDB002EB20E /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				F374EA2D2732D95C002EB20E /* TileInfoView.swift */,
@@ -307,17 +326,8 @@
 				F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */,
 				F3A41EC42759648900D5A0B7 /* CategoryView.swift */,
 				F374EA312732D970002EB20E /* NotificationView.swift */,
-				F363EE55276B94F700570A0F /* AllTasksView.swift */,
 			);
-			path = PlantTileComponents;
-			sourceTree = "<group>";
-		};
-		F374EA4A2732DCF7002EB20E /* GridComponents */ = {
-			isa = PBXGroup;
-			children = (
-				F374EA532732DE82002EB20E /* Header */,
-			);
-			path = GridComponents;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F374EA4B2732DD18002EB20E /* GridView */ = {
@@ -325,7 +335,7 @@
 			children = (
 				F374EA292732D94F002EB20E /* RoomSection.swift */,
 				F374EA352732D980002EB20E /* PlantsGrid.swift */,
-				F374EA4A2732DCF7002EB20E /* GridComponents */,
+				F374EA532732DE82002EB20E /* Header */,
 			);
 			path = GridView;
 			sourceTree = "<group>";
@@ -334,7 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				F374EA332732D979002EB20E /* PlantTile.swift */,
-				F374EA492732DCDB002EB20E /* PlantTileComponents */,
+				F3058D2A279F29810089D31B /* PlantTileAccessoryView.swift */,
+				F374EA492732DCDB002EB20E /* Components */,
 			);
 			path = PlantTile;
 			sourceTree = "<group>";
@@ -352,7 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				F374EA4D2732DE37002EB20E /* ButtonsView.swift */,
-				F374EA4F2732DE57002EB20E /* EditButton.swift */,
+				F374EA4F2732DE57002EB20E /* FilterButton.swift */,
 				F374EA512732DE60002EB20E /* AddButton.swift */,
 			);
 			path = HeaderComponents;
@@ -502,7 +513,7 @@
 				F3EEDD8C2771024E00B71968 /* PlantHealth.swift in Sources */,
 				F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */,
 				F3614C35279897DB006FFE72 /* RepottedToggleRow.swift in Sources */,
-				F374EA502732DE57002EB20E /* EditButton.swift in Sources */,
+				F374EA502732DE57002EB20E /* FilterButton.swift in Sources */,
 				F319A594279094DC00DD4B19 /* CustomCountButton.swift in Sources */,
 				F3614C332798973B006FFE72 /* WindowDistanceRow.swift in Sources */,
 				F319A5A227972F5800DD4B19 /* EditPlantView.swift in Sources */,
@@ -513,6 +524,7 @@
 				F3A41F13276277BE00D5A0B7 /* TaskList.swift in Sources */,
 				F374EA3C2732DA77002EB20E /* Room.swift in Sources */,
 				F374EA482732DBC8002EB20E /* MainGridView.swift in Sources */,
+				F3058D2B279F29810089D31B /* PlantTileAccessoryView.swift in Sources */,
 				F374EA002732D922002EB20E /* PlantiverseApp.swift in Sources */,
 				F374EA2A2732D94F002EB20E /* RoomSection.swift in Sources */,
 				F319A59C2795C89C00DD4B19 /* SaveButton.swift in Sources */,
