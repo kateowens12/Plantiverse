@@ -16,7 +16,6 @@ struct RoomSection: View {
         } header: {
             HeaderView(room: room)
         }
-        Divider()
     }
 }
 
