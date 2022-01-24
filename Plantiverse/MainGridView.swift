@@ -15,7 +15,9 @@ struct MainGridView: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    HeaderView()
+                    Text("My Plantiverse")
+                        .font(.title)
+                        .accessibilitySortPriority(2)
                     Divider()
                     ForEach(rooms.indices, id: \.self) { index in
                         RoomSection(room: rooms[index])
