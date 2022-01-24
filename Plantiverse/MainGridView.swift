@@ -18,8 +18,10 @@ struct MainGridView: View {
                     Text("My Plantiverse")
                         .font(.title)
                         .accessibilitySortPriority(2)
-                    // a11y sort priority - use line above for example of what can go wrong - once i removed the line above and had changed the sort code ot be in the new section header view - voiceover would skip 'my plantiverse' until the sort priority modifier was added back in line 20 
+                    // a11y sort priority - use line above for example of what can go wrong - once i removed the line above and had changed the sort code ot be in the new section header view - voiceover would skip 'my plantiverse' until the sort priority modifier was added back in line 20
+                        //.padding()
                     Divider()
+                        .padding()
                     ForEach(rooms.indices, id: \.self) { index in
                         RoomSection(room: rooms[index])
                     }
