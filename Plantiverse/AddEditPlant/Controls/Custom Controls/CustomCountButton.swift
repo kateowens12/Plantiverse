@@ -21,7 +21,7 @@ struct CustomCountButton: View {
                 .padding()
                 .contentShape(Rectangle())
                 .opacity(0.5)
-             //   .accessibilityLabel(Text(type.a11yLabel))
+                .accessibilityLabel(Text(type.a11yLabel))
         }
         .buttonStyle(.plain)
     }
@@ -44,9 +44,9 @@ extension CustomCountButton {
         var a11yLabel: String {
             switch self {
             case .increment:
-                return "increment"
+                return "Increment"
             case .decrement:
-                return "decrement"
+                return "Decrement"
             }
         }
     }

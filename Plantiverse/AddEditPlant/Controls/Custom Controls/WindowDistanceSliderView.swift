@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct WindowDistanceSliderView: View {
-    @State var value: CGFloat = 0
+    @State var value: CGFloat = 0.0
+    
     var body: some View {
         VStack {
             HStack(alignment: .center) {
                 Text("Window Distance")
                     .font(.body)
                 Spacer()
-                Text(value == 0 ? "In window" : "\(Int(value)) ft.")
+                Text($value.wrappedValue == 0 ? "In window" : "\(Int($value.wrappedValue)) ft.")
             }
             CustomSlider(value: $value)
             Spacer()
@@ -23,7 +24,14 @@ struct WindowDistanceSliderView: View {
         .padding(.vertical)
         .padding(.bottom)
         .padding(.bottom)
-    Divider()
+        
+        .accessibilityElement(children: .combine)
+        .accessibilityRepresentation {
+            Slider(value: $value, in: 0...10, step: 1.0) {
+                Text("Window Distance")
+                    .accessibilityValue(Text($value.wrappedValue == 0 ? "In Window" : "\(Int($value.wrappedValue)) ft."))
+            }
+        }
     }
 }
 

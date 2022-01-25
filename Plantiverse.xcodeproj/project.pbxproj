@@ -183,21 +183,20 @@
 			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
-		F3058D2F279F2B010089D31B /* Add Enter Plant */ = {
+		F3058D2F279F2B010089D31B /* AddEditPlant */ = {
 			isa = PBXGroup;
 			children = (
 				F3EEDD872770FE2C00B71968 /* AddPlantView.swift */,
 				F319A5A127972F5800DD4B19 /* EditPlantView.swift */,
 				F3058D2C279F2A7A0089D31B /* Controls */,
 			);
-			path = "Add Enter Plant";
+			path = AddEditPlant;
 			sourceTree = "<group>";
 		};
 		F315F5E52783677800ACA539 /* PlantDetails */ = {
 			isa = PBXGroup;
 			children = (
 				F363EE55276B94F700570A0F /* AllTasksView.swift */,
-				F3058D2F279F2B010089D31B /* Add Enter Plant */,
 				F363EE58276B97B500570A0F /* PlantDetailView */,
 			);
 			path = PlantDetails;
@@ -271,6 +270,7 @@
 				F374EA472732DBC8002EB20E /* MainGridView.swift */,
 				F374EA4B2732DD18002EB20E /* GridView */,
 				F374EA4C2732DD24002EB20E /* PlantTile */,
+				F3058D2F279F2B010089D31B /* AddEditPlant */,
 				F315F5E52783677800ACA539 /* PlantDetails */,
 				F374EA382732D9A9002EB20E /* Data */,
 				F374EA032732D923002EB20E /* Assets.xcassets */,

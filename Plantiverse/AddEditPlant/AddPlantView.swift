@@ -24,6 +24,7 @@ struct AddPlantView: View {
                         PlantCategoryPicker()
                         RepottedToggle()
                         WindowDistanceSliderView(value: value)
+                        Divider()
                         PotSizeStepper()
                     }
                     .padding()

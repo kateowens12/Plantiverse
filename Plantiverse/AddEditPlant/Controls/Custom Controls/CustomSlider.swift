@@ -10,11 +10,11 @@ import SwiftUI
 struct CustomSlider: View {
     @State var lastOffset: CGFloat = 0
     @Binding var value: CGFloat
-    var range: ClosedRange<CGFloat> = 1...10
+    var range: ClosedRange<CGFloat> = 0...10
     var leadingOffset: CGFloat = 2
     var trailingOffset: CGFloat = 12
     var thumbSize: CGSize = CGSize(width: 44, height: 44)
-    let trackGradient = LinearGradient(gradient: Gradient(colors: [.orange, .gray]), startPoint: .leading, endPoint: .trailing)
+    let trackGradient = LinearGradient(gradient: Gradient(colors: [.blue, .gray]), startPoint: .leading, endPoint: .trailing)
     
     var body: some View {
         GeometryReader { geometry in
@@ -42,13 +42,13 @@ struct CustomSlider: View {
                                         self.lastOffset = value.location.x
                                         let sliderPosition = max(0 + self.leadingOffset, min(self.lastOffset + value.translation.width, geometry.size.width - self.trailingOffset))
                                         let sliderValue = sliderPosition.map(from: self.leadingOffset...(geometry.size.width - self.trailingOffset), to: self.range)
-                                        self.value = sliderValue
+                                        self.$value.wrappedValue = sliderValue
                                     }
                                 }
                         )
                 }
             }
-            //TODO: find out if a11y representation is added here or on the entire window distance slider view
+           // .accessibilityElement(children: .combine)
         }
     }
 }
@@ -56,23 +56,18 @@ struct CustomSlider: View {
 extension CGFloat {
     func map(from startPoint: ClosedRange<CGFloat>, to endPoint: ClosedRange<CGFloat>) -> CGFloat {
         let startRangeLowerBound = startPoint.lowerBound
-        print("startRangeLowerBound --> \(startRangeLowerBound)")
         let startRangeUpperBound = startPoint.upperBound
-        print("startRangeUpperBound --> \(startRangeUpperBound)")
         let endRangeUpperBound = endPoint.upperBound
-        print("endRangeUpperBound --> \(endRangeUpperBound)")
         let endRangeLowerBound = endPoint.lowerBound
-        print("endRangeLowerBound --> \(endRangeLowerBound)")
         
         let result = ((self - startRangeLowerBound) / (startRangeUpperBound - startRangeLowerBound)) * (endRangeUpperBound - endRangeLowerBound) + endRangeLowerBound
-        print(result)
         
         return result
-        
     }
 }
+
 //struct WindowDistanceSlider_Previews: PreviewProvider {
 //    static var previews: some View {
-//        WindowDistanceSlider()
+//        CustomSlider(value: .constant(8))
 //    }
 //}
