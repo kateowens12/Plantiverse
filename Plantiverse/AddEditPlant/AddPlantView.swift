@@ -46,6 +46,6 @@ struct AddPlantView_Previews: PreviewProvider {
     @State var showing = false
     @Binding var isPresented: Binding<Bool>
     static var previews: some View {
-        AddPlantView(isAddViewShowing: .constant(false), value: 0.0)
+        AddPlantView(isAddViewShowing: .constant(true), value: 0)
     }
 }

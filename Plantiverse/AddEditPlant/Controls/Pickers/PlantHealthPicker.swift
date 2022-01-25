@@ -22,6 +22,7 @@ struct PlantHealthPicker: View {
             }
         }
         .accessibilityElement(children: .combine)
+      
         Divider()
     }
 }
