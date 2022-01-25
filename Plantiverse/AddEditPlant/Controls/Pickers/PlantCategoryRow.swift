@@ -16,6 +16,7 @@ struct PlantCategoryRow: View {
                 .padding()
             Text(category.rawValue).tag(category.id)
         }
+        .accessibilityElement(children: .combine)
     }
 }
 

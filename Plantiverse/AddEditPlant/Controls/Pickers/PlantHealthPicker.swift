@@ -13,6 +13,7 @@ struct PlantHealthPicker: View {
     var body: some View {
         HStack {
             Text("Plant Health")
+                .accessibilityHidden(true)
             Spacer()
             Picker("Plant Health", selection: $selectedHealth) {
                 ForEach(PlantHealth.allCases) { health in

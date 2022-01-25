@@ -20,6 +20,8 @@ struct PlantCategoryPicker: View {
                 }
             }
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityElement(children: .combine)
         Divider()
     }
 }
