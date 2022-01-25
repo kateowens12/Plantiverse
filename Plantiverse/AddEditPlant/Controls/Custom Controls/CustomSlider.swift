@@ -42,19 +42,26 @@ struct CustomSlider: View {
                                         self.lastOffset = value.location.x
                                         let sliderPosition = max(0 + self.leadingOffset, min(self.lastOffset + value.translation.width, geometry.size.width - self.trailingOffset))
                                         let sliderValue = sliderPosition.map(from: self.leadingOffset...(geometry.size.width - self.trailingOffset), to: self.range)
-                                        self.value = sliderValue
+                                        self.$value.wrappedValue = sliderValue
                                     }
                                 }
                         )
                 }
             }
-            .accessibilityRepresentation {
-                Slider(value: $value, in: 0...12, step: 1.0) {
-                    
-                   // Text("Window Distance")
-                    //.accessibilityLabel(Text("Window Distance"))
-                    //.accessibilityValue(Text($value.wrappedValue == 0 ? "In Window" : "\(Int($value.wrappedValue)) ft."))
-                }
+//            .accessibilityRepresentation {
+//                Slider(value: $value, in: 0...12, step: 1.0) {
+//
+//                    Text("Window Distance")
+//                    .accessibilityLabel(Text("Window Distance"))
+//                    //.accessibilityValue(Text($value.wrappedValue == 0 ? "In Window" : "\(Int($value.wrappedValue)) ft."))
+//                }
+//            }
+        }    .accessibilityRepresentation {
+            Slider(value: $value, in: 0...12, step: 1.0) {
+                
+                Text("Window Distance")
+                .accessibilityLabel("window distance")
+                //.accessibilityValue(Text($value.wrappedValue == 0 ? "In Window" : "\(Int($value.wrappedValue)) ft."))
             }
         }
     }
