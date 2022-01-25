@@ -42,7 +42,7 @@ struct CustomSlider: View {
                                         self.lastOffset = value.location.x
                                         let sliderPosition = max(0 + self.leadingOffset, min(self.lastOffset + value.translation.width, geometry.size.width - self.trailingOffset))
                                         let sliderValue = sliderPosition.map(from: self.leadingOffset...(geometry.size.width - self.trailingOffset), to: self.range)
-                                        self.$value.wrappedValue = sliderValue
+                                        self.value = sliderValue
                                     }
                                 }
                         )
