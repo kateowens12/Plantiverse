@@ -36,7 +36,7 @@ struct CustomSlider: View {
                         .offset(x: lastOffset)
                         .shadow(radius: 8)
                         .gesture(
-                            DragGesture(minimumDistance: 0.1)
+                            DragGesture(minimumDistance: 0)
                                 .onChanged { value in
                                     if value.location.x >= 0 && value.location.x <= geometry.size.width - self.thumbSize.width {
                                         self.lastOffset = value.location.x
@@ -47,21 +47,6 @@ struct CustomSlider: View {
                                 }
                         )
                 }
-            }
-//            .accessibilityRepresentation {
-//                Slider(value: $value, in: 0...12, step: 1.0) {
-//
-//                    Text("Window Distance")
-//                    .accessibilityLabel(Text("Window Distance"))
-//                    //.accessibilityValue(Text($value.wrappedValue == 0 ? "In Window" : "\(Int($value.wrappedValue)) ft."))
-//                }
-//            }
-        }    .accessibilityRepresentation {
-            Slider(value: $value, in: 0...12, step: 1.0) {
-                
-                Text("Window Distance")
-                .accessibilityLabel("window distance")
-                //.accessibilityValue(Text($value.wrappedValue == 0 ? "In Window" : "\(Int($value.wrappedValue)) ft."))
             }
         }
     }

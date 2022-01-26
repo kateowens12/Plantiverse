@@ -24,24 +24,22 @@ struct PotSizeStepper: View {
                     
                     HStack {
                         CustomCountButton(action: decrement, type: .decrement)
-                                        .disabled(potSize == 0)
-
+                            .disabled(potSize == 0)
+                        
                         CustomCountButton(action: increment, type: .increment)
-                                        .disabled(24 <= potSize)
+                            .disabled(24 <= potSize)
                     }
                     .background(.thinMaterial, in: Capsule())
-                                .contentShape(Capsule())
+                    .contentShape(Capsule())
                 }
             }
-//                .accessibilityRepresentation {
-//                Stepper("Pot Size", value: $potSize,
-//                        in: 0...24,
-//                        step: 1)
-//            }
         }
         .padding(.vertical)
+        .accessibilityElement(children: .combine)
+        .accessibilityRepresentation {
+            Stepper("Pot Size", value: $potSize, in: 0...24, step: 1)
+        }
     }
- 
     
     func increment() {
         $potSize.wrappedValue += 1

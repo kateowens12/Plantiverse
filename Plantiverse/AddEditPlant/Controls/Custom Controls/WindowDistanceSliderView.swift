@@ -9,22 +9,21 @@ import SwiftUI
 
 struct WindowDistanceSliderView: View {
     @State var value: CGFloat = 0.0
-    var text = "Window Distance"
+    @State var isEditing: Bool = false
+
     var body: some View {
         VStack {
             HStack(alignment: .center) {
                 Text("Window Distance")
                     .font(.body)
                 Spacer()
-                Text($value.wrappedValue == 0 ? "In window" : "\(Int($value.wrappedValue)) ft.")
+                Text($value.wrappedValue < 1 ? "In window" : "\(Int($value.wrappedValue)) ft.")
+                    .font(.body)
             }
-           // .accessibilityElement(children: .ignore)
             CustomSlider(value: $value)
-            // ideally, we'd get our a11y label and a11y value from the a11yRepresentation view modifier in the CustomSlider, but setting those as instructed seems to not work and cause a bug!
-            // we want voiceover to read this view as 'Window Distance, in window, adjustable ...etc ..
-            // this is why we ignore the elements in the hstack - we wouldn't want voiceover to ignore those elements if the a11y representation was working correctly
-
-               // .accessibilityElement(children: .contain)
+                            .accessibilityRepresentation {
+                                Slider(value: $value, in: 0...12, step: 1.0)
+            }
             Spacer()
         }
         .padding(.vertical)
