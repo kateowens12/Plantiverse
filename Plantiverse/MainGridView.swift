@@ -10,7 +10,7 @@ import SwiftUI
 struct MainGridView: View {
     @Namespace var plantNamespace
 
-    let rooms = RoomFactory().getAllRooms()
+    @Binding let rooms = RoomFactory().getAllRooms()
 
     var body: some View {
         NavigationView {

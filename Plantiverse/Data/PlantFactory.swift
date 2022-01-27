@@ -14,7 +14,7 @@ class PlantFactory {
                             needsHealthUpdate: false,
                             task: PlantTaskFactory().clean,
                             category: PlantCategory.Houseplants,
-                            status: .NeedsUpdate,
+                            health: .NeedsUpdate,
                             image: Image("pothos"),
                             distanceFromWindow: 2,
                             potSize: 6)
@@ -31,7 +31,7 @@ class PlantFactory {
                               needsHealthUpdate: false,
                               task: nil,
                               category: PlantCategory.Succulents,
-                              status: .Good,
+                              health: .Good,
                               image: Image("aloeVera"),
                               distanceFromWindow: 2,
                               potSize: 6)
@@ -48,7 +48,7 @@ class PlantFactory {
                                needsHealthUpdate: false,
                                task: nil,
                                category: PlantCategory.Succulents,
-                               status: .Good,
+                               health: .Good,
                                image: Image("burroTail"))
 
     var mint = PlantModel(name: "Mint",
@@ -69,7 +69,7 @@ class PlantFactory {
                                       needsHealthUpdate: false,
                                       task: PlantTaskFactory().repot,
                                       category: PlantCategory.Houseplants,
-                                      status: .Great,
+                                      health: .Great,
                                       image: Image("monsteraDelicosa"))
 
     var snakePlant = PlantModel(name: "Snake Plant",
@@ -82,7 +82,7 @@ class PlantFactory {
                              needsHealthUpdate: false,
                              task: nil,
                              category: PlantCategory.Herbs,
-                             status: .Meh,
+                             health: .Meh,
                              image: Image("parsley"))
 
     func getAllPlants() -> [PlantModel] {
