@@ -28,6 +28,7 @@ struct RepottedToggle: View {
                 }
             })
         }
+        .accessibilityElement(children: .combine)
         Divider()
     }
 }

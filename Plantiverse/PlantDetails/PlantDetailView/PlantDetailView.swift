@@ -19,22 +19,12 @@ struct PlantDetailView: View {
             ScrollView {
                 VStack {
                     PlantImageView(plant: plant, width: geometry.size.width, height: geometry.size.height)
-                    Button(action: {
-                        self.showingImagePicker = true
-                    }) {
-                        Image(systemName: "photo")
-                            .foregroundColor(Color.black)
-                            .padding()
-                            .background(Circle().fill(Color.gray).opacity(0.60))
-                    }
-                   // .accessibility(label: Text("Add a new image"))
-                    .padding(.bottom)
+                    AddImageButton(showingImagePicker: $showingImagePicker)
                     
                     Spacer()
                     
                     PlantDetailsInfoView(plant: plant)
                         .padding()
-                    
                     Spacer()
                     
                     plant.allTasks.map { tasks in
@@ -49,20 +39,10 @@ struct PlantDetailView: View {
                 } content: {
                     ImagePicker(image: self.$image)
                 }
-            }.toolbar {
+            }
+            .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        isEditing = true
-                    } label: {
-                        Image(systemName: "gearshape.fill")
-                            .foregroundColor(.black)
-                            .frame(minWidth: 44.0, minHeight: 44.0)
-                        //.accessibilityLabel("Edit Plant")
-                    }.sheet(isPresented: $isEditing) {
-                     //   update plant info
-                        } content: {
-                            EditPlantView(plant: plant, isEditing: $isEditing, value: $value)
-                        }
+                    EditToolbarButton(isEditing: $isEditing, plant: PlantFactory().pothos)
                 }
             }
         }

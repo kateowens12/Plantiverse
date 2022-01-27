@@ -21,7 +21,7 @@ struct PotSizeStepper: View {
                     Text("\($potSize.wrappedValue) inch")
                         .font(.body)
                         .foregroundColor(potSize > 0 ? .black : .gray)
-                    
+                        //.accessibilityHidden(true)
                     HStack {
                         CustomCountButton(action: decrement, type: .decrement)
                             .disabled(potSize == 0)
@@ -31,14 +31,16 @@ struct PotSizeStepper: View {
                     }
                     .background(.thinMaterial, in: Capsule())
                     .contentShape(Capsule())
-                }
+                }.accessibilityElement(children: .combine)
             }
         }
         .padding(.vertical)
-        .accessibilityElement(children: .combine)
         .accessibilityRepresentation {
             Stepper("Pot Size", value: $potSize, in: 0...24, step: 1)
         }
+        .accessibilityValue("\(Int($potSize.wrappedValue)) inch")
+        // the a11y Representation won't work unless voiceover is turned off and back on when you land on the screen where it lives
+        .accessibilityElement(children: .combine)
     }
     
     func increment() {

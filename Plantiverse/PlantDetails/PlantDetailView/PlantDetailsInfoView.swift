@@ -19,7 +19,9 @@ struct PlantDetailsInfoView: View {
                 plant.status.map { status in
                     PlantHealthView(status: status)
                 }
+                .accessibilityElement(children: .contain)
             }
+            .accessibilityElement(children: .combine)
             .padding()
             
             Divider()

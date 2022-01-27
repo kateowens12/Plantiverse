@@ -12,7 +12,7 @@ struct PlantCategoryRow: View {
 
     var body: some View {
         HStack {
-            Image(systemName: category.getImageName(for: category))
+            Image(category.getImageName(for: category))
                 .padding()
             Text(category.rawValue).tag(category.id)
         }

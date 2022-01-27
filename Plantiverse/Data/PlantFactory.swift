@@ -61,7 +61,7 @@ class PlantFactory {
 
     var miniMonstera = PlantModel(name: "Mini Monstera",
                                   needsHealthUpdate: false,
-                                  task: PlantTaskFactory().clean,
+                                  task: nil,
                                   category: PlantCategory.Houseplants,
                                   image: Image("miniMonstera"))
 
@@ -80,7 +80,7 @@ class PlantFactory {
 
     var parsley = PlantModel(name: "Parsley",
                              needsHealthUpdate: false,
-                             task: PlantTaskFactory().water,
+                             task: nil,
                              category: PlantCategory.Herbs,
                              status: .Meh,
                              image: Image("parsley"))

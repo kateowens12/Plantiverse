@@ -19,6 +19,7 @@ struct PlantHealthView: View {
             .accessibilityHidden(true)
             .accessibilityElement(children: .contain)
             .accessibilityCustomContent("Plant Health", status.rawValue, importance: .default)
+            .accessibilityElement(children: .combine)
     }
 }
 

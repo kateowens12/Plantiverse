@@ -27,6 +27,7 @@ struct PotSizeRow: View {
                 Text("Unspecified")
             }
         }
+        .accessibilityElement(children: .combine)
     }
 }
 
