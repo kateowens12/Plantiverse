@@ -2,19 +2,20 @@
 //  PlantCategoryRow.swift
 //  Plantiverse
 //
-//  Created by Kate Owens on 1/13/22.
+//  Created by Kate Owens on 1/27/22.
 //
 
 import SwiftUI
 
 struct PlantCategoryRow: View {
-    @State var category: PlantCategory
+    var category: PlantCategory
 
     var body: some View {
         HStack {
-            Image(category.getImageName(for: category))
+            Text("Plant category:")
+            Text(category.rawValue.capitalized)
+            Image(category.getImageName(for: category)).foregroundColor(.blue)
                 .padding()
-            Text(category.rawValue).tag(category.id)
         }
         .accessibilityElement(children: .combine)
     }
@@ -22,6 +23,6 @@ struct PlantCategoryRow: View {
 
 struct PlantCategoryRow_Previews: PreviewProvider {
     static var previews: some View {
-        PlantCategoryRow(category: .Herbs)
+        PlantCategoryRow(category: PlantFactory().pothos.category)
     }
 }

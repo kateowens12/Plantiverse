@@ -13,8 +13,9 @@ struct RepottedToggleRow: View {
         HStack {
             Text("Has this plant been repotted?")
             Text(isRepotted ? "Yes" : "No")
-            Spacer()
+                .padding()
         }
+        .accessibilityElement(children: .combine)
     }
 }
 

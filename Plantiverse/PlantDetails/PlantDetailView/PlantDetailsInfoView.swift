@@ -14,16 +14,16 @@ struct PlantDetailsInfoView: View {
         VStack(alignment: .leading) {
             Text("Plant Details")
                 .font(.title2)
-            HStack {
-                CategoryView(category: plant.category)
+                .padding()
+            PlantCategoryRow(category: plant.category)
+                Divider()
                 plant.status.map { status in
-                    PlantHealthView(status: status)
+                    HStack {
+                        Text("Plant Health:")
+                        Text(status.rawValue)
+                            .padding()
+                    }.accessibilityElement(children: .combine)
                 }
-                .accessibilityElement(children: .contain)
-            }
-            .accessibilityElement(children: .combine)
-            .padding()
-            
             Divider()
             WindowDistanceRow(distance: plant.distanceFromWindow)
             Divider()
@@ -43,4 +43,6 @@ struct PlantDetailsInfoView_Previews: PreviewProvider {
         PlantDetailsInfoView(plant: PlantFactory().aloeVera)
     }
 }
+
+
 

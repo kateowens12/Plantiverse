@@ -16,7 +16,7 @@ struct PlantCategoryPicker: View {
             Spacer()
             Picker("Plant Category", selection: $selectedCategory) {
                 ForEach(PlantCategory.allCases) { category in
-                    PlantCategoryRow(category: category).tag(category)
+                    PlantCategoryPickerRow(category: category).tag(category)
                 }
             }
         }
