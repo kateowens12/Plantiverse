@@ -25,6 +25,7 @@ struct PlantImageView: View {
                     .overlay(Circle().stroke(Color.cyan, lineWidth: 4.0))
             }
         }
+        .accessibilityLabel(Text("\(plant.name)"))
     }
 }
 

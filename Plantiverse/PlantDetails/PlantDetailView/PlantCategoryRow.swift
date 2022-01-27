@@ -13,8 +13,15 @@ struct PlantCategoryRow: View {
     var body: some View {
         HStack {
             Text("Plant category:")
-            Text(category.rawValue.capitalized)
-            Image(category.getImageName(for: category)).foregroundColor(.blue)
+            HStack {
+                Text(category.rawValue.capitalized)
+                Image(category.getImageName(for: category))
+                   // .frame(minWidth: 44)
+                    //.imageScale(.small)
+                    .background(Color
+                                                                    .blue)
+            }
+            
                 .padding()
         }
         .accessibilityElement(children: .combine)
@@ -23,6 +30,6 @@ struct PlantCategoryRow: View {
 
 struct PlantCategoryRow_Previews: PreviewProvider {
     static var previews: some View {
-        PlantCategoryRow(category: PlantFactory().pothos.category)
+        PlantCategoryRow(category: PlantFactory().aloeVera.category)
     }
 }
