@@ -14,7 +14,7 @@ struct PlantDetailsInfoView: View {
         VStack(alignment: .leading) {
             Text("Plant Details")
                 .font(.title2)
-                .padding()
+                .padding(.vertical)
             PlantCategoryRow(category: plant.category)
                 Divider()
                 plant.status.map { status in
