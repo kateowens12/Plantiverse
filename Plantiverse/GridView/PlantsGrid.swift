@@ -23,7 +23,6 @@ struct PlantsGrid: View {
             ForEach(plants.indices, id: \.self) { i in
                 NavigationLink(destination: PlantDetailView(plant: room.plants[i])) {
                     PlantTile(plant: room.plants[i])
-                        .accessibilityRotorEntry(id: room.plants[i].id, in: plantNamespace)
                 }.buttonStyle(PlainButtonStyle())
             }
         }

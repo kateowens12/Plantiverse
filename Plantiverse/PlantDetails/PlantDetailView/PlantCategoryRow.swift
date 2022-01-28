@@ -15,14 +15,11 @@ struct PlantCategoryRow: View {
             Text("Plant category:")
             HStack {
                 Text(category.rawValue.capitalized)
-                Image(category.getImageName(for: category))
-                   // .frame(minWidth: 44)
-                    //.imageScale(.small)
-                    .background(Color
-                                                                    .blue)
+                Image(systemName: "\(category.getImageName(for: category))")
+                    .accessibilityHidden(true)
+                    .aspectRatio(contentMode: .fit)
             }
-            
-                .padding()
+            .padding()
         }
         .accessibilityElement(children: .combine)
     }

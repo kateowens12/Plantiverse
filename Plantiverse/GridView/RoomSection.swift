@@ -9,14 +9,16 @@ import SwiftUI
 
 struct RoomSection: View {
     var room: Room
+    @Namespace var roomNamespace
     
     var body: some View {
         Section {
             PlantsGrid(room: room)
-                
         } header: {
             HeaderView(room: room)
         }
+        .accessibilityElement(children: .contain)
+        .accessibilityRotorEntry(id: room.name.rawValue, in: roomNamespace)
     }
 }
 
