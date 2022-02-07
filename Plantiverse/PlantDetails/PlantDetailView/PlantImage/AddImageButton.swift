@@ -21,7 +21,7 @@ struct AddImageButton: View {
         }
         .accessibility(label: Text("Add a new image"))
         .padding(.bottom)
-        .accessibilitySortPriority(0)
+      //  .accessibilitySortPriority(0)
     }
 }
 

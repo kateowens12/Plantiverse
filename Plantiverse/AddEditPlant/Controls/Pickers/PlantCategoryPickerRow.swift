@@ -12,7 +12,8 @@ struct PlantCategoryPickerRow: View {
 
     var body: some View {
         HStack {
-            Image(category.getImageName(for: category))
+            Image(systemName: category.getImageName(for: category))
+                .accessibilityHidden(true)
                 .padding()
             Text(category.rawValue).tag(category.id)
         }

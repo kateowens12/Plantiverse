@@ -13,7 +13,6 @@ struct RoomSection: View {
     var body: some View {
         Section {
             PlantsGrid(room: room)
-                
         } header: {
             HeaderView(room: room)
         }

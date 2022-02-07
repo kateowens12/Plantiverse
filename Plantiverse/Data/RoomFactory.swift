@@ -9,9 +9,8 @@ import Foundation
 
 class RoomFactory {
     var livingRoom = Room(plants: [PlantFactory().aloeVera,
-                                   PlantFactory().burroTail,
-                                   PlantFactory().snakePlant,
                                    PlantFactory().monsteraDelicosa,
+                                   PlantFactory().snakePlant,
                                    PlantFactory().pothos],
                           name: .LivingRoom,
                           id: UUID())
@@ -19,7 +18,6 @@ class RoomFactory {
     var bedroom = Room(plants: [PlantFactory().brasilPhilodendron,
                                 PlantFactory().philodendron,
                                 PlantFactory().miniMonstera,
-                                PlantFactory().snakePlant,
                                 PlantFactory().pothos
                                 ],
                        name: .Bedroom,

@@ -21,7 +21,7 @@ struct PotSizeStepper: View {
                     Text("\($potSize.wrappedValue) inch")
                         .font(.body)
                         .foregroundColor(potSize > 0 ? .black : .gray)
-                        //.accessibilityHidden(true)
+                        .accessibilityHidden(true)
                     HStack {
                         CustomCountButton(action: decrement, type: .decrement)
                             .disabled(potSize == 0)

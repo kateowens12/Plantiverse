@@ -76,6 +76,7 @@ class PlantFactory {
                                 needsHealthUpdate: true,
                                 task: PlantTaskFactory().repot,
                                 category: PlantCategory.Succulents,
+                                status: .Good,
                                 image: Image("snakePlant"))
 
     var parsley = PlantModel(name: "Parsley",

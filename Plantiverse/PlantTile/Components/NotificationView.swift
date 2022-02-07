@@ -14,7 +14,8 @@ struct NotificationView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Color.clear
-            Image(systemName: "exclamationmark")
+            Image(systemName: "heart.fill")
+                .imageScale(.small)
                 .padding()
                 .background(Color.red.opacity(0.9))
                 .clipShape(Circle())
@@ -25,21 +26,11 @@ struct NotificationView: View {
                 .alignmentGuide(HorizontalAlignment.trailing) {
                     $0[HorizontalAlignment.trailing] - $0.width * 0.15
                 }
-        }.frame(minHeight: 44.0)
+        }.frame(minWidth: 50.0, minHeight: 50.0)
         .accessibilityLabel("Health update needed")
-        .accessibilityAddTraits(.isButton)
         .accessibilityHidden(true)
         .accessibilityElement(children: .contain)
         .accessibilityCustomContent(Text("Health Update"), Text(plant.needsHealthUpdate ? "Health update needed" : "No health update needed"), importance: .high)
-        
-        .onTapGesture {
-            showingAlert = true
-        }
-        .alert("Update plant health", isPresented: $showingAlert) {
-            HealthUpdateAlert(showingAlert: $showingAlert, plant: self.plant)
-        } message: {
-            Text("Please select \(plant.name)'s current health")
-        }
     }
 }
 

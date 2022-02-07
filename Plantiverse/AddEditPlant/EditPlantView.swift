@@ -20,6 +20,7 @@ struct EditPlantView: View {
                     .font(.title)
                 VStack {
                     TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
+                        .frame(minHeight: 44.0)
                     Divider()
                     PlantHealthPicker()
                     PlantCategoryPicker()
@@ -48,6 +49,6 @@ struct Previews_EditPlantView_Previews: PreviewProvider {
     @Binding var isEditing: Bool
     @Binding var value: CGFloat
     static var previews: some View {
-        EditPlantView(plant: PlantFactory().pothos, isEditing: .constant(false), value: .constant(0.0))
+        EditPlantView(plant: PlantFactory().monsteraDelicosa, isEditing: .constant(false), value: .constant(0.0))
     }
 }

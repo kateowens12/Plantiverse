@@ -19,6 +19,7 @@ struct AddPlantView: View {
                         .font(.title)
                     VStack {
                         TextField("Plant Name", text: $plantName, prompt: Text("Enter plant name"))
+                            .frame(minHeight: 44.0)
                         Divider()
                         PlantHealthPicker()
                         PlantCategoryPicker()

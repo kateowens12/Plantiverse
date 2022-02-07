@@ -32,7 +32,7 @@ struct PlantDetailsInfoView: View {
             RepottedToggleRow(isRepotted: plant.hasBeenRepotted)
         }
         .padding(.leading)
-       // .accessibilityElement(children: .contain)
+        .accessibilityElement(children: .contain)
         .padding()
         .overlay(RoundedRectangle(cornerRadius: 20).background(.gray).opacity(0.10))
     }

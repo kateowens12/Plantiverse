@@ -34,7 +34,8 @@ struct WindowDistanceRow: View {
             if noDistanceProvided {
                 Text("Unspecified")
             }
-        }.accessibilityElement(children: .combine)
+        }
+        .accessibilityElement(children: .combine)
     }
 }
 
