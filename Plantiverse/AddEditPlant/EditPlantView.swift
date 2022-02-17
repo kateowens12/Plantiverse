@@ -31,7 +31,7 @@ struct EditPlantView: View {
                 }
                 .padding()
                 .background {
-                    Color.gray.opacity(0.40)
+                    Color("Deque Gray").opacity(0.40)
                 }
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .padding()

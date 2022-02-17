@@ -25,7 +25,9 @@ struct WindowDistanceSliderView: View {
             
             CustomSlider(value: $value)
                 .accessibilityRepresentation {
-                    Slider(value: $value, in: 0...12, step: 1.0)
+                    Slider(value: $value, in: 0...12, step: 1.0) {
+                        Text("Window Distance")
+                    }
                 }
                 .accessibilityValue($value.wrappedValue < 1 ? "In Window" : "\(Int($value.wrappedValue)) ft")
             Spacer()

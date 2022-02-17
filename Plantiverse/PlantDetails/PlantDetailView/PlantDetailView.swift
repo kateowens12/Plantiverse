@@ -44,7 +44,7 @@ struct PlantDetailView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditToolbarButton(isEditing: $isEditing, plant: PlantFactory().pothos)
                 }
-            }
+            }.accessibilitySortPriority(2)
         }
     }
 }

@@ -15,10 +15,10 @@ struct AddButton: View {
             $isAddViewShowing.wrappedValue.toggle()
         }) {
             Image(systemName: "plus")
-                .foregroundColor(Color.black)
+                .foregroundColor(Color("Deque Black"))
                 .padding()
         }
-        .background(Circle().fill(Color.gray).opacity(0.60))
+        .background(Circle().fill(Color("Deque Gray")).opacity(0.55))
         .accessibility(label: Text("Add a plant"))
         .sheet(isPresented: $isAddViewShowing) {
             AddPlantView(isAddViewShowing: self.$isAddViewShowing)

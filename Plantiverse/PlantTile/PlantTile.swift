@@ -17,7 +17,7 @@ struct PlantTile: View {
                 PlantTileAccessoryView(plant: plant)
             }
             .padding()
-            .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.75))
+            .background(RoundedRectangle(cornerRadius: 20.0).fill(Color.purple).opacity(0.80))
             .overlay(plant.needsHealthUpdate ? NotificationView(plant: plant) : nil) 
         }
         .accessibilityElement(children: .contain)

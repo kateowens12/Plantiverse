@@ -14,7 +14,7 @@ struct CustomSlider: View {
     var leadingOffset: CGFloat = 2
     var trailingOffset: CGFloat = 12
     var thumbSize: CGSize = CGSize(width: 44, height: 44)
-    let trackGradient = LinearGradient(gradient: Gradient(colors: [.blue, .gray]), startPoint: .leading, endPoint: .trailing)
+    let trackGradient = LinearGradient(gradient: Gradient(colors: [Color("Deque Blue"), Color("Deque Gray")]), startPoint: .leading, endPoint: .trailing)
     
     var body: some View {
         GeometryReader { geometry in
@@ -25,14 +25,14 @@ struct CustomSlider: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 30)
                             .foregroundColor(.clear)
-                            .shadow(color: .black, radius: 5)
+                            .shadow(color: Color("Deque Black"), radius: 5)
                             .clipShape(RoundedRectangle(cornerRadius: 30))
                     )
                 
                 HStack {
                     RoundedRectangle(cornerRadius: 50)
                         .frame(width: self.thumbSize.width, height: self.thumbSize.height)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("Deque White"))
                         .offset(x: lastOffset)
                         .shadow(radius: 8)
                         .gesture(

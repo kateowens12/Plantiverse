@@ -12,7 +12,7 @@
 		F319A58A278F5AAA00DD4B19 /* PotSizeStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */; };
 		F319A58C278F707800DD4B19 /* PlantHealthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A58B278F707800DD4B19 /* PlantHealthPicker.swift */; };
 		F319A58E278F709300DD4B19 /* PlantCategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A58D278F709300DD4B19 /* PlantCategoryPicker.swift */; };
-		F319A594279094DC00DD4B19 /* CustomCountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A593279094DC00DD4B19 /* CustomCountButton.swift */; };
+		F319A594279094DC00DD4B19 /* CustomStepperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A593279094DC00DD4B19 /* CustomStepperButton.swift */; };
 		F319A5962790C8D200DD4B19 /* PlantCategoryPickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A5952790C8D200DD4B19 /* PlantCategoryPickerRow.swift */; };
 		F319A5982790C9E200DD4B19 /* RepottedToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A5972790C9E200DD4B19 /* RepottedToggle.swift */; };
 		F319A59C2795C89C00DD4B19 /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F319A59B2795C89C00DD4B19 /* SaveButton.swift */; };
@@ -46,6 +46,8 @@
 		F374EA4E2732DE37002EB20E /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4D2732DE37002EB20E /* ButtonsView.swift */; };
 		F374EA502732DE57002EB20E /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA4F2732DE57002EB20E /* FilterButton.swift */; };
 		F374EA522732DE60002EB20E /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374EA512732DE60002EB20E /* AddButton.swift */; };
+		F375162E27BD822B0087A1AD /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F375162D27BD822B0087A1AD /* MyView.swift */; };
+		F375163427BEF94C0087A1AD /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F375163327BEF94C0087A1AD /* Color.xcassets */; };
 		F3A41EC12759221900D5A0B7 /* PlantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */; };
 		F3A41EC3275961B700D5A0B7 /* PlantHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */; };
 		F3A41EC52759648900D5A0B7 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A41EC42759648900D5A0B7 /* CategoryView.swift */; };
@@ -86,7 +88,7 @@
 		F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotSizeStepper.swift; sourceTree = "<group>"; };
 		F319A58B278F707800DD4B19 /* PlantHealthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealthPicker.swift; sourceTree = "<group>"; };
 		F319A58D278F709300DD4B19 /* PlantCategoryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategoryPicker.swift; sourceTree = "<group>"; };
-		F319A593279094DC00DD4B19 /* CustomCountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCountButton.swift; sourceTree = "<group>"; };
+		F319A593279094DC00DD4B19 /* CustomStepperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepperButton.swift; sourceTree = "<group>"; };
 		F319A5952790C8D200DD4B19 /* PlantCategoryPickerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCategoryPickerRow.swift; sourceTree = "<group>"; };
 		F319A5972790C9E200DD4B19 /* RepottedToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepottedToggle.swift; sourceTree = "<group>"; };
 		F319A59B2795C89C00DD4B19 /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
@@ -123,6 +125,8 @@
 		F374EA4D2732DE37002EB20E /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		F374EA4F2732DE57002EB20E /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		F374EA512732DE60002EB20E /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		F375162D27BD822B0087A1AD /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		F375163327BEF94C0087A1AD /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		F3A41EC02759221900D5A0B7 /* PlantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetailView.swift; sourceTree = "<group>"; };
 		F3A41EC2275961B700D5A0B7 /* PlantHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantHealthView.swift; sourceTree = "<group>"; };
 		F3A41EC42759648900D5A0B7 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
@@ -178,7 +182,7 @@
 		F3058D2D279F2A8F0089D31B /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
-				F319A593279094DC00DD4B19 /* CustomCountButton.swift */,
+				F319A593279094DC00DD4B19 /* CustomStepperButton.swift */,
 				F3614C372798A66B006FFE72 /* CustomSlider.swift */,
 				F3A848A02799BFCF003FC1A8 /* WindowDistanceSliderView.swift */,
 				F319A589278F5AAA00DD4B19 /* PotSizeStepper.swift */,
@@ -242,6 +246,7 @@
 				F3A7FE8227A306D10040A92E /* EditToolbarButton.swift */,
 				F3A41F0E27626ABD00D5A0B7 /* PlantDetailsInfoView.swift */,
 				F3A7FE8427A30CB30040A92E /* PlantCategoryRow.swift */,
+				F375162D27BD822B0087A1AD /* MyView.swift */,
 				F3A8489E2798B6ED003FC1A8 /* PlantImage */,
 				F315F5E62783679200ACA539 /* DetailViewComponents */,
 				F363EE57276B97A100570A0F /* TasksComponents */,
@@ -280,6 +285,7 @@
 				F315F5E52783677800ACA539 /* PlantDetails */,
 				F374EA382732D9A9002EB20E /* Data */,
 				F374EA032732D923002EB20E /* Assets.xcassets */,
+				F375163327BEF94C0087A1AD /* Color.xcassets */,
 				F374EA052732D923002EB20E /* Preview Content */,
 			);
 			path = Plantiverse;
@@ -494,6 +500,7 @@
 			files = (
 				F374EA072732D923002EB20E /* Preview Assets.xcassets in Resources */,
 				F374EA042732D923002EB20E /* Assets.xcassets in Resources */,
+				F375163427BEF94C0087A1AD /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +530,7 @@
 				F3A41F1527627B1D00D5A0B7 /* TaskRow.swift in Sources */,
 				F3614C35279897DB006FFE72 /* RepottedToggleRow.swift in Sources */,
 				F374EA502732DE57002EB20E /* FilterButton.swift in Sources */,
-				F319A594279094DC00DD4B19 /* CustomCountButton.swift in Sources */,
+				F319A594279094DC00DD4B19 /* CustomStepperButton.swift in Sources */,
 				F3614C332798973B006FFE72 /* WindowDistanceRow.swift in Sources */,
 				F319A5A227972F5800DD4B19 /* EditPlantView.swift in Sources */,
 				F3A41EC72759698000D5A0B7 /* ImagePicker.swift in Sources */,
@@ -557,6 +564,7 @@
 				F3A848A12799BFCF003FC1A8 /* WindowDistanceSliderView.swift in Sources */,
 				F3A41EC52759648900D5A0B7 /* CategoryView.swift in Sources */,
 				F374EA442732DAB2002EB20E /* PlantTaskFactory.swift in Sources */,
+				F375162E27BD822B0087A1AD /* MyView.swift in Sources */,
 				F319A58E278F709300DD4B19 /* PlantCategoryPicker.swift in Sources */,
 				F374EA462732DAE9002EB20E /* PlantCategory.swift in Sources */,
 				F3A41F1727627F3A00D5A0B7 /* PlantViewModel.swift in Sources */,

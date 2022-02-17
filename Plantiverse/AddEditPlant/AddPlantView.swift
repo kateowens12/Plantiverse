@@ -30,7 +30,7 @@ struct AddPlantView: View {
                     }
                     .padding()
                     .background {
-                        Color.gray.opacity(0.50)
+                        Color("Deque Gray").opacity(0.50)
                     }
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .padding()

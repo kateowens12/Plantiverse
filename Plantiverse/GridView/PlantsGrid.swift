@@ -18,31 +18,36 @@ struct PlantsGrid: View {
         let plants = room.plants
         LazyVGrid(columns: columns,
                   alignment: .center,
-                  spacing: 16,
+                  spacing: 20,
                   pinnedViews: .sectionHeaders) {
             ForEach(plants.indices, id: \.self) { i in
                 NavigationLink(destination: PlantDetailView(plant: room.plants[i])) {
                     PlantTile(plant: room.plants[i])
-                       .accessibilityRotorEntry(id: room.plants[i].id, in: plantNamespace)
-                }.buttonStyle(PlainButtonStyle())
+                }
+                .buttonStyle(PlainButtonStyle())
             }
+            .padding(.horizontal)
         }
                   .accessibilityElement(children: .contain)
-                  .accessibilityRotor("Plants with Health Update Due") {
-                      ForEach(plants, id: \.id) { plant in
-                          if plant.needsHealthUpdate {
-                              AccessibilityRotorEntry("Update plant health", id: plant.id, in: plantNamespace)
-                          }
-                      }
-                  }
         
-                  .accessibilityRotor("Plants with task due") {
-                      ForEach(plants, id: \.id) { plant in
-                          if plant.hasTask {
-                              AccessibilityRotorEntry("task due", id: plant.id, in: plantNamespace)
-                          }
-                      }
-                  }
+        
+        //rotors are acting funny - need to figure out what i'm doing that's preventing the rotor from encompassing the entire view instead of just allowing rotor navigating within each individual section
+        
+//                  .accessibilityRotor("Plants with Health Update Due") {
+//                      ForEach(plants, id: \.id) { plant in
+//                          if plant.needsHealthUpdate {
+//                              AccessibilityRotorEntry("Update plant health", id: plant.id, in: plantNamespace)
+//                          }
+//                      }
+//                  }
+        
+//                  .accessibilityRotor("Plants with task due") {
+//                      ForEach(plants, id: \.id) { plant in
+//                          if plant.hasTask {
+//                              AccessibilityRotorEntry("task due", id: plant.id, in: plantNamespace)
+//                          }
+//                      }
+//                  }
     }
 }
 

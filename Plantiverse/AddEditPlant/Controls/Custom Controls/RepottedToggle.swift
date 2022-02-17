@@ -22,11 +22,11 @@ struct RepottedToggle: View {
             .onTapGesture {
                 $isRepotted.wrappedValue.toggle()
             }
-            .accessibilityRepresentation(representation: {
+            .accessibilityRepresentation {
                 Toggle(isOn: $isRepotted) {
                     Text("Plant is repotted")
                 }
-            })
+            }
         }
         .accessibilityElement(children: .combine)
         Divider()

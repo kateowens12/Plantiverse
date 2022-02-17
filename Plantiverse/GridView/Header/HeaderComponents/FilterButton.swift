@@ -13,10 +13,10 @@ struct FilterButton: View {
             print("tapped")
         }, label: {
             Image(systemName: "line.3.horizontal.decrease")
-                .foregroundColor(Color.black)
+                .foregroundColor(Color("Deque Black"))
                 .padding()
         })
-            .background(Circle().fill(Color.gray).opacity(0.60))
+            .background(Circle().fill(Color("Deque Gray")).opacity(0.60))
             .accessibility(label: Text("Filter plants"))
     }
 }

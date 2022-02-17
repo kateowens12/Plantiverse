@@ -17,7 +17,7 @@ struct NotificationView: View {
             Image(systemName: "heart.fill")
                 .imageScale(.small)
                 .padding()
-                .background(Color.red.opacity(0.9))
+                .background(Color("Deque Red").opacity(0.9))
                 .clipShape(Circle())
                 .frame(width: 50, height: 50)
                 .alignmentGuide(VerticalAlignment.top) {

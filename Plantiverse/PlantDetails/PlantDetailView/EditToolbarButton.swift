@@ -21,7 +21,7 @@ struct EditToolbarButton: View {
                 .frame(minWidth: 45.0, minHeight: 45.0)
             .accessibilityLabel("Edit Plant")
         }
-        .accessibilitySortPriority(2.0)
+   //     .accessibilitySortPriority(2.0)
         .sheet(isPresented: $isEditing) {
             //   update plant info
         } content: {

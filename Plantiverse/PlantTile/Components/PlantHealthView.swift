@@ -12,9 +12,9 @@ struct PlantHealthView: View {
 
     var body: some View {
         Text(status.rawValue)
-            .font(.footnote)
+            .font(.callout)
             .padding()
-            .background(.cyan.opacity(0.80))
+            .background(.cyan.opacity(0.70))
             .clipShape(Capsule())
             .accessibilityHidden(true)
             .accessibilityElement(children: .contain)

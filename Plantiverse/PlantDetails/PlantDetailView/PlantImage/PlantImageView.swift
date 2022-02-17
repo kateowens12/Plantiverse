@@ -13,9 +13,10 @@ struct PlantImageView: View {
     var height: CGFloat
     
     var body: some View {
-        VStack(alignment: .center) {
+        ZStack(alignment: .center) {
             plant.image.map { image in
                 plant.image?
+                   
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: width * 0.90, height: height * 0.30, alignment: .center)

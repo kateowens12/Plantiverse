@@ -17,10 +17,10 @@ struct SaveButton: View {
         } label: {
             Text("Save")
                 .fontWeight(.bold)
-                .foregroundColor(.black)
+                .foregroundColor(Color("Deque Black"))
         }
         .padding()
-        .overlay(RoundedRectangle(cornerRadius: 15).foregroundColor(.blue).opacity(0.40))
+        .overlay(RoundedRectangle(cornerRadius: 15).foregroundColor(Color("Deque Blue")).opacity(0.40))
         .frame(minWidth: 44.0, minHeight: 44.0)
     }
 }

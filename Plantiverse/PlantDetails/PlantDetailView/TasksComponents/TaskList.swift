@@ -15,7 +15,7 @@ struct TaskList: View {
             Spacer()
             Text("Tasks To Complete")
                 .font(.title2)
-                .foregroundColor(.black)
+                .foregroundColor(Color("Deque Black"))
                 .padding()
             ForEach(tasks) { plantTask in
                 TaskRow(task: plantTask)

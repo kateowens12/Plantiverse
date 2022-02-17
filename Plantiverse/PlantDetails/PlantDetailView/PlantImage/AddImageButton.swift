@@ -15,13 +15,13 @@ struct AddImageButton: View {
             self.showingImagePicker = true
         }) {
             Image(systemName: "photo")
-                .foregroundColor(Color.black)
+                .foregroundColor(Color("Deque Black"))
                 .padding()
-                .background(Circle().fill(Color.gray).opacity(0.60))
+                .background(Circle().fill(Color("Deque Gray")).opacity(0.60))
         }
         .accessibility(label: Text("Add a new image"))
         .padding(.bottom)
-      //  .accessibilitySortPriority(0)
+        .accessibilitySortPriority(0)
     }
 }
 

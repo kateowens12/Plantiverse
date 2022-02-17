@@ -22,7 +22,8 @@ struct PlantDetailsInfoView: View {
                         Text("Plant Health:")
                         Text(status.rawValue)
                             .padding()
-                    }.accessibilityElement(children: .combine)
+                    }
+                    .accessibilityElement(children: .combine)
                 }
             Divider()
             WindowDistanceRow(distance: plant.distanceFromWindow)

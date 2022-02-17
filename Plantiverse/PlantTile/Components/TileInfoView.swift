@@ -13,6 +13,8 @@ struct TileInfoView: View {
     var body: some View {
             Text(plant.name)
                 .font(.body)
+                .fontWeight(.medium)
+                .foregroundColor(Color("Deque Black"))
                 .multilineTextAlignment(.center)
                 .padding()
                 .fixedSize(horizontal: true, vertical: false)

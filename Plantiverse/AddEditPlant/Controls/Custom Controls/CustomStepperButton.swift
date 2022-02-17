@@ -1,5 +1,5 @@
 //
-//  CustomCountButton.swift
+//  CustomStepperButton.swift
 //  Plantiverse
 //
 //  Created by Kate Owens on 1/13/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomCountButton: View {
+struct CustomStepperButton: View {
     var action: () -> Void
     var type: ButtonType
     @Environment(\.isEnabled) var isEnabled
@@ -27,7 +27,7 @@ struct CustomCountButton: View {
     }
 }
 
-extension CustomCountButton {
+extension CustomStepperButton {
     enum ButtonType {
         case increment
         case decrement
@@ -54,7 +54,7 @@ extension CustomCountButton {
 
 struct CustomCountButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomCountButton(action: {
+        CustomStepperButton(action: {
             print("increment tapped")
         }, type: .increment)
     }

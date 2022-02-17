@@ -20,6 +20,7 @@ struct HeaderView: View {
                            maxHeight: .infinity)
                 Text(room.name.rawValue)
                     .font(.title2)
+                    .fontWeight(.regular)
                 AddButton()
                     .padding()
                     .frame(minWidth: 44,

@@ -15,7 +15,7 @@ struct PotSizeStepper: View {
             HStack {
                 Text("Pot Size")
                     .font(.body)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("Deque Black"))
                 Spacer()
                 VStack {
                     Text("\($potSize.wrappedValue) inch")
@@ -23,23 +23,26 @@ struct PotSizeStepper: View {
                         .foregroundColor(potSize > 0 ? .black : .gray)
                         .accessibilityHidden(true)
                     HStack {
-                        CustomCountButton(action: decrement, type: .decrement)
+                        CustomStepperButton(action: decrement, type: .decrement)
                             .disabled(potSize == 0)
                         
-                        CustomCountButton(action: increment, type: .increment)
+                        CustomStepperButton(action: increment, type: .increment)
                             .disabled(24 <= potSize)
                     }
                     .background(.thinMaterial, in: Capsule())
                     .contentShape(Capsule())
-                }.accessibilityElement(children: .combine)
+                }
+                .accessibilityElement(children: .combine)
             }
         }
         .padding(.vertical)
         .accessibilityRepresentation {
-            Stepper("Pot Size", value: $potSize, in: 0...24, step: 1)
+            Stepper(value: $potSize, in: 0...24, step: 1) {
+                Text("Pot Size")
+            }
         }
         .accessibilityValue("\(Int($potSize.wrappedValue)) inch")
-        // the a11y Representation won't work unless voiceover is turned off and back on when you land on the screen where it lives
+       //  the a11y Representation won't work unless voiceover is turned off and back on when you land on the screen where it lives
         .accessibilityElement(children: .combine)
     }
     
@@ -57,3 +60,5 @@ struct PotSizeStepper_Previews: PreviewProvider {
         PotSizeStepper()
     }
 }
+
+//TODO: make the colors reuseable variables that are less annoying to call
