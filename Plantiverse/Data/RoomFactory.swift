@@ -8,39 +8,32 @@
 import Foundation
 
 class RoomFactory {
-    var livingRoom = Room(plants: PlantFactory().getAllPlants(),
+    var livingRoom = Room(plants: [PlantFactory().aloeVera,
+                                   PlantFactory().monsteraDelicosa,
+                                   PlantFactory().snakePlant,
+                                   PlantFactory().pothos],
                           name: .LivingRoom,
                           id: UUID())
-    var bathroom = Room(plants: PlantFactory().getAllPlants(),
-                        name: .Bathroom,
-                        id: UUID())
-    var kitchen = Room(plants: PlantFactory().getAllPlants(),
-                       name: .Kitchen,
-                       id: UUID())
-    var bedroom = Room(plants: PlantFactory().getAllPlants(),
+    
+    var bedroom = Room(plants: [PlantFactory().brasilPhilodendron,
+                                PlantFactory().philodendron,
+                                PlantFactory().miniMonstera,
+                                PlantFactory().pothos
+                                ],
                        name: .Bedroom,
                        id: UUID())
-    var diningRoom = Room(plants: PlantFactory().getAllPlants(),
+    
+    var diningRoom = Room(plants: [PlantFactory().mint,
+                          PlantFactory().parsley,
+                          PlantFactory().monsteraDelicosa],
                           name: .DiningRoom,
                           id: UUID())
-    var office = Room(plants: PlantFactory().getAllPlants(),
-                      name: .Office,
-                      id: UUID())
-    var outside = Room(plants: PlantFactory().getAllPlants(),
-                       name: .Outside,
-                       id: UUID())
 
     func getAllRooms() -> [Room] {
         var rooms: [Room] = []
-
         rooms.append(livingRoom)
         rooms.append(diningRoom)
-        rooms.append(kitchen)
-        rooms.append(office)
         rooms.append(bedroom)
-        rooms.append(outside)
-        rooms.append(bathroom)
-
         return rooms
     }
 }

@@ -7,12 +7,16 @@
 
 import Foundation
 
-enum PlantCategory: String, CaseIterable {
-
-
+enum PlantCategory: String, CaseIterable, Identifiable {
+    
+    var id: String {
+        return self.rawValue
+    }
+    
     case Houseplants = "houseplant"
     case Succulents = "succulent"
     case Herbs = "herb"
+    case NA = "Unspecified"
 
     func getImageName(for category: PlantCategory) -> String {
         var name: String
@@ -24,8 +28,10 @@ enum PlantCategory: String, CaseIterable {
             name = "ladybug.fill"
         case .Succulents:
             name = "sun.max.fill"
+        case .NA:
+            name = ""
         }
-
         return name
     }
 }
+

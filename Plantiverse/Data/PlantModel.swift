@@ -15,10 +15,13 @@ struct PlantModel: Identifiable {
     var task: PlantTask?
     var category: PlantCategory
     var id = UUID()
-    var status: Status?
-    var image: Image? = Image("pothos")
-    var allPhotos: [Image]?
-
+    var status: PlantHealth?
+    var image: Image?
+    var distanceFromWindow: Int?
+    var potSize: Int?
+    var hasBeenRepotted: Bool = false
+    var room: Room?
+    
     var hasTask: Bool {
         return task != nil
     }
@@ -27,10 +30,6 @@ struct PlantModel: Identifiable {
         guard let theTask = task else { return nil }
         var all = [PlantTask]()
         all.append(theTask)
-        // do we have a task?
-        // unwrap it and add to array
-
         return all
     }
 }
-

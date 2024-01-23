@@ -8,45 +8,28 @@
 import SwiftUI
 
 struct MainGridView: View {
-    @Environment(\.isSearching)
-    private var isSearching: Bool
+    @Namespace var plantNamespace
 
-    @Environment(\.dismissSearch)
-    private var dismissSearch
-
-    @State private var query: String = ""
     let rooms = RoomFactory().getAllRooms()
-    let suggestions: [String] = [
-        // each of the plant names with no repeating names
-    ]
 
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack {
-                    HeaderView()
+                    Text("My Plantiverse")
+                        .font(.title)
                     Divider()
-                    ForEach(rooms.indices, id: \.self) { index in
+                        .padding()
+                    ForEach(rooms.indices, id: \.self) { index in 
                         RoomSection(room: rooms[index])
-                    }
-                }.padding()
+                    }.padding()
+                }
+                .padding()
             }
             .navigationTitle("Plantiverse")
+            .navigationBarTitleDisplayMode(.automatic)
         }
-        .searchable(text: $query,
-                    placement: .navigationBarDrawer(displayMode: .always),
-                    prompt: "Search Plants") {
-            ForEach(suggestions, id: \.self) { suggestion in
-                Text(suggestion)
-                    .searchCompletion(suggestion)
-            }
-        }
-        .onChange(of: query) { newQuery in
-
-        }
-
     }
-
 }
 
 struct MainGridView_Previews: PreviewProvider {
