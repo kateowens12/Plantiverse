@@ -20,6 +20,8 @@ struct PlantCategoryPicker: View {
                 }
             }
         }
+        .accessibilityValue($selectedCategory.wrappedValue.rawValue)
+        .accessibilityAddTraits(.isButton)
         .accessibilityElement(children: .contain)
         .accessibilityElement(children: .combine)
         Divider()

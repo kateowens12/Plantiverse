@@ -13,16 +13,21 @@ struct PlantHealthPicker: View {
     var body: some View {
         HStack {
             Text("Plant Health")
-                .accessibilityHidden(true)
+                .font(.body)
+                .accessibilityElement(children: .ignore)
             Spacer()
             Picker("Plant Health", selection: $selectedHealth) {
                 ForEach(PlantHealth.allCases) { health in
-                    Text(health.rawValue).tag(health)
+                    PlantHealthPickerRow(plantHealth: health).tag(health)
                 }
             }
         }
+
+        .accessibilityElement(children: .contain)
         .accessibilityElement(children: .combine)
-      
+        .accessibilityLabel("Plant Health")
+        .accessibilityValue($selectedHealth.wrappedValue.rawValue)
+        .accessibilityAddTraits(.isButton)
         Divider()
     }
 }

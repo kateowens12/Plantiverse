@@ -19,8 +19,7 @@ struct PlantCategoryRow: View {
                     .imageScale(.small)
                     .accessibilityHidden(true)
             }
-            
-                .padding()
+            .padding()
         }
         .accessibilityElement(children: .combine)
     }
