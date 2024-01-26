@@ -31,8 +31,8 @@ struct PlantsGrid: View {
         .accessibilityElement(children: .contain)
 
         
-        //rotors are acting funny - need to figure out what i'm doing that's preventing the rotor from encompassing the entire view instead of just allowing rotor navigating within each individual section
-        
+        // TODO: plant task rotor and plants that need health update rotors are no longer moving to expected places - need to research and fix
+
 //                  .accessibilityRotor("Plants with Health Update Due") {
 //                      ForEach(plants, id: \.id) { plant in
 //                          if plant.needsHealthUpdate {
