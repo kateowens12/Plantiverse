@@ -34,7 +34,7 @@ struct HeaderView: View {
                     Color.indigo.opacity(0.50)
                         .clipShape(Capsule())
                 }
-                .accessibilityElement(children: .combine)
+                .accessibilityElement(children: .contain)
     }
 }
 

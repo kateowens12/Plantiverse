@@ -28,7 +28,6 @@ struct TaskView: View {
         .fixedSize(horizontal: true, vertical: false)
         .accessibilityHidden(true)
         .accessibilityElement(children: .combine)
-        .accessibilityElement(children: .combine)
         .accessibilityCustomContent("Tasks due", Text("\(plantTask.name.rawValue) due"), importance: .high)
     }
 }

@@ -19,7 +19,7 @@ struct TaskRow: View {
                 .font(.body)
                 Spacer()
         }
-        .accessibilityElement(children: .combine)
+//        .accessibilityElement(children: .combine)
     }
 }
 
