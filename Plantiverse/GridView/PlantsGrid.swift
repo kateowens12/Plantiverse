@@ -28,8 +28,8 @@ struct PlantsGrid: View {
             }
             .padding(.horizontal)
         }
-                  .accessibilityElement(children: .contain)
-        
+        .accessibilityElement(children: .contain)
+
         
         //rotors are acting funny - need to figure out what i'm doing that's preventing the rotor from encompassing the entire view instead of just allowing rotor navigating within each individual section
         
